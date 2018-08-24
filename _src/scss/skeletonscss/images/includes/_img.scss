@@ -1,0 +1,41 @@
+.u-objectFitCover{
+	object-fit: cover;
+}
+.u-imageMax100{
+	max-width: 100%;
+}
+
+.u-imgBgSizeCover{
+	background-size: cover;
+	background-position: center top;
+}
+
+img.alignnone{
+	margin: 15px;
+	max-width: 100%;
+}
+img.alignright{
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	max-width: 50%;
+	height: auto;
+}
+
+img.alignleft{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	max-width: 50%;
+	height: auto;
+}
+
+img.aligncenter{
+	margin: 15px auto;
+    position: relative;
+    display: block;
+	max-width: 100%;
+	height: auto;	
+}

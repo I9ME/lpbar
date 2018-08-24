@@ -1,0 +1,117 @@
+//====================================
+// GLOBAL
+// ===================================
+
+body{
+	&.home{}
+	&.single{}
+}
+
+.Site{
+    &:after{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: $header_height_m * 1.25;
+    z-index: 19; 
+    content: "";
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0));
+    top: 0px;
+    left: 0px;
+    transition: all 0.25s;
+    opacity: 0;
+  }
+  @media screen and (min-width: $break-sm){
+    //overflow-x: inherit;
+    &:after{
+      display: none;
+    }
+  }
+}
+
+//====================================
+// HOME
+//====================================
+
+.Intro{
+	&--home{
+		
+		padding-top: $header_height_m;
+		/* background-image: url('../images/Intro--bg--mobile.png'); */
+		background-position: top center;
+		background-size: cover;
+		//background-attachment: fixed;
+
+	}
+	
+	
+	&--page{
+	
+		@media screen and (min-width: $break-sm){
+
+		
+			
+		}
+	}
+}
+.u-hasSideBar{
+	&.SiteMain{
+		& .SiteMain-main{}
+		& .SiteMain-sideBar{
+			& .Section{
+				&-header{
+					& i{
+						& svg{
+							font-size: 18px;
+						}
+					}
+					&-title{
+						font-size: 18px;
+					}
+				}
+				&--search{
+					& .Form{
+						& input{
+							height: 75px;
+							text-indent: 0px;
+						}
+						& input[type="submit"],
+						& button{
+							&.FigureIcon{
+								right: 15px;
+								top: 20px;
+								left: inherit;
+								color: $color_9;
+							}
+						}
+					}
+				}
+			}
+		}
+		@media screen and (min-width: $break-sm){
+			& .SiteMain-main{
+				margin-right: $h_spacing;
+			}
+			& .SiteMain-sideBar{}
+			}
+	}
+
+}
+
+
+
+.Breadcrumbs{
+	//border-top: 1px solid $color_8;
+	//border-bottom: 1px solid $color_8;
+	font-size: 13px;
+	& a{
+		font-weight: bold;
+		color: $color_2;
+		&:hover{
+			color: $color_3;
+		}
+	}
+	& .u-icon{
+		font-size: 13px;
+	}
+}

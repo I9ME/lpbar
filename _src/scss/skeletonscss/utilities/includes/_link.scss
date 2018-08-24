@@ -1,0 +1,47 @@
+.Button{
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 2px;
+	&--border{
+		border-width:2px;
+		border-style: solid;
+	}
+	
+	&--largeSize{
+		padding: 15px 30px;
+		min-height: 66px;
+		&.u-hasIcon{
+			padding-left: 37px !important;
+		}
+		& .u-icon{
+			font-size: 20px;
+			line-height: 20px;
+		}
+	}
+
+	&--mediumSize{
+		padding: 10px 20px;
+		min-height: $sizeColumns_px;
+		&.u-hasIcon{
+			padding-left: 27px !important;
+		}
+		& .u-icon{
+			font-size: 20px;
+			line-height: 20px;
+		}
+	}
+
+	&--smallSize{
+		padding: 5px 10px;
+		min-height: 30px;
+		font-size: 14px;
+		&.u-hasIcon{
+			padding-left: 17px !important;
+		}
+		& .u-icon{
+			font-size: 20px;
+			line-height: 20px;
+		}
+	}
+
+}

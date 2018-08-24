@@ -1,0 +1,48 @@
+.u-lineHeight0{
+	line-height: 0;
+}
+
+.u-lineHeight100{
+	line-height: 100%;
+}
+
+.u-lineHeight120{
+	line-height: 120%;
+}
+.u-lineHeight130{
+	line-height: 130%;
+}
+.u-lineHeight140{
+	line-height: 140%;
+}
+.u-lineHeight150{
+	line-height: 150%;
+}
+.u-textParagraph{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+@font-face {
+	font-family: 'Cambria';
+	src: url('../../assets/fonts/Cambria.eot');
+	src: url('../../assets/fonts/Cambria.woff') format('woff'),
+		url('../../assets/fonts/Cambria.ttf') format('truetype'),
+		url('../../assets/fonts/Cambria.svg#Cambria') format('svg'), 
+		url('../../assets/fonts/Cambria.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 
+@font-face {
+	font-family: 'Cambria';
+	src: url('http://pizzavignoli.com.br/wp-content/uploads/2016/06/Cambria.eot');
+	src: url('http://pizzavignoli.com.br/wp-content/uploads/2016/06/Cambria.woff') format('woff'),
+		url('http://pizzavignoli.com.br/wp-content/uploads/2016/06/Cambria.ttf') format('truetype'),
+		url('http://pizzavignoli.com.br/wp-content/uploads/2016/06/Cambria.svg#Cambria') format('svg'), 
+		url('http://pizzavignoli.com.br/wp-content/uploads/2016/06/Cambria.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+} */

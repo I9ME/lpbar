@@ -1,0 +1,1 @@
+npm init -y && npm install --save-dev gulp && npm install --save-dev gulp-sass && npm install --save-dev gulp-rename && npm install --save-dev gulp-minify && npm install --save-dev gulp-watch && npm install --save-dev gulp.spritesmith && npm install --save-dev gulp-imagemin && npm install --save-dev gulp-changed && npm install --save-dev browser-sync && gulp

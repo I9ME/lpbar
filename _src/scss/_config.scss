@@ -1,0 +1,86 @@
+
+//==============================
+// Variables
+//==============================
+
+//== colors tests =================
+
+$color_1: #FFFFFF;
+$color_2: #6e1b1d; //Vinho
+$color_3: #b8252b; // vermelho
+$color_4: #63974d; // Verde
+$color_5: #edeae3; // Off 
+$color_6: #ab696b; // Vinho Claro
+$color_7: #BBBBBB; //Cinza Médio
+$color_8: #e9e9e9; // cinza claro
+$color_9: #999999; // Cinza Médio 2
+$color_10: #555555; // Cinza Escuro
+$color_11: #000000; // Preto
+$color_12: #44752f; // verde escuro
+$color_13: #deffaf; // verde claro
+$color_14: #DDDDDD; // Cinza Claro 2
+$color_15: #d4cbaf; // Verde opaco claro
+$color_16: #d2c6aa; //BEGE claro
+$color_17: #167614; //Verde escuro botão
+$color_18: #3A9018; //Verde claro botão
+$color_19: #a18c59; //Bege escuro
+$color_20: #f9ebd9; //Cor da section locais
+
+
+
+
+//== Utilities =================
+//Colors
+$cor_lilas: #4f4872;
+$cor_yellow: #feb933;
+
+//Fonts
+$fontFamily: "Cambria";
+$font_size_text: 16px;
+$font_size_title_section: 30px;
+$font_size_subtitle_section: 22px;
+$font_size_title_item: 18px;
+$font_size_subtitle_item: 16px;
+$line_height: 120%;
+
+
+//== Layout =====================
+//Regular Content
+$h_spacing: 4.166666666666667%;
+$v_spacing: 45px;
+
+//== Sizes =====================
+
+//Natural
+$numColumns: 24;
+$sizeColumns: 4.166666666666667%;
+$sizeColumns_px: 50px;
+
+//customizer
+$header_height_m: 74px;
+$header_height: $header_height_m * 1.25;
+
+
+
+
+//==============================
+// Components
+//==============================
+
+
+
+//==============================
+// Variables in queries
+//==============================
+
+
+$break-sm: 768px;
+$break-md: 960px;
+$break-lg: 1200px;
+$break-ex: 1400px;
+
+
+//==============================
+// Animate
+//==============================
+$time_animate: 0.5s; 

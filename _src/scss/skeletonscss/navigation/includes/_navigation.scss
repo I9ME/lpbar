@@ -1,0 +1,608 @@
+.Navigation{
+	&-controller{
+		&--prev{
+			
+		}
+		&--next{
+			
+		}
+		&.disabled{
+			opacity: 0.5;
+		}
+	}
+	&--menu{
+		position:fixed;	
+		left: 0px;
+		
+	/* 	& .Navigation--subMenu{
+			position: fixed;
+			display: block;
+			z-index: 11;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			padding-top: 10px;
+			top: 75px;
+			left: 0px;
+			&-title{
+				color: $color_1;
+			}
+			
+			@media screen and (min-width: $break-md){
+				top: inherit;
+				left: inherit;
+				&:before{
+					content: "";
+				    position: absolute;
+				    display: block;
+				    vertical-align: middle;
+				    width: 0;
+				    height: 0;
+				    top: -10px;
+				    left: 50%;
+				    transform: translateX(-50%);
+					}
+
+				    position: absolute;
+				    top: 45px;
+				    left: 50%;
+				    width: auto;
+				    min-width: 280px;
+				    height: 0%;
+				    transform: translateX(-50%);
+				    border-radius: 10px;
+				    
+				    & #BackNav,
+				    &-title{
+				    	display: none;
+				    }
+				    & .Navigation-items{
+				    	padding-top: 0px;
+				    	padding-bottom: $v_spacing / 2;
+				    	display: flex !important;
+				    	flex-direction: column;
+				    	min-width: 240px;
+				    	&-item{
+				    		margin: 0px;
+				    		background: none !important;
+				    		width: 100%;
+				    		padding: 0 10px;
+				    	}
+				    }
+				}
+
+			} */
+
+			/* &--level2{
+			top: 160px;
+			& .Navigation--subMenu{
+				top: 170px;
+			}
+		} */
+		/* @media screen and (min-width: $break-md){
+			&--level2{			
+				top: 0px;
+				& .Navigation--subMenu{
+					top: 44px;
+					left: inherit;
+				}
+			}
+		} */
+
+		&.Navigation{
+			&.Navigation--menu--main{
+				top: $header_height_m;
+			}
+			@media screen and (min-width: $break-md){
+				position: relative;
+				display: inline-flex;
+				width: 50% !important;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				&.Navigation--menu--main{
+					top: inherit !important;
+					width: 100% !important;
+					height: auto;
+				}
+			}
+		}
+
+		.Navigation--menu{
+
+				&--contactPoints{
+
+					height: auto !important;
+					display: flex;
+					
+					& .Item{
+						margin: 0px 5px;
+						padding: 0px;
+					}
+
+					&.SocialMedias{
+						& svg{
+							font-size: 30px;
+							color: $color_3;
+						}	
+					}
+					&.Contacts{
+						border-top: 1px solid $color_8;
+						border-bottom: 1px solid $color_8;
+						color: $color_10;
+						& svg{
+							font-size: 20px;
+						}
+						& .Value{
+							font-size: 20px;
+						}
+						& a{
+								color: $color_10;
+							}	
+					}
+
+					@media screen and (min-width: $break-sm) {
+
+					height: auto !important;
+					margin: 0px 0px 0px 2.5% !important;
+
+					
+					& .Item{
+						margin: 0px 5px;
+						padding: 0px;
+					}
+
+					&.SocialMedias{
+						& svg{
+							font-size: 20px;
+							&:hover{
+								color: $color_10;
+							}
+						}	
+					}
+					&.Contacts{
+						color: $color_3;
+						min-width: 130px;
+						border: none;
+						& svg{
+							font-size: 14px;
+						}
+						& .Value{
+							font-size: 13px;
+							margin-left: 5px;
+							color: $color_2;
+							letter-spacing: 1px;
+						}	
+					}
+
+					}
+				}
+			} //.Navigation--menu
+
+		& .Navigation-items{
+			&-item{
+				overflow: hidden;
+				text-align: left;
+				margin-left: 5%;
+				& .NavigationLink{
+					&-icon{
+						top: 0px;
+						height: 26px;
+						&--left{
+							left: 10px;
+						}
+						&--right{
+							right: -20px;
+						}
+						& .u-icon{
+							font-size: 20px;
+						}
+					}
+					& span{
+						height: auto;
+						line-height: normal;
+					}
+				}
+			}
+			@media screen and (min-width: $break-md){
+				&-item{
+					position: relative;
+					height: inherit !important;
+					margin: 0px 17px;
+					width: auto;
+					display: inline-flex;
+					overflow: visible !important;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+		&--style1{
+			background: $color_3;
+			& .Navigation-items{
+				&-item{
+					background: $color_3;
+					font-weight: bold;
+					& .NavigationLink{
+						color: $color_2;
+						&:hover{
+							color: $color_1;
+						}
+						/* &--backNav{
+							font-size: 16px;
+							color: $color_1;
+							border-color: $color_1;
+							padding: 5px 15px 5px 30px;
+							& i{
+								top: 3px;
+							}
+						} */
+					}
+				}
+			/* 	& .Navigation--subMenu{
+					background: $color_3;
+					&:before{
+						border-bottom-color: $color_3;
+					}
+				} */
+			}
+		}
+		&--style2{
+			background: $color_1;
+			& .Navigation-items{
+				&-item{
+					background: none;
+					font-weight: bold;
+					& .NavigationLink{
+						color: $color_3;
+						font-weight: bold;
+						font-size: $font_size_title_section;
+					}
+				}
+				/* & .Navigation--subMenu{
+					background: $color_7;
+					&-title{
+						color: $color_4;
+					}
+				} */
+			}
+			@media screen and (min-width: $break-md){
+				background: none;
+				& .Navigation-items{
+					&--level1{
+						margin-top: 0px !important;
+					}
+					display: flex;
+					justify-content: center;
+					&-item{
+						background: none;
+						font-weight: bold;
+						font-size: 14px;
+						& .NavigationLink{
+							color: $color_11;
+							font-weight: lighter;
+							font-size: 14px;
+							letter-spacing: 1.25px;
+							&:hover{
+								color: $color_3;
+							}
+						}
+					}
+					/* & .Navigation--subMenu{
+						background: $color_2;
+						&:before{
+						border-bottom-color: $color_2;
+						}
+					} */
+				}
+			}
+		}
+		@media screen and (min-width: $break-md){
+			overflow: visible !important;
+		}
+	} // Navigation--menu
+
+	
+	&--content{
+		position:fixed;
+		top: 75px;
+		/* &--level2{
+			top: 160px;
+		} */
+		&--style1{
+			background: $color_3;
+			left: 0px;
+			& .Navigation-items{
+				&-item{
+					overflow: hidden;
+					background: $color_3;
+				}
+			}
+		}
+		&--style2{
+			background: $color_1;
+			left: 0px;
+			& .Navigation-items{
+				&-item{
+					overflow: hidden;
+					background: $color_1;
+				}
+			}
+		}
+		@media screen and (min-width: $break-md){
+			top: 0px;
+			&--style2{
+				position: absolute !important;
+				top: 40px;
+				max-width: 240px;
+				right: 5%;
+				left: inherit;
+				//height: auto !important;
+			}
+		}
+		
+		/* &.Form{
+			@media screen and (min-width: $break-md){
+				position: relative;
+				display: flex;
+				float: right;
+				height: 100%;
+				padding: 0;
+				justify-content: right;
+				@media screen and (min-width: $break-md){
+					& .Item{
+						position: relative;
+						display: flex;
+						justify-content: right;
+						width: 100%;
+						height: auto !important;
+						padding: 0 !important;
+					}
+				}
+			}
+		} */
+		&-container{
+				width: 100%;
+				& .Form-input[type="text"]{
+					width: 100% !important;
+				}
+			}
+	}
+	/* &--blog{
+		@media screen and (min-width: $break-md){
+			& .Navigation-items{
+				display: flex;
+				justify-content: center;
+
+			}
+		}	
+	} */
+
+
+	&Button{
+		&--blog{
+			@media screen and (min-width: $break-md){
+				display: none;
+			}
+		}
+	}
+	
+	&.Navigation{
+
+		&--main{
+			position:fixed;
+			display: block;
+			background: $color_1;
+			top: 0px;
+			right: 0px;
+			height: 100vh;
+
+			@media screen and (min-width: $break-md){
+				height: 100% !important;
+				background: none !important;
+
+				&.a-hzt.u-isExpanded{
+					position: relative;
+					display: block;
+					background: none;
+				}
+
+				& .Navigation-items{
+					text-align: right;
+					&-item{
+						display: inline-block;
+					}
+				}
+			}
+			& .Navigation-items-item{
+				margin:20px 0;
+				& .NavigationLink{
+					padding:10px;
+				}
+			}
+		}
+		&--login{
+			& fieldset legend{
+				font-weight: bold;
+			}
+			&:before{
+					display: none;
+			}
+			@media screen and (min-width: $break-md){
+				border-radius: 10px;
+				&:before{
+					content: "";
+				    position: absolute;
+				    display: block;
+				    vertical-align: middle;
+				    width: 0px;
+				    height: 0px;
+				    top: -10px;
+				    left: 50%;
+				    transform: translateX(-50%);
+					}
+			}	
+		}
+		&--header{
+
+			& .Navigation-items-item{
+				& .NavigationLink{
+					font-size: 24px;
+					font-weight: bold;
+					color: $color_2;
+				}
+			}
+
+			@media screen and (min-width: $break-md){
+				height: 100% !important;
+				& .Navigation-items{
+					height: 100%;
+				}
+				& .Navigation-items-item{
+					//display: inline-block;
+					margin:0 0.75%;
+					height: 100%;
+					&:last-child{
+						margin-right:0px !important;
+					}
+					& .NavigationLink{
+						font-size: 16px;
+						color: $color_1;
+						&:hover{
+							color: $color_3;
+						}
+					}
+				}
+			}
+
+			@media screen and (min-width: $break-md){
+
+				& .Navigation-items-item{
+					margin:0 0.75%;
+				}
+			}
+
+			@media screen and (min-width: $break-lg){
+
+				& .Navigation-items-item{
+					margin:0 0.75%;
+				}
+			}
+			@media screen and (min-width: $break-ex){
+
+				& .Navigation-items-item{
+					margin:0 1.75%;
+				}
+			}
+
+			&.u-isExpanded{
+				display: block;
+				
+
+			}
+		}
+
+	}	
+	
+	&--footer{
+		& .Navigation-section{
+			width: 100%;
+			float: none;
+			text-align: center;
+			margin:0 0 25px 0;
+			& h4{
+				margin-bottom: 5px;
+				color: $color_1;
+			}
+			&-item{
+					width: 100%;
+					float: none;
+					margin:0 0 2.5px 0;
+				}
+			@media screen and (min-width: $break-md){
+				width: 33.33%;
+				padding:0 10px;
+				margin-bottom: 15px;
+				text-align: left;
+				
+				&-item{
+					font-size: 16px;
+				}
+			}
+			@media screen and (min-width: $break-md){
+				//width: 16.66666666666667%;// Com o LINK "HOME"
+				width: 20%; // Sem o Link "HOME" - Recomendo!
+				padding:0 10px;
+			}
+			& a{
+				color: $color_1;
+				&:hover{
+					color: $color_3;
+				}
+			}
+			& h4{
+
+			}	
+		}
+	}
+
+}
+
+.NavigationButton{
+	position: absolute;
+	&--main{
+		color: $color_3;
+		right: 5%;
+	}
+	&--login{
+		color: $color_1;
+		right: calc(5% + 50px)
+	}
+	/* &--controllCarousel{
+		position: absolute;
+		display: block;
+		width: 70px;
+		height: 70px;
+		background: #FFF;
+		top:0px;
+	}
+	&--controllCarousel.prev{
+		left: 0px;
+	}
+	&--controllCarousel.next{
+		right: 0px;
+	} */
+	@media screen and (min-width: $break-md){
+		&--main{
+			display: none;
+		}
+		&--login{
+			position: absolute !important;
+			top:0px;
+			right:5%;
+			width: auto;
+			height: 30px;
+			& .iconUser{
+				display: none !important;
+			}
+			& .Label{
+				position: relative;
+				display: flex;
+				top: -2px;
+				left: 0;
+				width: auto;
+				height: auto;
+				font-size: 12px;
+				font-weight: bold;
+				color: $color_1;
+				padding: 5px 15px;
+				border: 1px solid rgba(255,255,255,0.25);
+				border-radius: 0px 0px 10px 10px;
+				&:hover{
+					border: 1px solid rgba(255,255,255,1);
+				}
+			}	
+		}
+	}
+}
