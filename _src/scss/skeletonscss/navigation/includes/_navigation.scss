@@ -96,13 +96,12 @@
 			@media screen and (min-width: $break-md){
 				position: relative;
 				display: inline-flex;
-				width: 50% !important;
+				width: calc(100% - 235px);
 				height: 100%;
-				margin: 0;
+				margin: 0 0 0 235px;
 				padding: 0;
 				&.Navigation--menu--main{
 					top: inherit !important;
-					width: 100% !important;
 					height: auto;
 				}
 			}
@@ -552,8 +551,17 @@
 .NavigationButton{
 	position: absolute;
 	&--main{
-		color: $color_3;
-		right: 5%;
+		color: $color_1;
+		right: 0px;
+		height: 82px;
+		width: 60px;
+	    height: 58px;
+	    margin-top: 12px;
+	    padding-right: 20px;
+	}
+	&-icon{
+		height: 58px;
+		margin: 0px;
 	}
 	&--login{
 		color: $color_1;
@@ -605,4 +613,8 @@
 			}	
 		}
 	}
+}
+
+.ElementImg--bgNav--menu{
+	right: -80px;
 }

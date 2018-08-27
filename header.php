@@ -23,7 +23,7 @@
 
 	
 <div id="page" class="Site">
-	<header id="masthead" class="Site-header u-positionAbsolute u-sizeFull u-paddingVertical u-paddingHorizontal--inter is-animating u-zIndex20">
+	<header id="masthead" class="Site-header u-positionAbsolute u-sizeFull u-paddingVertical u-lineHeight0 u-paddingHorizontal--inter--half is-animating u-zIndex20">
 		<div class="u-maxSize--container u-alignCenterBox u-alignCenter u-displayFlex">
 			<!-- Logo do site -->
 			<div class="Site-header-branding u-positionRelative"> 

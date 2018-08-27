@@ -1,11 +1,40 @@
 .Site-header{
-	border-bottom: 1px solid rgba(255,255,255,0.5);
 	height: auto;
-	
+	background: $color_1;
+	&-branding{
+		max-width: 220px;
+		height: 82px;
+		&-img{
+			height: 80px;
+		}
+		&-type{
+			height: 66px;
+			width: 205px;
+			left: 10px;
+			& .ElementImg{
+				left: -20px;
+				letter-spacing: 4px;
+				font-size: 14px;
+				color: $color_2;
+				font-weight: bold;
+			}
+		}
+	}
+
 
 	@media screen and (min-width: $break-sm){
+		background: none;
 		
-		height: auto;
+		&-branding{
+			max-width: inherit;
+			&-type{
+				width: 255px;
+				& .ElementImg{
+					left: 10px;
+				}
+			}
+		}
+
 	}
 	
 
