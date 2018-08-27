@@ -1,11 +1,16 @@
 .Site-header{
 	height: auto;
 	background: $color_1;
+	position: fixed;
+	
+	padding-top: $v_spacing / 4;
+	padding-bottom: $v_spacing / 4;
+
 	&-branding{
 		max-width: 220px;
-		height: 82px;
+		height: 88px;
 		&-img{
-			height: 80px;
+			height: 88px;
 		}
 		&-type{
 			height: 66px;
@@ -24,9 +29,13 @@
 
 	@media screen and (min-width: $break-sm){
 		background: none;
+
+		padding-top: $v_spacing / 2;
+		padding-bottom: $v_spacing / 2;
 		
 		&-branding{
 			max-width: inherit;
+			width: $sizeColumns_px * 5;
 			&-type{
 				width: 255px;
 				& .ElementImg{

@@ -12,8 +12,8 @@
 </a>
 <div class="ElementImg--bgNav--menu u-displayBlock u-absoluteMiddle u-onlyMobile"></div>
 
-<nav id="MainNavigation-container" class="Navigation Navigation--menu Navigation--menu--main Navigation--menu--style2 is-animating u-isCollapsed u-contentHide u-contentHide--height u-flexJustifyContentFlexEnd u-zIndex20" role="navigation" aria-label="">
-	<ul class="Navigation-items Navigation-items--level1 u-alignCenter u-sizeFull u-marginTop--inter">
+<nav id="MainNavigation-container" class="Navigation Navigation--menu u-sizeFull u-flex1 Navigation--menu--main Navigation--menu--style2 is-animating u-isCollapsed u-contentHide u-contentHide--height u-flexJustifyContentFlexEnd u-zIndex20" role="navigation" aria-label="">
+	<ul class="Navigation-items Navigation-items--level1 u-alignCenter u-sizeFull u-marginTop--inter is-animating">
 
 		<?php if ( is_home() || is_front_page() ) { ?>
 		
@@ -22,15 +22,23 @@
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
-			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#avignoli">VIGNOLI</a>
+			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#videos">VÍDEOS</a>
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
-			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#seja-franqueado">SEJA FRANQUEADO</a>
+			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#opinioes">OPINIÕES</a>
 		</li>
 
 		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
 			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#midia">MÍDIA</a>
+		</li>
+
+		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
+			<a class="NavigationLink u-isScrollDown u-positionRelative Item-level1 is-animating " href="#barneys">BARNEY'S</a>
+		</li>
+
+		<li class="Navigation-items-item Item Item-level1 u-flex u-flexAlignCenter is-animating">
+			<a class="NavigationLink ButtonLink--nav Button Button--mediumSize u-lineHeightNormal u-borderRadius50 u-isScrollDown u-positionRelative Item-level1 is-animating" href="#seja-franqueado">SEJA FRANQUEADO</a>
 		</li>
 
 	<?php } else { ?>

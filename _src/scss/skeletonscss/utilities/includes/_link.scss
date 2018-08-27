@@ -9,7 +9,6 @@
 	
 	&--largeSize{
 		padding: 15px 30px;
-		min-height: 66px;
 		&.u-hasIcon{
 			padding-left: 37px !important;
 		}
@@ -21,7 +20,6 @@
 
 	&--mediumSize{
 		padding: 10px 20px;
-		min-height: $sizeColumns_px;
 		&.u-hasIcon{
 			padding-left: 27px !important;
 		}
@@ -33,7 +31,6 @@
 
 	&--smallSize{
 		padding: 5px 10px;
-		min-height: 30px;
 		font-size: 14px;
 		&.u-hasIcon{
 			padding-left: 17px !important;

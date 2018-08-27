@@ -428,9 +428,57 @@ body.u-isScrollOff{
     }
   }
   & .Site-header{
-      position:fixed !important;
+
+    @media screen and (min-width: $break-md){
+
+
+      & .Navigation{
+        &-items{
+          //justify-content: center;
+        }
+
+      &--menu--contactPoints{
+
+       &.SocialMedias{
+            & svg{
+              color: $color_2;
+              &:hover{
+                color: $color_11;
+              }
+            } 
+          }
+          &.Contacts{
+            color: $color_11;
+            & svg{
+            }
+            & .Value{
+              color: $color_11;
+            } 
+          }
+        }
+      }
+
+    }
       background: $color_1;
-      box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+      box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.20);
+
+    & .NavigationLink{
+        color: $color_2 !important;
+        &.ButtonLink--nav{
+          // color: $color_2 !important;
+          &:hover{
+            color: $color_1 !important;
+          }
+        }
+      }
+      padding-top: $v_spacing / 6;
+      padding-bottom: $v_spacing / 6;
+
+      @media screen and (min-width: $break-sm){
+        position: fixed;
+        padding-top: $v_spacing / 4;
+        padding-bottom: $v_spacing / 4;
+      }
   }
   & .Branding--img:first-child{
     display: none;
@@ -438,24 +486,7 @@ body.u-isScrollOff{
   & .Branding--img:last-child{
     display: block;
   }
-  & .Navigation{
-   
-    &--menu{
-      &--main{
-        top: 55px !important;
-      }
-    }
-  }
-
  
-  
-  & .Site-header .ButtonLink--nav.NavigationLink{
-      border-color: $color_2;
-      // color: $color_2 !important;
-      &:hover{
-        color: $color_1 !important;
-      }
-  }
 
   & .Intro--blog-headerBar{
     position: fixed;

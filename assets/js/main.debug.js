@@ -11,11 +11,12 @@ jQuery(function($) {
 //
 var hostname = location.hostname;
 if ( hostname == 'localhost' ) {
-    url = 'http://localhost/vignoli';
+    url = 'http://localhost/barneys/franquia';
 } else {
     url = 'http://'+hostname+'/franquia';
 }
 
+/*
 window.onload = function() {
 
 
@@ -31,7 +32,7 @@ window.onload = function() {
         //Inserindo imagens secudárias
         $('.Section--aFranquia #tabImage-2.Subsection-imageMain[data-img-src]').each(function(){
           var src = $(this).attr('data-img-src');
-          $('<img>').attr('src', url+'/wp-content/themes/lpvigno/assets/images/'+src).appendTo('.Section--aFranquia .Section-subSection #tabImage-2').addClass('Subsection-imageMain-src u-maxSize100 is-animating');
+          $('<img>').attr('src', url+'/wp-content/themes/lpbar/assets/images/'+src).appendTo('.Section--aFranquia .Section-subSection #tabImage-2').addClass('Subsection-imageMain-src u-maxSize100 is-animating');
         });
 
         
@@ -43,9 +44,9 @@ window.onload = function() {
     //$('#afranquia #tabImage-1.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza'+mobile+'.png" />');
     //$('#afranquia #tabImage-2.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza--expresso'+mobile+'.png" />');
     //$('#onde-estamos .Section-items-figure').html('<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="'+url+'/wp-content/themes/lpvigno/assets/images/brazil-pizza--right'+mobile+'.png" />');
-    $('#avignoli').addClass('imgAfter');
+    //$('#avignoli').addClass('imgAfter');
 
-    $('#avignoli .Items--tabs .Item--tab.Item--gallery').load(url+'/galeria-de-fotos/');
+    //$('#avignoli .Items--tabs .Item--tab.Item--gallery').load(url+'/galeria-de-fotos/');
     //$('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
 
 
@@ -57,7 +58,7 @@ window.onload = function() {
    //alert('Carregou! ')
    //
 
-};
+};*/
 
 
 
@@ -137,7 +138,6 @@ var title = $(this).find('img').attr('alt');
 
 
 
-
 // =====================================
 // .ScrollOn
 // Detecta o Movimento da Barra de Rolagem e aplica a classe no body
@@ -146,23 +146,23 @@ var title = $(this).find('img').attr('alt');
 $(window).scroll(function(){
 
 
-     var scroll = jQuery(window).scrollTop();
+     var scroll = $(window).scrollTop();
 
      //Class ScrollOn
      if ( scroll > 0 ) {
-      jQuery('body').addClass('u-isScrollOn');
+
+      $('body').addClass('u-isScrollOn');
 
      } else {
-      jQuery('body').removeClass('u-isScrollOn');
+      $('body').removeClass('u-isScrollOn');
      }
 
-     //Class Fixed
-    /* if ( scroll > 135 ) {
-      jQuery('.Intro--blog-headerBar').addClass('u-isFixed');
+      /*if ( scroll > 300 ) {
+        $('.Intro--home-imageMain .Layer').addClass('LessDesign');
+      } else { 
+        $('.Intro--home-imageMain .Layer').removeClass('LessDesign');
+      }*/
 
-     } else {
-      jQuery('.Intro--blog-headerBar').removeClass('u-isFixed');
-     }*/
 
 });
 
@@ -297,28 +297,6 @@ function LightboxClose(iFrame) {
 $( ".LightboxClose" ).on( "click", LightboxClose );
 
 
-
-// =====================================
-// .ScrollOn
-// Detecta o Movimento da Barra de Rolagem e aplica a classe no body
-// =====================================
-
-$(window).scroll(function(){
-
-
-     var scroll = $(window).scrollTop();
-
-     //Class ScrollOn
-     if ( scroll > 0 ) {
-
-      $('body').addClass('u-isScrollOn');
-
-     } else {
-      $('body').removeClass('u-isScrollOn');
-     }
-
-
-});
 
 
 
