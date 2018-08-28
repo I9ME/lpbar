@@ -1011,6 +1011,7 @@
 				&-title{
 					font-weight: normal;
 					font-size: 38px;
+					color: $color_1;
 					&--line3{
 						font-size: 24px;
 					}
@@ -1018,7 +1019,6 @@
 				& .Form{
 					& .u-icon{
 						font-size: 18px;
-						margin-right: 7.5px;
 						color: $color_9;
 					}
 					&-input{
@@ -1048,7 +1048,6 @@
 							letter-spacing: 3px;
 							position: absolute;
 							height: 100%;
-							width: 100%;
 
 							&.Form-input--submit{
 								background: transparent;
@@ -1082,8 +1081,9 @@
 					
 					&-row{
 						&--email{
-							padding: 3px 3px 3px 25px;
+							padding: 3px 3px 3px 15px;
 							background: $color_1;
+
 
 							-moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
 						    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
@@ -1092,11 +1092,21 @@
 
 						    border-radius: 50px;
 
+						    & .Form-coll{
+						    	min-width: 200px;
+						    }
+
+						}
+						& .Form-input{
+							&--email{
+								min-width: 180px;
+							}
+
 						}
 					}
 					&-coll{
 						&.Submit{
-							width: $sizeColumns_px * 2.5;
+							min-width: $sizeColumns_px * 1.1;
 							height: $sizeColumns_px;
 							position: relative;
 							display: block;
@@ -1104,13 +1114,26 @@
 					}
 				}
 				@media screen and (min-width: $break-sm){
+					&-title{
+						color: $color_10;
+					}
 					& .Form{	
 						&-coll{
 							&.Submit{
+								min-width: $sizeColumns_px * 2.25;
+								& .Form-input{
+										&--bg{
+											justify-content: flex-end;
+											& .u-icon{
+												margin-right: 10px;
+											}
+										}
+									}
 								&:hover{
 									& .Form-input{
 										&--bg{
 											opacity: 0;
+
 											&--hover{
 												opacity: 1;
 											}

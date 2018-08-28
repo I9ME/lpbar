@@ -1078,6 +1078,7 @@ FOOTER .Site--foter .Section--footerContent
 .Section--intro .Captions-title {
   font-weight: normal;
   font-size: 38px;
+  color: #FFFFFF;
 }
 
 .Section--intro .Captions-title--line3 {
@@ -1086,7 +1087,6 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section--intro .Captions .Form .u-icon {
   font-size: 18px;
-  margin-right: 7.5px;
   color: #999999;
 }
 
@@ -1125,7 +1125,6 @@ FOOTER .Site--foter .Section--footerContent
   letter-spacing: 3px;
   position: absolute;
   height: 100%;
-  width: 100%;
 }
 
 .Section--intro .Captions .Form-input.Button.Form-input--submit {
@@ -1155,7 +1154,7 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--intro .Captions .Form-row--email {
-  padding: 3px 3px 3px 25px;
+  padding: 3px 3px 3px 15px;
   background: #FFFFFF;
   -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
@@ -1164,8 +1163,16 @@ FOOTER .Site--foter .Section--footerContent
   border-radius: 50px;
 }
 
+.Section--intro .Captions .Form-row--email .Form-coll {
+  min-width: 200px;
+}
+
+.Section--intro .Captions .Form-row .Form-input--email {
+  min-width: 180px;
+}
+
 .Section--intro .Captions .Form-coll.Submit {
-  width: 125px;
+  min-width: 55px;
   height: 50px;
   position: relative;
   display: block;
@@ -1175,6 +1182,18 @@ FOOTER .Site--foter .Section--footerContent
   .Section--intro .Captions {
     top: calc(50% - 50px);
     transform: translateY(-50%);
+  }
+  .Section--intro .Captions-title {
+    color: #555555;
+  }
+  .Section--intro .Captions .Form-coll.Submit {
+    min-width: 112.5px;
+  }
+  .Section--intro .Captions .Form-coll.Submit .Form-input--bg {
+    justify-content: flex-end;
+  }
+  .Section--intro .Captions .Form-coll.Submit .Form-input--bg .u-icon {
+    margin-right: 10px;
   }
   .Section--intro .Captions .Form-coll.Submit:hover .Form-input--bg {
     opacity: 0;
@@ -6754,7 +6773,7 @@ input[type="tel"],
 input[type="search"],
 textarea,
 select {
-  padding: 0 10px;
+  padding: 0 5px;
   min-height: 50px;
   font-size: 16px;
   font-family: "Raleway";
