@@ -765,24 +765,116 @@
 		&.Intro{
 			&--home{
 				
-				background: $color_2;
 
+				& .Intro--home-imageMain{
 
-
-				@media screen and (min-width: $break-sm){
-					background: $color_1;
-
-					& .Intro--home-imageMain{
-
+					background: $color_2;
 						
 
+						& .Layer{
+							min-height: 450px;
+							width: 200%;
+						    margin-left: -60px;
+						   
+						    position: relative;
+						    content: "";
+						   
+						   
+						    &--before{
+						    	overflow: hidden;
+						    	
+						    	-webkit-transform: skew(24deg, -23deg) rotate(0deg);
+							    -moz-transform: skew(24deg, -23deg) rotate(0deg);
+							    -o-transform: skew(24deg, -23deg) rotate(0deg);
+							    transform: skew(24deg, -23deg) rotate(0deg);
+
+
+						    	moz-background: linear-gradient(to right, $color_2 50%, $color_4);
+							    -webkit-background: linear-gradient(to right, $color_2 50%, $color_4);
+							    background: linear-gradient(to right, $color_2 50%, $color_4);
+							    
+							    border-bottom-left-radius: 75px;
+							    z-index: 1;
+
+							    margin-bottom: 240px;
+						    }
+						    &--after{
+
+						    
+						    	position: absolute;
+						    	display: block;
+						    	top: 50px;
+						    	left: 0px;
+
+						    	-webkit-transform: skew(24deg, -23deg) rotate(0deg);
+							    -moz-transform: skew(24deg, -23deg) rotate(0deg);
+							    -o-transform: skew(24deg, -23deg) rotate(0deg);
+							    transform: skew(24deg, -23deg) rotate(0deg);
+
+							    
+							    border-bottom-left-radius: 100px;
+
+						
+							   
+
+							    moz-background: linear-gradient(to bottom, $color_1 35%, $color_5);
+							    -webkit-background: linear-gradient(to bottom, $color_1 35%, $color_5);
+							    background: linear-gradient(to bottom, $color_1 35%, $color_5);
+
+							    -moz-box-shadow: 5px 20px 80px -20px rgba(0,0,0,0.25);
+							    -webkit-box-shadow: 5px 20px 80px -20px rgba(0,0,0,0.25);
+							    -o-box-shadow: 5px 20px 80px -20px rgba(0,0,0,0.25);
+							    box-shadow: 5px 20px 80px -20px rgba(0,0,0,0.25);
+
+
+							    z-index: -1;
+
+							   
+							}
+						    &-image{
+						    	&--marcelo{
+						    		position: absolute;
+						    		display: block;
+						    		max-width: 50%;
+						    		left: -80px;
+						    		bottom: -70px;
+						    		width: auto;
+						    		height: auto;
+
+						    		-webkit-transform: skew(-24deg, 23deg) rotate(0deg);
+						    		-moz-transform: skew(-24deg, 23deg) rotate(0deg);
+						    		-o-transform: skew(-24deg, 23deg) rotate(0deg);
+						    		transform: skew(-24deg, 23deg) rotate(0deg);
+						    	}
+						    }
+
+						    &.LessDesign{
+
+						    	/* -webkit-transform:  none !important;
+							    -moz-transform:  none !important;
+							    -o-transform:  none !important;
+							    transform: none !important;
+
+							    border-bottom-left-radius: 0px !important;
+ */
+						    }
+						}
+					}
+
+				@media screen and (min-width: $break-sm){
+					
+
+					& .Intro--home-imageMain{
 						position: absolute;
-						display: block;
+						top: 0px;
+						left: 0px;
 						min-height: 700px;
 						z-index: 0;
+						background: none;
 
 						& .Layer{
-						    margin: 0;
+						    margin: 0 !important;
+						    top: initial !important;
 
 						    height: calc(100% + 200px);
 						   
@@ -1004,10 +1096,10 @@
 
 		& .Captions{
 			position: absolute;
+			top: $header_height_m + 50px;
+			left: 50%;
+			transform: translateX(-50%);
 			display: block;
-			left: 0px;
-			top: calc(50% + 0px);
-			transform: translateY(-50%);
 				&-title{
 					font-weight: normal;
 					font-size: 38px;
@@ -1114,6 +1206,11 @@
 					}
 				}
 				@media screen and (min-width: $break-sm){
+					position: absolute;
+					left: 0px;
+					top: calc(50% + 0px);
+					transform: translateY(-50%);
+					margin-top: 0px;
 					&-title{
 						color: $color_10;
 					}

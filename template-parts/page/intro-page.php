@@ -45,7 +45,7 @@
 				</fieldset>
 			</form>
 	</div>
-	<div class="Intro--home-imageMain u-absoluteTopLeft u-sizeFull u-zIndex0">
+	<div class="Intro--home-imageMain u-positionRelative u-sizeFull u-zIndex0">
 		<figure class="Layer Layer--before is-animating">
 			<img class="Layer-image Layer-image--marcelo" src="<?php echo get_template_directory_uri(); ?>/assets/images/foto-marcelo-pimentel-barneys-burger.png" alt="Marcelo Pimentel" />
 		</figure>

@@ -18,7 +18,7 @@
 		<img  class="Site-header-branding-img u-displayBlock u-absoluteLeftMiddle u-zIndex2 u-sizeAuto" src="<?php echo get_template_directory_uri(); ?>/assets/images/logotipo-barneys-burger.png" alt="<?php echo get_bloginfo( 'name' ); ?>" />
 		 <figure class="Site-header-branding-type u-displayBlock u-absoluteMiddle u-zIndex1 u-overflowHidden">
 		 	<span class="ElementImg ElementImg--bgLogo u-positionAbsolute u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexEnd">
-		 		<span class="u-displayBlock u-marginRight--inter--px">FRANQUIA</span>
+		 		<span class="u-displayBlock u-marginRight--inter--half--px">FRANQUIA</span>
 		 	</span>
 		 </figure>
 	</a>
