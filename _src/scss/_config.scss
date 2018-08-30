@@ -38,6 +38,7 @@ $cor_yellow: #feb933;
 $fontFamily: "Raleway";
 $font_size_text: 16px;
 $font_size_title_section: 32px;
+$font_size_title_section_m: 26px;
 $font_size_subtitle_section: 22px;
 $font_size_title_item: 18px;
 $font_size_subtitle_item: 16px;
@@ -47,7 +48,7 @@ $line_height: 120%;
 //== Layout =====================
 //Regular Content
 $h_spacing: 4.166666666666667%;
-$v_spacing: 45px;
+$v_spacing: 37.5px;
 
 //== Sizes =====================
 
@@ -73,7 +74,7 @@ $header_height: $header_height_m * 1.25;
 // Variables in queries
 //==============================
 
-
+$break-xs: 480px;
 $break-sm: 768px;
 $break-md: 960px;
 $break-lg: 1200px;

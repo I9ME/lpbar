@@ -178,7 +178,7 @@ $(window).scroll(function(){
         $('.u-isScrollFade').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 100;
             var bottom_of_window_ = $(window).scrollTop() + $(window).height();
 
             
@@ -190,7 +190,7 @@ $(window).scroll(function(){
                     
             } else {
 
-               //$(this).removeClass('u-isScrollFade--on'); 
+               $(this).removeClass('u-isScrollFade--on'); 
             
             } 
             
