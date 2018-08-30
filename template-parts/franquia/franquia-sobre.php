@@ -12,7 +12,7 @@
 				<div class="Section-content">
 					<ul class="Section-items u-displayFlex u-flexWrapWrap">
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--hamburger"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -24,7 +24,7 @@
 							</div>
 						</li>
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--trofeu"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -36,7 +36,7 @@
 							</div>
 						</li>
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--report"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -48,7 +48,7 @@
 							</div>
 						</li>
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--network"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
