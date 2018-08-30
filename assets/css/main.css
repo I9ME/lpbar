@@ -1338,12 +1338,10 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section .ImgFigure--franquia--flyer {
   top: -300px;
-  right: 20%;
 }
 
 .Section .ImgFigure--franquia--flyer--vert {
   top: -150px;
-  right: 25%;
 }
 
 .Section .ImgFigure--franquia--circle {
@@ -1352,22 +1350,34 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section .ImgFigure--franquia--circle--lg {
   top: -200px;
-  right: 5%;
   border-radius: 150px;
   border: 15px solid #e0a870;
   width: 80px;
   height: 80px;
-  opacity: 0.5;
 }
 
 .Section .ImgFigure--franquia--circle--md {
   top: -100px;
-  right: 25%;
   border-radius: 150px;
   border: 10px solid #f7eadd;
   width: 60px;
   height: 60px;
-  opacity: 1;
+}
+
+.Section .ImgFigure--left {
+  left: 0%;
+}
+
+.Section .ImgFigure--leftCenter {
+  left: 15%;
+}
+
+.Section .ImgFigure--right {
+  right: 5%;
+}
+
+.Section .ImgFigure--rightCenter {
+  right: 25%;
 }
 
 .Section--aFranquia .Section-header-title--beforeTitleLine {
@@ -1430,6 +1440,14 @@ FOOTER .Site--foter .Section--footerContent
     transform: inherit;
     background: #FFFFFF;
   }
+}
+
+.Section--aFranquia .Section-items-item-container.u-isScrollFade {
+  opacity: 0;
+}
+
+.Section--aFranquia .Section-items-item-container.u-isScrollFade--on {
+  opacity: 1;
 }
 
 .Section--aFranquia .Section-items-item .FigureIcon--CirclesGradient {
@@ -2439,9 +2457,9 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .u-boxShadow--clean--bottom {
-  -moz-box-shadow: 0px 22px 45px -10px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 22px 45px -10px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 22px 45px -10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 15px 60px -10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 15px 60px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 15px 65px -5px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 768px) {
@@ -3634,6 +3652,46 @@ th.u-isShown {
 
 .u-isVisible {
   visibility: visible !important;
+}
+
+.u-opacity10 {
+  opacity: 0.1;
+}
+
+.u-opacity20 {
+  opacity: 0.2;
+}
+
+.u-opacity30 {
+  opacity: 0.3;
+}
+
+.u-opacity40 {
+  opacity: 0.4;
+}
+
+.u-opacity50 {
+  opacity: 0.5;
+}
+
+.u-opacity60 {
+  opacity: 0.6;
+}
+
+.u-opacity70 {
+  opacity: 0.7;
+}
+
+.u-opacity80 {
+  opacity: 0.8;
+}
+
+.u-opacity90 {
+  opacity: 0.9;
+}
+
+.u-opacity100 {
+  opacity: 1;
 }
 
 @media screen and (min-width: 960px) {

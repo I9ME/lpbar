@@ -12,7 +12,7 @@
 				<div class="Section-content">
 					<ul class="Section-items u-displayFlex u-flexWrapWrap">
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative u-isScrollFade is-animating--time2">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--hamburger"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -24,7 +24,7 @@
 							</div>
 						</li>
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative u-isScrollFade is-animating--time2">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--trofeu"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -36,7 +36,7 @@
 							</div>
 						</li>
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative u-isScrollFade is-animating--time2">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--report"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -48,7 +48,7 @@
 							</div>
 						</li>
 						<li class="Section-items-item u-size12of24 u-paddingHorizontal--vrt--inter--half--px">
-							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative">
+							<div class="Section-items-item-container u-boxShadow--clean--bottom u-paddingHorizontal--vrt--inter--px  u-overflowHidden u-positionRelative u-isScrollFade is-animatin--time2">
 								<div class="Section-items-item-header">
 									<figure class="Section-items-item-figure u-displayInlineBlock FigureIcon FigureIcon--network"></figure>
 									<h4 class="Section-items-item-title u-marginTop--inter">
@@ -65,18 +65,19 @@
 			<?php !wp_is_mobile(); { ?>
 				<figure></figure>
 			<div class="Section-imageMain u-size12of24 u-marginTop--inter u-positionRelative u-onlyDesktop">
-				<figure class="FigureIcon ImgFigure--franquia--flyer u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-				<figure class="FigureIcon ImgFigure--franquia--flyer--vert u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+				<figure class="FigureIcon ImgFigure--franquia--circle--md ImgFigure--left u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="2.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+				<figure class="FigureIcon ImgFigure--franquia--flyer ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+				<figure class="FigureIcon ImgFigure--franquia--flyer--vert ImgFigure--right u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--first u-positionRelative u-displayBlock u-zIndex2"></figure>
-				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--second u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
-				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--third u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>	
+				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--second u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade is-repeat"></figure>
+				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--third u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade is-repeat"></figure>	
 			</div>
 			<?php } ?>
 		</div>
 	</div>
 	<?php // get_template_part('template-parts/franquia/franquia','subsection'); ?>
 
-	<figure class="FigureIcon ImgFigure--franquia--circle--lg u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-	<figure class="FigureIcon ImgFigure--franquia--circle--md u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="0.99" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+	<figure class="FigureIcon ImgFigure--franquia--circle--lg ImgFigure--right u-opacity50 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+	<figure class="FigureIcon ImgFigure--franquia--circle--md ImgFigure--rightCenter  u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="0.99" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 
 </section>
