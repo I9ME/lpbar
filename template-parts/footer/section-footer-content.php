@@ -11,7 +11,7 @@
 									<use xlink:href="#iconFacebook"></use>
 								</svg>
 						 	</i>
-							<p class="Section-items-item-resume">/pizzavignoli</p>
+							<p class="Section-items-item-resume">/baneys</p>
 					</a>
 				</li>
 				<li class="Section-items-item u-size8of24">
@@ -21,7 +21,7 @@
 									<use xlink:href="#iconInstagram"></use>
 								</svg>
 						 	</i>
-							<p class="Section-items-item-resume">@pizzavignoli</p>
+							<p class="Section-items-item-resume">@barneys</p>
 					
 					</a>
 				</li>

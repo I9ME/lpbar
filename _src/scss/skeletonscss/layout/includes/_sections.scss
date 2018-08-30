@@ -1020,7 +1020,7 @@
 
 				@media screen and (min-width: $break-md) and (max-width: $break-lg){
 
-					min-height: calc(100vh + 200px);
+					min-height: calc(100vh + 150px);
 
 					& .Intro--home-imageMain{
 
@@ -1260,7 +1260,7 @@
 							max-width: inherit;
 						}
 					}
-					top: calc(50% - 50px);
+					top: calc(50% - 20px);
 					transform: translateY(-50%);
 				}
 			}
@@ -1314,52 +1314,44 @@
 			& .Captions{
 				left: $h_spacing;
 			}
-			.Flatlays{
-				//overflow-x: visible;
-				 
-			}
-			 .Flatlay{
-				&--folha1{
-					left: -25px;
-					bottom: 300px;
-					top: inherit;
-					display: block;
-				}
-				&--tomate1{
-					right: 15%;
-					top: 100px;
-				}
-				&--tomate2{
-					left: -25px;
-					bottom: -75px;
-				}
-				&--azeite{
-					right: 30%;
-					top: 110px;
-					bottom: inherit;
-					display: block;
-				}
-				&--colher{
-					right: -160px;
-					top: 75px;
-					bottom: inherit;
-				}
-				&--ramo{
-					right: 15.5%;
-					bottom: 150px;
-					left: inherit;
-					top: inherit;
-					display: block;
-				}
-				&--folha2{
-					right: 0px;
-					bottom: 0px;
-					display: block;
-				}
-			}	
+			
 		}
 	} // .Intro
 
+// Figure
+.ImgFigure{
+	&--franquia{
+		&--flyer{
+			top: -300px;
+			right: 20%;
+			&--vert{
+				top: -150px;
+				right: 25%;
+			}
+		}
+		&--circle{
+			background: transparent;
+			&--lg{
+				top: -200px;
+				right: 5%;
+				border-radius: 150px;
+				border: 15px solid #e0a870;
+				width: 80px;
+				height: 80px;
+				opacity: 0.5;
+			}
+			&--md{
+				top: -100px;
+				right: 25%;
+				border-radius: 150px;
+				border: 10px solid #f7eadd;
+				width: 60px;
+				height: 60px;
+				opacity: 1;
+			}
+		}
+	}
+}
 	
 	// A FRANQUIA
 
@@ -1379,34 +1371,50 @@
 					&.ImgFigure--franquia{
 
 						&--first{
-							margin-left: -100px;
+							margin-left: -200px;
 						}
 						&--second{
 							top:0px;
-							left: -160px;
+							left: -310px;
 							transform: rotate(-45deg) !important;
 							&.u-isScrollFade--on{
 								transform: rotate(45deg) !important;
 							}
 						}
 						&--third{
-							left: -150px;
+							left: -300px;
 							top: -80px;
 							transform: rotate(45deg) !important;
 							&.u-isScrollFade--on{
 								transform: rotate(-45deg) !important;
 							}
 						}
+
+						@media screen and (min-width: $break-md){
+
+							&--first{
+								margin-left: -150px;
+							}
+							&--second{
+								left: -210px;
+							}
+							&--third{
+								left: -200px;
+							}
+						}
+
 					}
 				}
-
 			}
 			
 			@media screen and (min-width: $break-sm){
+				&-mainContent{
+					margin-left: 0px !important;
+				}
 				&-header{
 					&-title{
 						position: absolute;
-						top: calc(50% - 37.5px);
+						top: calc(50% - 75px);
 						transform: translateY(-50%);
 						left: $h_spacing;
 						max-width: 200px;
@@ -1422,51 +1430,21 @@
 					}
 				}
 			}
-
-		} // .Section
-		& .Features{
-				&-items{
-					&-item{
-						overflow: hidden;
-						width: 0px;
-						opacity: 0;
-						&-figure,
-						&-title,
-						&-value{
-							opacity: 0;
-							transition: all 0.3s;
-							transition-delay: 0.5s;
+			&-items{
+				&-item{
+					& .FigureIcon{
+						&--CirclesGradient{
+							top: 150px;
 						}
-						&.u-isScrollFade--on{
-							width: 100%;
-							opacity: 1;
-							& .Features{
-								&-items{
-									&-item{
-										&-figure,
-										&-title,
-										&-value{
-											opacity: 1;
-											transition: all 0.3s;
-											transition-delay: 0.5s;
-										}
-									}
-								}
-							}
-						}
-						&-title{
-							font-size: $font_size_text;
-						}
-						&-value{
-							color: $color_4;
-							font-size: 11px;
-							& em{
-								font-size: $font_size_text;
-							}
-						}
+					}
+					&-title{
+						color: $color_11;
 					}
 				}
 			}
+
+		} // .Section
+		
 		@media screen and (min-width: $break-sm){
 			& .Features-items-item{
 				&-title{
@@ -1479,41 +1457,7 @@
 					}
 				}
 			}
-			& .Section{
-				&-gridElastic{
-					margin-right: $h_spacing;
-					height: 600px;
-					&-item{
-						position: absolute;
-						&.Image{
-							max-width: inherit;
-							&_2{
-								left: 0px;
-								top: 0px;
-							}
-							&_3{
-								right: 0px;
-								top: 0px;
-							}
-							&_4{
-								left: 0px;
-								bottom: 0px;
-							}
-							&_5{
-								right: 0px;
-								bottom: 0px;
-							}
-						}
-						max-width: 50%;
-						text-align: center;
-						&-src{
-							display: inline-block;
-							margin-bottom: 10px;
-							max-width: 100%;
-							}
-					}
-				}
-			}
+			
 		}
 
 		& .Subsection{

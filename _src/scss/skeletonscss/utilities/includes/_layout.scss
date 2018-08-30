@@ -55,13 +55,13 @@
 	}
 }
 .u-onlyMobile{
-	@media screen and (min-width: $break-md){
+	@media screen and (min-width: $break-sm){
 		display: none !important;
 	}
 }
 
 .u-onlyDesktop{
-	@media screen and (max-width: $break-md){
+	@media screen and (max-width: $break-sm){
 		display: none !important;
 	}
 }
