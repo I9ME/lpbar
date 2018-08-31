@@ -158,7 +158,7 @@ $iframeVideo = $embed;
 	<nav class="Section-navigation">
 	
 		<ul id="videos-carousel--control" class="Section-navigation-items Section-navigation-items--tabs u-displayFlex u-maxSize--container u-alignCenterBox owl-theme owl-carousel">
-			<li id="1--ControllLink" class="Section-navigation-items-item u-sizeFull Item" data-hash="1">
+			<li id="1--ControllLink" class="Section-navigation-items-item u-sizeFull Item active" data-hash="1">
 				<div class="Section-navigation-items-item-container Border Border--right Border--left u-paddingHorizontal--vrt--inter--px u-marginVertical">
 					<a class="NavigationLink u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter is-animating u-boxShadow--active url" href="#1">
 						<div class="Section-navigation-items-item-header u-displayFlex u-flexJustifyContentSpaceBetween u-sizeFull">

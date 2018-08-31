@@ -68,9 +68,9 @@
 				<figure class="FigureIcon ImgFigure--franquia--circle--md ImgFigure--left u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="2.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 				<figure class="FigureIcon ImgFigure--franquia--flyer ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 				<figure class="FigureIcon ImgFigure--franquia--flyer--vert ImgFigure--right u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--first u-positionRelative u-displayBlock u-zIndex2"></figure>
-				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--second u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
-				<figure class="Section-imageMain-figure ImgFigure--franquia ImgFigure--franquia--third u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>	
+				<figure class="Section-imageMain-figure  Section-imageMain-figure--first ImgFigure--franquia--first u-positionRelative u-displayBlock u-zIndex2"></figure>
+				<figure class="Section-imageMain-figure Section-imageMain-figure--second ImgFigure--franquia--second u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
+				<figure class="Section-imageMain-figure Section-imageMain-figure--third ImgFigure--franquia--third u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>	
 			</div>
 			<?php } ?>
 		</div>

@@ -3,7 +3,7 @@
 	<div class="Section-content u-positionRelative u-sizeFull u-flexAlignItemsCenter u-flexJustifyContentCenter">
 		<div class="u-positionAbsolute Section-content u-marginTop--inter u-positionAbsolute u-displayFlex u-size24of24 u-flexAlignItemsCenter u-flexJustifyContentCenter">
 
-			<ul class="Section-items u-displayFlex u-flexJustifyContentCenter u-positionAbsolute u-flexFollowSize u-heightFull u-sizeFull">
+			<!-- <ul class="Section-items u-displayFlex u-flexJustifyContentCenter u-positionAbsolute u-flexFollowSize u-heightFull u-sizeFull">
 				<li class="Section-items-item u-size8of24">
 					<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull" href="https://www.facebook.com/vignolipizzaria/" target="_blank">
 							<i class="FigureIcon u-marginRight--inter u-lineHeight0">
@@ -36,7 +36,7 @@
 
 					</a>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
 
@@ -90,11 +90,11 @@
 				<ul class="Section-items--contact u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-alignCenterBox">
 					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
 						<i class="figureIcon"></i>
-						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter">(85) 3267-9450</p>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter">(85) 3333-3333</p>
 					</li>
 					<li class="Section-items--contact-item u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-flexAlignItemsCenter u-marginTop--inter--half">
 						<i class="figureIcon"></i>
-						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">franquia@pizzavignoli.com.br</p>
+						<p class="Section-items--contact-item-resume u-displayFlex u-flexJustifyContentCenter u-size12of24 u-alignCenter">franquia@barneysburger.com.br</p>
 					</li>
 				</ul>
 

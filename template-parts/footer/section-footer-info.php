@@ -13,7 +13,7 @@
 	<div class="u-maxSize--container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-sizeFull u-flexAlignItemsCenter u-flexJustifyContentCenter">
 		<div class="Section-subSection Section-subSection--bio u-size8of24">
 			<p class="u-alignCenter">
-				© <a href="http://www.pizzavignoli.com.br">Pizza Vignoli</a> <?php echo get_the_date('Y') ?>, Todos os direitos Resevados.
+				© <a href="http://www.pizzavignoli.com.br">Barney's Burger</a> <?php echo get_the_date('Y') ?>, Todos os direitos Resevados.
 			</p>
 		</div>
 		
