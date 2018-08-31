@@ -96,7 +96,7 @@ var title = $(this).find('img').attr('alt');
         
        
 
-        $('html,body').animate({scrollTop:$(this.hash).offset().top - 0}, 1000);
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
 
           if ($(".Navigation--main").hasClass('u-isExpanded')){
             $("#MainNavigation-container, .NavigationButton.NavigationButton--main").removeClass("u-isExpanded")
@@ -360,14 +360,14 @@ $('#namidia-carousel').owlCarousel({
 $('#videos-carousel').owlCarousel({
     loop:true,
     dots: false,
-    nav: true,
+    nav: false,
     margin: 0,
     responsiveClass: true,
     responsive:{
         0:{
             items:1,
-            
-
+            //dots: true,
+            nav: true,
         },
         768:{
             items:1,
@@ -377,6 +377,33 @@ $('#videos-carousel').owlCarousel({
         }
     }
 });
+
+
+$('#videos-carousel--control').owlCarousel({
+    loop:false,
+    margin:0,
+    dots: false,
+    nav: false,
+    URLhashListener:true,
+    autoplayHoverPause:false,
+    startPosition: 'URLHash',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+         480:{
+            items:2,
+        },
+        768:{
+            items:2,
+        },
+        960:{
+            items:4,
+        }
+    } // Responsive
+
+})
 
 $('#opinioes-carousel').owlCarousel({
     loop:true,
@@ -436,7 +463,7 @@ $('#parcerias-carousel--control .owl-prev').html('<svg class="Pagination-items-i
 $('#parcerias-carousel--control .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--border u-borderRadius50 u-positionAbsolute is-animating u-isActionable ');
 */
 
-$('#videos-carousel .owl-prev, #opinioes-carousel .owl-prev').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowLeftLine"><use xlink:href="#iconArrowLeftLine"></use></svg>').addClass('navController navController-prev navController--content u-borderRadius5--left is-animating u-isActionable ');
+$('#videos-carousel .owl-prev, #opinioes-carousel .owl-prev').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowLeftLine"><use xlink:href="#iconArrowLeftLine"></use></svg>').addClass('navController navController--prev navController--content u-borderRadius5--left is-animating u-isActionable ');
 $('#videos-carousel .owl-next, #opinioes-carousel .owl-next').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowRightLine"><use xlink:href="#iconArrowRightLine"></use></svg>').addClass('navController navController--next navController--content u-borderRadius5--right is-animating u-isActionable ');
 
 
@@ -446,6 +473,20 @@ $('#depoimentos-carousel .owl-prev').html('<svg class="Pagination-items-item-ico
 $('#depoimentos-carousel .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--button--largeSize navController--border u-borderRadius50 is-animating u-marginRight--inter');
 $('#depoimentos-carousel .owl-nav').append('<a class="navController navController--center  navController--all  navController--button  navController--border ReadMore ReadMore--background  Button ButtonLink u-lineHeight0 hover is-animating u-marginRight--inter" href="/cases/"><span class="ShowText">VER TODOS</span></a>');
 */
+
+
+
+// Switch de Ativo / Inativo
+var hashUrl = window.location.hash;
+$(hashUrl+'--ControllLink').addClass('active');
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+owl.on('changed.owl.carousel', function(event) {
+    //location.hash = event.property.value;
+  var hashUrl = window.location.hash;
+  $('.Section-navigation-items-item, .Pagination .navController').removeClass('active');
+  $(hashUrl+'--ControllLink').addClass('active');
+})
 
 
 // /*=========================================================================================

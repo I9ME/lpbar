@@ -1550,125 +1550,184 @@ FOOTER .Site--foter .Section--footerContent
 .Section .owl-nav {
   position: absolute;
   display: flex;
-  bottom: 50px;
-  width: 80%;
-  left: 10%;
+  bottom: -80px;
+  width: 100%;
+  left: 0px;
+  padding: 0 4.16667%;
   justify-content: space-between;
 }
 
-.Section .owl-nav:after {
-  position: absolute;
+.Section .owl-nav .navController--prev {
+  left: 0px;
+}
+
+.Section .owl-nav .navController--next {
+  right: 0px;
+}
+
+.Section .owl-nav .navController--content {
+  position: aboslute;
   display: block;
-  width: 70%;
-  left: 15%;
-  bottom: 15px;
-  height: 25px;
-  -moz-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
-  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
-  content: "";
-  background: transparent;
-  z-index: -1;
-  font-size: 12px;
 }
 
-.Section--videos {
-  background-color: #f7eadd;
-}
-
-.Section--videos .navController--content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: calc(50% - 1px);
-  padding: 25px;
-  background: #FFFFFF !important;
-  min-height: 70px !important;
-}
-
-.Section--videos .navController--content .u-icon {
+.Section .owl-nav .navController--content .u-icon {
   color: #9d0a0e;
 }
 
-.Section--videos .Section-imageMain {
-  background: #9d0a0e;
-  min-height: 200px;
-}
-
-.Section--videos .Section-imageMain-ButtonCommand {
-  width: 100px;
-  height: 100px;
+.Section--videos {
   background: #FFFFFF;
-  border-radius: 150px;
-  top: -57.5px;
+  /* & .navController{
+				&--prev{}
+				&--next{}
+				&--content{
+						position: relative;
+						display: flex;
+						justify-content: center;
+						width: calc(50% - 1px);
+						padding: 25px;
+						background: $color_1 !important;
+						min-height: 70px !important;
+						& .u-icon{
+							color: $color_2;
+						}
+				}	
+			} */
 }
 
-.Section--videos .Section-imageMain-ButtonCommand .IconPlay {
-  width: 85px;
-  height: 85px;
-  border-radius: 150px;
-  background: #9d0a0e;
-  color: #FFFFFF;
-}
-
-.Section--videos .Section-imageMain-ButtonCommand .IconPlay svg {
-  left: 54% !important;
+.Section--videos .Section-header-title {
+  color: #f3ad13;
 }
 
 .Section--videos .Section-items-item-figure {
-  min-height: 300px;
+  min-height: 200px;
+}
+
+.Section--videos .Section-items-item-title {
+  color: #FFFFFF;
+  height: 80px;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+.Section--videos .Section-items-item-title--left {
+  padding-right: 55px;
+}
+
+.Section--videos .Section-items-item-title--right {
+  padding-left: 55px;
+}
+
+.Section--videos .Section-items-item .ButtonCommand .IconPlay {
+  color: #9d0a0e;
+  background: #FFFFFF;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.Section--videos .Section-items-item .ButtonCommand .IconPlay svg {
+  left: calc(50% + 2px) !important;
+}
+
+.Section--videos .Section-navigation {
+  background: #FFFFFF;
+  margin-top: -30px;
+}
+
+.Section--videos .Section-navigation-items .owl-stage-outer {
+  padding-top: 30px;
+}
+
+.Section--videos .Section-navigation-items .owl-stage {
+  align-items: stretch;
+  display: flex;
+}
+
+.Section--videos .Section-navigation-items-item-resume {
+  color: #555555;
 }
 
 @media screen and (max-width: 768px) {
-  .Section--videos {
-    margin-top: 0px !important;
+  .Section--videos .Section-navigation {
+    margin-left: 12.15%;
+    margin-right: 12.15%;
   }
-  .Section--videos:after {
+  .Section--videos .Section-navigation-items-item .NavigationLink {
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 0px 0px;
     width: 100%;
-    height: 45px;
-    margin: 0px;
-    -webkit-transform: skew(0deg, -4deg);
-    -moz-transform: skew(0deg, -4deg);
-    -o-transform: skew(0deg, -4deg);
-    overflow: hidden;
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0px;
-    z-index: 4;
-    background: #f7eadd;
-  }
-  .Section--videos .Section-mainContent {
+    margin-top: -30px;
+    padding: 37.5px;
+    z-index: 9;
     background: #FFFFFF;
-    margin-bottom: 65px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .Section--videos .Owl-container {
+  .Section--videos .Section-navigation {
+    border-bottom: 1px solid #DDDDDD;
+    margin-top: -30px;
+  }
+  .Section--videos .Section-navigation-items .owl-stage-outer {
+    padding-top: 30px;
+  }
+  .Section--videos .Section-navigation-items .owl-stage {
+    align-items: stretch;
+    display: flex;
+  }
+  .Section--videos .Section-navigation-items-item .Border {
+    border-color: #DDDDDD;
+    border-width: 1px;
+  }
+  .Section--videos .Section-navigation-items-item .Border--left {
+    border-left-style: solid;
+  }
+  .Section--videos .Section-navigation-items-item .Border--right {
+    border-right-style: solid;
+  }
+  .Section--videos .Section-navigation-items-item.active .Border {
+    border: none;
+  }
+  .Section--videos .Section-navigation-items-item.active .NavigationLink {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 0px 0px;
+    width: 91.66%;
+    left: 4.16%;
+    top: -30px;
+    height: calc(100% + 30px);
+    padding: 37.5px;
+    z-index: 9;
+    background: #FFFFFF;
+  }
+  .Section--videos .Section .Owl-container {
     padding: 0px !important;
     margin: 0px !important;
   }
-  .Section--videos .owl-carousel {
+  .Section--videos .Section .owl-carousel {
     padding: 0px !important;
   }
-  .Section--videos .Section--texts {
+  .Section--videos .Section .Section--texts {
     width: 50% !important;
     padding-top: 180px;
     padding-bottom: 180px;
   }
-  .Section--videos .Section-imageMain {
+  .Section--videos .Section .Section-imageMain {
     width: 50%;
     border-radius: 0px;
   }
-  .Section--videos .Section-mainContent {
+  .Section--videos .Section .Section-mainContent {
     margin-top: 0px !important;
   }
-  .Section--videos .owl-nav {
+  .Section--videos .Section .owl-nav {
     width: 300px;
     bottom: 70px;
   }
-  .Section--videos .owl-nav:after {
+  .Section--videos .Section .owl-nav:after {
     width: 70%;
     left: 15%;
     bottom: 0;
@@ -1678,37 +1737,27 @@ FOOTER .Site--foter .Section--footerContent
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.22);
     background: #f7eadd;
   }
-  .Section--videos .Section-header {
-    position: absolute;
-    left: 0 !important;
-    transform: none !important;
-    top: 50px !important;
-    width: 50% !important;
+  .Section--videos .Section-items-item-title {
+    color: #FFFFFF;
+    height: 100px;
+    font-size: 36px;
   }
-  .Section--videos .Section--texts {
-    padding-right: 8.33333%;
-    margin-left: 0px;
-    margin-right: 0px;
+  .Section--videos .Section-items-item-title--left {
+    padding-right: 70px;
   }
-  .Section--videos .Section-imageMain {
-    margin-top: 0px;
-    min-height: 480px;
+  .Section--videos .Section-items-item-title--right {
+    padding-left: 70px;
   }
-  .Section--videos .Section-imageMain-ButtonCommand {
-    left: -57.5px !important;
-    top: 50% !important;
-    background: #f7eadd;
-    transform: translateY(-50%) !important;
+  .Section--videos .Section-items-item .ButtonCommand a .IconPlay {
+    width: 100px;
+    height: 100px;
   }
-  .Section--videos .Section-imageMain-ButtonCommand .IconPlay {
-    color: #f7eadd;
-    border: 2px solid #9d0a0e;
+  .Section--videos .Section-items-item .ButtonCommand a:hover .IconPlay {
+    background: transparent;
+    color: #FFFFFF;
   }
-  .Section--videos .Section-imageMain a:hover .Section-imageMain-ButtonCommand .IconPlay {
-    background: #f7eadd;
-  }
-  .Section--videos .Section-imageMain a:hover .Section-imageMain-ButtonCommand .IconPlay svg {
-    color: #9d0a0e;
+  .Section--videos .Section-items-item .ButtonCommand a:hover .IconPlay svg {
+    left: calc(50% + 3px) !important;
   }
 }
 
@@ -6804,6 +6853,13 @@ th.u-isShown {
   height: 114px;
 }
 
+.FigureIcon--video {
+  background-image: url(../images/sprite.png);
+  background-position: -1396px -282px;
+  width: 46px;
+  height: 36px;
+}
+
 .ImgFigure--franquia--first {
   background-image: url(../images/sprite.png);
   background-position: -715px 0px;
@@ -6869,7 +6925,7 @@ th.u-isShown {
 
 .ShadowBox--tabLeft {
   background-image: url(../images/sprite.png);
-  background-position: -1396px -169px;
+  background-position: -1415px -169px;
   width: 19px;
   height: 113px;
 }
@@ -6883,7 +6939,7 @@ th.u-isShown {
 
 .ShadowBox--tabRight {
   background-image: url(../images/sprite.png);
-  background-position: -1415px -169px;
+  background-position: -1396px -169px;
   width: 19px;
   height: 113px;
 }

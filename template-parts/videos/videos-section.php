@@ -8,95 +8,203 @@ $iframeVideo = $embed;
 
  
 ?>
-<section id="videos" class="Section Section--style1 Section--videos u-positionRelative u-marginTop">
-	<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter  u-size12of24 u-paddingVertical u-absoluteTopCenter u-paddingTop--inter--half u-zIndex5">
-		<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
-		<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-sizeFull"><strong>VÍDEOS</strong></h2>
+<section id="videos" class="Section Section--style2 Section--videos u-positionRelative">
+	<header class="Section-header u-marginBottom--inter u-sizeFull u-displayFlex u-flexAlignItemsCenter u-paddingVertical u-absoluteTopCenter u-paddingTop--inter--half u-zIndex5">
+		<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-marginTop u-paddingBottom--inter--half u-sizeFull"><strong>VÍDEOS</strong></h2>
 	</header>
-	<div class="Owl-container u-paddingVertical u-marginVertical u-paddingTop">
-	<div id="videos-carousel" class="Section-items owl-carousel u-paddingTop">
-		
+	<div class="Owl-container">
+		<div id="videos-carousel" class="Section-items owl-carousel">
+			
+			<!-- .Section-items-item -->
+			<div class="Section-items-item Section-mainContent u-displayFlex"  data-hash="1">
+					<div class="Section-items-item-container u-displayFlex u-sizeFull">
+						
+						<div class="Section-items-item-header u-absoluteCenterMiddle u-paddingTop  u-alignCenter u-sizeFull u-zIndex2">
+							<h3 class="Section-items-item-title u-displayFlex u-sizeFull u-flexDirectionRow u-flexJustifyContentSpaceBetween">
+								<span class="Section-items-item-title--left u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexEnd u-alignRight u-onlyDesktop">
+									Título do vídeo
+								</span>
+								<span class="ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
+									<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-displayInlineBlock u-positionRelative">
+										<i class="IconPlay u-positionRelative u-displayBlock is-animating">
+											<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
+												<use xlink:href="#iconPlay"></use>
+											</svg>
+										</i>
+									</a>
 
-		<div class="Section-items-item Section-mainContent u-marginTop--inter u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-positionRelative u-borderRadius5">
-				<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop--inter--half u-paddingBottom u-paddingVertical">
-					<div class="Section-content u-alignCenter">
-						<h3 class="Section-content-subtitle">
-							Conheça os diferenciais da Vignoli
-						</h3>
-						<p class="Section-content-text u-marginTop--inter--half">
-							Ingredientes bem escolhidos, que ao serem manipulados por mãos que entendem da arte de cozinhar, resultam em sabores marcantes.
-						</p>
+								</span>
+								<span class="Section-items-item-title--right u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexStart u-alignLeft u-onlyDesktop">
+									apenas teste
+								</span>
+							</h3>
+						</div>
+
+						
+							<figure class="Section-items-item-figure u-sizeFull u-positionRelative u-displayBlock u-overFlowHidden">
+								<img class="u-displayBlock u-positionRelative u-objectFitCover u-sizeFull" src="<?php echo get_template_directory_uri(); ?>/assets/images/Section-videos-image<?php echo switch_img_Mobile(); ?>.png" alt="Title" />
+							</figure>
+					
+
 					</div>
-				</div>
+			</div>
+			<!-- .Section-items-item -->
+			<!-- .Section-items-item -->
+			<div class="Section-items-item Section-mainContent u-displayFlex" data-hash="2">
+					<div class="Section-items-item-container u-displayFlex u-sizeFull">
+						
+						<div class="Section-items-item-header u-absoluteCenterMiddle u-alignCenter u-sizeFull u-zIndex2">
+							<h3 class="Section-items-item-title u-displayFlex u-sizeFull u-flexDirectionRow u-flexJustifyContentSpaceBetween">
+								<span class="Section-items-item-title--left u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexEnd u-alignRight u-onlyDesktop">
+									Título do vídeo
+								</span>
+								<span class="ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
+									<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-displayInlineBlock u-positionRelative">
+										<i class="IconPlay u-positionRelative u-displayBlock is-animating">
+											<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
+												<use xlink:href="#iconPlay"></use>
+											</svg>
+										</i>
+									</a>
 
-				<div class="Section-imageMain Section-gridElastic u-size12of24 u-positionRelative u-marginTop--inter u-borderRadius5--bottom" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Section-items-item-video<?php echo switch_img_Mobile(); ?>.png'); background-position: center center; background-size: cover;">
-					<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-absoluteTopLeft u-zIndex2 u-displayBlock u-sizeFull u-heightFull ">
+								</span>
+								<span class="Section-items-item-title--right u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexStart u-alignLeft u-onlyDesktop">
+									apenas teste
+								</span>
+							</h3>
+						</div>
 
-						<span class="Section-imageMain-ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
-							<i class="IconPlay u-positionRelative u-displayBlock is-animating">
-								<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
-									<use xlink:href="#iconPlay"></use>
-								</svg>
-							</i>
-						</span>
-					</a>
-				</div>
-		</div> <!-- .Section-items-item -->
+						
+							<figure class="Section-items-item-figure u-sizeFull u-positionRelative u-displayBlock u-overFlowHidden">
+								<img class="u-displayBlock u-positionRelative u-objectFitCover u-sizeFull" src="<?php echo get_template_directory_uri(); ?>/assets/images/Section-videos-image<?php echo switch_img_Mobile(); ?>.png" alt="Title" />
+							</figure>
+					
 
-		<div class="Section-items-item Section-mainContent u-marginTop--inter u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-positionRelative u-borderRadius5">
-				<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop--inter--half u-paddingBottom u-paddingVertical">
-					<div class="Section-content u-alignCenter">
-						<h3 class="Section-content-subtitle">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</h3>
-						<p class="Section-content-text u-marginTop--inter--half">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-						</p>
 					</div>
-				</div>
+			</div>
+			<!-- .Section-items-item -->
+			<!-- .Section-items-item -->
+			<div class="Section-items-item Section-mainContent u-displayFlex" data-hash="3">
+					<div class="Section-items-item-container u-displayFlex u-sizeFull">
+						
+						<div class="Section-items-item-header u-absoluteCenterMiddle u-alignCenter u-sizeFull u-zIndex2">
+							<h3 class="Section-items-item-title u-displayFlex u-sizeFull u-flexDirectionRow u-flexJustifyContentSpaceBetween">
+								<span class="Section-items-item-title--left u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexEnd u-alignRight u-onlyDesktop">
+									Título do vídeo
+								</span>
+								<span class="ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
+									<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-displayInlineBlock u-positionRelative">
+										<i class="IconPlay u-positionRelative u-displayBlock is-animating">
+											<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
+												<use xlink:href="#iconPlay"></use>
+											</svg>
+										</i>
+									</a>
 
-				<div class="Section-imageMain Section-gridElastic u-size12of24 u-positionRelative u-marginTop--inter u-borderRadius5--bottom" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Section-items-item-video<?php echo switch_img_Mobile(); ?>.png'); background-position: center center; background-size: cover;">
-					<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-absoluteTopLeft u-zIndex2 u-displayBlock u-sizeFull u-heightFull ">
+								</span>
+								<span class="Section-items-item-title--right u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexStart u-alignLeft u-onlyDesktop">
+									apenas teste
+								</span>
+							</h3>
+						</div>
 
-						<span class="Section-imageMain-ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
-							<i class="IconPlay u-positionRelative u-displayBlock is-animating">
-								<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
-									<use xlink:href="#iconPlay"></use>
-								</svg>
-							</i>
-						</span>
-					</a>
-				</div>
-		</div> <!-- .Section-items-item -->
+						
+							<figure class="Section-items-item-figure u-sizeFull u-positionRelative u-displayBlock u-overFlowHidden">
+								<img class="u-displayBlock u-positionRelative u-objectFitCover u-sizeFull" src="<?php echo get_template_directory_uri(); ?>/assets/images/Section-videos-image<?php echo switch_img_Mobile(); ?>.png" alt="Title" />
+							</figure>
+					
 
-		<div class="Section-items-item Section-mainContent u-marginTop--inter u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-positionRelative u-borderRadius5">
-				<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop--inter--half u-paddingBottom u-paddingVertical">
-					<div class="Section-content u-alignCenter">
-						<h3 class="Section-content-subtitle">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</h3>
-						<p class="Section-content-text u-marginTop--inter--half">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-						</p>
 					</div>
-				</div>
+			</div>
+			<!-- .Section-items-item -->
+			<!-- .Section-items-item -->
+			<div class="Section-items-item Section-mainContent u-displayFlex" data-hash="4">
+					<div class="Section-items-item-container u-displayFlex u-sizeFull">
+						
+						<div class="Section-items-item-header u-absoluteCenterMiddle u-alignCenter u-sizeFull u-zIndex2">
+							<h3 class="Section-items-item-title u-displayFlex u-sizeFull u-flexDirectionRow u-flexJustifyContentSpaceBetween">
+								<span class="Section-items-item-title--left u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexEnd u-alignRight u-onlyDesktop">
+									Título do vídeo
+								</span>
+								<span class="ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
+									<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-displayInlineBlock u-positionRelative">
+										<i class="IconPlay u-positionRelative u-displayBlock is-animating">
+											<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
+												<use xlink:href="#iconPlay"></use>
+											</svg>
+										</i>
+									</a>
 
-				<div class="Section-imageMain Section-gridElastic u-size12of24 u-positionRelative u-marginTop--inter u-borderRadius5--bottom" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Section-items-item-video<?php echo switch_img_Mobile(); ?>.png'); background-position: center center; background-size: cover;">
-					<a href="javascript:LightboxCall(<?php  echo esc_html( '\'' . $iframeVideo . '\'' ); ?>);" class="u-absoluteTopLeft u-zIndex2 u-displayBlock u-sizeFull u-heightFull ">
+								</span>
+								<span class="Section-items-item-title--right u-flex1 u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentFlexStart u-alignLeft u-onlyDesktop">
+									apenas teste
+								</span>
+							</h3>
+						</div>
 
-						<span class="Section-imageMain-ButtonCommand u-absoluteCenter u-displayFlex u-flexAlignItemsCenter u-flexJustifyContentCenter u-zIndex2 ">
-							<i class="IconPlay u-positionRelative u-displayBlock is-animating">
-								<svg class="iconPlay u-icon u-displayBlock u-absoluteCenterMiddle is-animating">
-									<use xlink:href="#iconPlay"></use>
-								</svg>
-							</i>
-						</span>
-					</a>
-				</div>
-		</div> <!-- .Section-items-item -->
+						
+							<figure class="Section-items-item-figure u-sizeFull u-positionRelative u-displayBlock u-overFlowHidden">
+								<img class="u-displayBlock u-positionRelative u-objectFitCover u-sizeFull" src="<?php echo get_template_directory_uri(); ?>/assets/images/Section-videos-image<?php echo switch_img_Mobile(); ?>.png" alt="Title" />
+							</figure>
+					
 
-
-		
+					</div>
+			</div>
+			<!-- .Section-items-item -->
+			
+		</div>
 	</div>
-</div>
+
+	<nav class="Section-navigation">
+	
+		<ul id="videos-carousel--control" class="Section-navigation-items Section-navigation-items--tabs u-displayFlex u-maxSize--container u-alignCenterBox owl-theme owl-carousel">
+			<li id="1--ControllLink" class="Section-navigation-items-item u-sizeFull Item" data-hash="1">
+				<div class="Section-navigation-items-item-container Border Border--right Border--left u-paddingHorizontal--vrt--inter--px u-marginVertical">
+					<a class="NavigationLink u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter is-animating u-boxShadow--active url" href="#1">
+						<div class="Section-navigation-items-item-header u-displayFlex u-flexJustifyContentSpaceBetween u-sizeFull">
+							<figure class="FigureIcon FigureIcon--video u-displayBlock"></figure>
+							<h4 class="Section-navigation-items-item-title u-flex1 u-marginLeft--inter--half--px u-displayFlex u-flexAlignItemsCenter">Título exemplo do vídeo</h4>
+						</div>
+						<p class="Section-navigation-items-item-resume u-marginTop--inter--half">Lorem ipsum é apenas mais um teste de texto</p>
+					</a>
+				</div>
+			</li>
+			<li id="2--ControllLink" class="Section-navigation-items-item u-sizeFull BorderItem" data-hash="2">
+				<div class="Section-navigation-items-item-container Border Border--right u-paddingHorizontal--inter u-marginVertical">
+					<a class="NavigationLink u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter is-animating u-boxShadow--active url" href="#2">
+						<div class="Section-navigation-items-item-header u-displayFlex u-flexJustifyContentSpaceBetween u-sizeFull">
+							<figure class="FigureIcon FigureIcon--video u-displayBlock"></figure>
+							<h4 class="Section-navigation-items-item-title u-flex1 u-marginLeft--inter--half--px u-displayFlex u-flexAlignItemsCenter">Título exemplo do vídeo</h4>
+						</div>
+						<p class="Section-navigation-items-item-resume u-marginTop--inter--half">Lorem ipsum é apenas mais um teste de texto</p>
+					</a>
+				</div>
+			</li>
+			<li id="3--ControllLink" class="Section-navigation-items-item u-sizeFullItem" data-hash="3">
+				<div class="Section-navigation-items-item-container Border Border--right u-paddingHorizontal--inter u-marginVertical">
+					<a class="NavigationLink u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter is-animating u-boxShadow--active url" href="#3">
+						<div class="Section-navigation-items-item-header u-displayFlex u-flexJustifyContentSpaceBetween u-sizeFull">
+							<figure class="FigureIcon FigureIcon--video u-displayBlock"></figure>
+							<h4 class="Section-navigation-items-item-title u-flex1 u-marginLeft--inter--half--px u-displayFlex u-flexAlignItemsCenter">Título exemplo do vídeo</h4>
+						</div>
+						<p class="Section-navigation-items-item-resume u-marginTop--inter--half">Lorem ipsum é apenas mais um teste de texto</p>
+					</a>
+				</div>
+			</li>
+			<li id="4--ControllLink" class="Section-navigation-items-item u-sizeFull Item" data-hash="4">
+				<div class="Section-navigation-items-item-container Border Border--right u-paddingHorizontal--inter u-marginVertical">
+					<a class="NavigationLink u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter is-animating u-boxShadow--active url" href="#4">
+						<div class="Section-navigation-items-item-header u-displayFlex u-flexJustifyContentSpaceBetween u-sizeFull">
+							<figure class="FigureIcon FigureIcon--video u-displayBlock"></figure>
+							<h4 class="Section-navigation-items-item-title u-flex1 u-marginLeft--inter--half--px u-displayFlex u-flexAlignItemsCenter">Título exemplo do vídeo</h4>
+						</div>
+						<p class="Section-navigation-items-item-resume u-marginTop--inter--half">Lorem ipsum é apenas mais um teste de texto</p>
+					</a>
+				</div>
+			</li>
+			
+		</ul>
+
+	</nav>
+
 </section>

@@ -1598,33 +1598,35 @@
 	& .owl-nav{
 			position: absolute;
 			display: flex;
-			bottom: 50px;
-			width: 80%;
-			left: 10%;
+			bottom: -80px;
+			width: 100%;
+			left: 0px;
+			padding: 0 $h_spacing;
 			justify-content: space-between;
 
-			&:after{
-				position: absolute;
-			    display: block;
-			    width: 70%;
-			    left: 15%;
-			    bottom: 15px;
-			    height: 25px;
-			    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-			    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-			    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-			    content: "";
-			    background: transparent;
-			    z-index: -1;
-			    font-size: 12px;
+			& .navController{
+				&--prev{
+					left: 0px;
+				}
+				&--next{
+					right: 0px;
+				}
+				&--content{
+						position: aboslute;
+						display: block;
+						& .u-icon{
+							color: $color_2;
+						}
+				}	
 			}
 		}
 
 	
-	&--videos{
-		background-color: $color_5;		
+	&--videos{	
 
-		& .navController{
+		background: $color_1;
+
+		/* & .navController{
 				&--prev{}
 				&--next{}
 				&--content{
@@ -1639,156 +1641,214 @@
 							color: $color_2;
 						}
 				}	
-			}
+			} */
 
 		& .Section{
-			&-imageMain{
-				background: $color_2;
-				min-height: 200px;
-				&-ButtonCommand{
-					width: 100px;
-					height: 100px;
-					background: $color_1;
-					border-radius: 150px;
-					top: -57.5px;
-					& .IconPlay{
-						width: 85px;
-						height: 85px;
-						border-radius: 150px;
-						background: $color_2;
-						color: $color_1;
-						//font-size: 20px;
-						& svg{
-							left: 54% !important;
-						}
-					}
+			&-header{
+				&-title{
+					color: $color_3;
 				}
 			}
+			
 			&-items{
 				&-item{
 					&-figure{
-						min-height: 300px;
+						min-height: 200px;
 					}
-				}
-			}
 
-
-		}
-		@media screen and (max-width: $break-sm){
-
-			margin-top: 0px !important;
-
-			&:after{
-
-			 	width: 100%;
-				    height: 45px;
-				    margin: 0px;
-				    -webkit-transform: skew(0deg, -4deg);
-				       -moz-transform: skew(0deg, -4deg);
-				         -o-transform: skew(0deg, -4deg);
-				    overflow:hidden;
-				  
-
-				    content:"";
-				    position: absolute;
-				    top: -25px;
-				    left: 0px;
-				    z-index: 4;
-
-				    background: $color_5;
-			}
-
-			& .Section{
-				&-mainContent{
-					background: $color_1;
-					margin-bottom: 65px;
-				}
-				&--texts{
-					
-				}
-				&-imageMain{
-				}
-			}
-		}
-		@media screen and (min-width: $break-sm){
-
-			& .Owl-container{
-				padding: 0px !important;
-				margin: 0px !important;
-			}
-
-			& .owl-carousel{
-				padding: 0px !important;
-			}
-			& .Section--texts{
-				width: 50% !important;
-				padding-top: 180px;
-				padding-bottom: 180px;
-			}
-			& .Section-imageMain{
-				width: 50%;
-				border-radius: 0px;
-			}
-			& .Section-mainContent{
-				margin-top: 0px !important;
-			}
-
-			& .owl-nav{
-				width: 300px;
-    			bottom: 70px;
-
-				&:after{
-				    width: 70%;
-				    left: 15%;
-				    bottom: 0;
-				    height: 25px;
-				    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-				    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-				    background: $color_5;
-				}
-			}
-
-			& .Section{
-				&-header{
-					position: absolute;
-				    left: 0 !important;
-				    transform: none !important;
-				    top: $sizeColumns_px !important;
-				    width: 50% !important;
-				}
-				&--texts{
-					padding-right: $h_spacing * 2;
-					margin-left: 0px;
-					margin-right: 0px;
-				}
-				&-imageMain{
-					margin-top: 0px;
-					min-height: 480px;
-					&-ButtonCommand{
-						left: -57.5px !important;
-						top: 50% !important;
-						background: $color_5;
-						transform: translateY(-50%) !important;
-						& .IconPlay{
-							color: $color_5;
-							border: 2px solid $color_2;
+					&-title{
+						color: $color_1;
+						height: 80px;
+						font-size: 26px;
+						font-weight: lighter;
+						&--left{
+								padding-right: 55px;
+						}
+						&--right{
+							padding-left: 55px;
 						}
 					}
-					& a:hover{
-						& .Section-imageMain{
-							&-ButtonCommand{
+					& .ButtonCommand{
+						& .IconPlay{
+							color: $color_2;
+							background: $color_1;
+							width: 80px;
+							height: 80px;
+							border-radius: 100px;
+							border-color: $color_1;
+							border-width: 2px;
+							border-style: solid;
+							& svg{
+								left: calc(50% + 2px) !important;
+							}
+						}
+					}
+				}
+			}
+
+			&-navigation{
+				background: $color_1;
+				margin-top: -30px;
+				
+				&-items{
+					& .owl-stage-outer{
+							padding-top: 30px;
+						}
+					& .owl-stage{
+						align-items: stretch;
+						display: flex;
+					}
+					&-item{
+						&-title{}
+						&-resume{
+							color: $color_10;
+						}
+						
+					}
+					
+				}
+				@media screen and (max-width: $break-sm){
+					margin-left: 12.15%;
+					margin-right: 12.15%;
+					&-items{
+						&-item{
+							&-container{
+							}
+							& .NavigationLink{
+								position: relative;
+								box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+								border-radius: 5px 5px 0px 0px;
+								width: 100%;
+								margin-top: -30px;
+								//height: calc(100% + 30px);
+								padding: $v_spacing;
+								z-index: 9;
+								background: $color_1;
+							}
+						}
+					}
+				}
+			}
+
+			@media screen and (min-width: $break-sm){
+
+				&-navigation{
+					border-bottom: 1px solid $color_14;
+					margin-top: -30px;
+					&-items{
+						& .owl-stage-outer{
+							padding-top: 30px;
+						}
+						& .owl-stage{
+							align-items: stretch;
+							display: flex;
+						}
+						&-item{
+								& .Border{
+									border-color: $color_14;
+									border-width: 1px;
+									//border-style: solid;
+									&--left{
+										border-left-style: solid;
+									}
+									&--right{
+										border-right-style: solid;
+									}
+								}
+							&.active{
+								& .Border{
+									border: none;
+								}
+								& .NavigationLink{
+									position: absolute;
+									box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+									border-radius: 5px 5px 0px 0px;
+									width: 91.66%;
+									left: 4.16%;
+									top: -30px;
+									height: calc(100% + 30px);
+									padding: $v_spacing;
+									z-index: 9;
+									background: $color_1;
+								}
+							}
+						}
+					}
+					
+				}
+
+				& .Owl-container{
+					padding: 0px !important;
+					margin: 0px !important;
+				}
+
+				& .owl-carousel{
+					padding: 0px !important;
+				}
+				& .Section--texts{
+					width: 50% !important;
+					padding-top: 180px;
+					padding-bottom: 180px;
+				}
+				& .Section-imageMain{
+					width: 50%;
+					border-radius: 0px;
+				}
+				& .Section-mainContent{
+					margin-top: 0px !important;
+				}
+
+				& .owl-nav{
+					width: 300px;
+	    			bottom: 70px;
+
+					&:after{
+					    width: 70%;
+					    left: 15%;
+					    bottom: 0;
+					    height: 25px;
+					    -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+					    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+					    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
+					    background: $color_5;
+					}
+				}
+
+				&-items{
+					&-item{
+						&-title{
+							color: $color_1;
+							height: 100px;
+							font-size: 36px;
+							&--left{
+								padding-right: 70px;
+							}
+							&--right{
+								padding-left: 70px;
+							}
+						}
+						& .ButtonCommand{
+							& a{
 								& .IconPlay{
-									background: $color_5;
-									& svg{
-										color: $color_2;
+									width: 100px;
+									height: 100px;
+								}
+								&:hover{
+									& .IconPlay{
+										background: transparent;
+										color: $color_1;
+										& svg{
+											left: calc(50% + 3px) !important;
+										}
 									}
 								}
 							}
 						}
 					}
 				}
-			}
+				
+			} // @media
+			
 		}
 	}
 
