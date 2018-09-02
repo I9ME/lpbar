@@ -17,7 +17,7 @@
 		
 		<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
 			<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-sizeFull">CONTINUE O SEU <strong>CADASTRO</strong></h2>
-			<h3 class="Section-header-subtitle u-alignCenter">Faça parte desse empreendimento de sucesso! Invista em na Vignoli e garanta uma das melhores franquias de pizzaria do país!</h3>
+			<h3 class="Section-header-subtitle u-alignCenter">Faça parte desse empreendimento de sucesso! Invista em no Barney's e garanta uma das melhores franquias do país!</h3>
 		</header>
 
 		<div class="Section-content u-sizeFull u-paddingVertical u-alignCenterBox u-marginTop--inter u-marginBottom">

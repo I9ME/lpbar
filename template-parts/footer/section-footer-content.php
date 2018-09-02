@@ -84,7 +84,7 @@
 					<!--End mc_embed_signup-->
 
 				<figure class="Section-content-figure u-positionRelative LogoFooter u-displayFlex u-flexJustifyContentCenter u-marginTop--inter u-marginBottom--inter--half">
-					<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/vignoli--logo--footer.png">
+					<img class="u-objectFitCover u-displayInlineBlock u-maxSize100 u-sizeHeight100 u-sizeAuto" src="<?php echo get_template_directory_uri() ?>/assets/images/barneys--logo.png">
 				</figure>
 
 				<ul class="Section-items--contact u-displayFlex u-flexDirectionColumn u-flexJustifyContentCenter u-alignCenterBox">
