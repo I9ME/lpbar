@@ -3,7 +3,6 @@
 		<div class="u-maxSize--container u-alignCenterBox u-alignCenter u-displayFlex u-flexDirectionColumn u-flexSwitchRow--reverse u-positionRelative"><!-- Max Size Container -->
 			<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24">
 				<header class="Section-header u-marginBottom--inter u-sizeFull u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter">
-					<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
 					<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-sizeFull">CONHEÇA <br />A FRANQUIA <strong>BARNEY'S</strong></h2>
 					<p class="Section-header-subtitle u-marginTop--inter">
 						<strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o <strong>século XVI</strong>, quando um impressor desconhecido.
@@ -63,21 +62,21 @@
 				</div>
 			</div>
 			<?php !wp_is_mobile(); { ?>
-				<figure></figure>
-			<div class="Section-imageMain u-size12of24 u-marginTop--inter u-positionRelative u-onlyDesktop">
-				<figure class="FigureIcon ImgFigure--franquia--circle--md ImgFigure--left u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="2.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-				<figure class="FigureIcon ImgFigure--franquia--flyer ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-				<figure class="FigureIcon ImgFigure--franquia--flyer--vert ImgFigure--right u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-				<figure class="Section-imageMain-figure  Section-imageMain-figure--first ImgFigure--franquia--first u-positionRelative u-displayBlock u-zIndex2"></figure>
-				<figure class="Section-imageMain-figure Section-imageMain-figure--second ImgFigure--franquia--second u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
-				<figure class="Section-imageMain-figure Section-imageMain-figure--third ImgFigure--franquia--third u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>	
+			<div class="Section-imageMain Section-imageMain--left u-size12of24 u-marginTop--inter u-positionRelative u-onlyDesktop">
+				<figure class="FigureIcon ImgFigure--circle--md ImgFigure--left u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="2.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+				<figure class="FigureIcon ImgFigure--flyer ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+				<figure class="FigureIcon ImgFigure--flyer--vert ImgFigure--right u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+				
+				<figure class="Section-imageMain-figure  Section-imageMain-figure--first ImgFigure--main--rightDirection u-positionRelative u-displayBlock u-zIndex2"></figure>
+				<figure class="Section-imageMain-figure Section-imageMain-figure--second ImgFigure--topRightDirection u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
+				<figure class="Section-imageMain-figure Section-imageMain-figure--third ImgFigure--leftDirection u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>	
 			</div>
 			<?php } ?>
 		</div>
 	</div>
 	<?php // get_template_part('template-parts/franquia/franquia','subsection'); ?>
 
-	<figure class="FigureIcon ImgFigure--franquia--circle--lg ImgFigure--right u-opacity50 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.0" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
-	<figure class="FigureIcon ImgFigure--franquia--circle--md ImgFigure--rightCenter  u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="0.25" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+	<figure class="FigureIcon ImgFigure--circle--lg ImgFigure--right u-opacity50 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.0" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+	<figure class="FigureIcon ImgFigure--circle--md ImgFigure--rightCenter  u-opacity70 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="0.25" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 
 </section>

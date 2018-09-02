@@ -716,6 +716,139 @@
 		}
 	}
 
+	// ========================
+	// .Section-imageMain
+	// ========================
+	&-imageMain{
+				// .Section-imageMain--left
+				&--left{
+
+					& .Section-imageMain{
+						&-figure{
+							&--first{
+								margin-left: -20px;
+							}
+							&--second{
+								left: -31px;
+								transform: rotate(-45deg) !important;
+								&.u-isScrollFade--on{
+									transform: rotate(45deg) !important;
+								}
+							}
+							&--third{
+								left: -30px;
+								transform: rotate(45deg) !important;
+								&.u-isScrollFade--on{
+									transform: rotate(-45deg) !important;
+								}
+							}
+							@media screen and (min-width: $break-sm){
+								&--first{
+									margin-left: -200px;
+								}
+								&--second{
+									left: -310px;
+									transform: rotate(-45deg) !important;
+									&.u-isScrollFade--on{
+										transform: rotate(45deg) !important;
+									}
+								}
+								&--third{
+									left: -300px;
+									transform: rotate(45deg) !important;
+									&.u-isScrollFade--on{
+										transform: rotate(-45deg) !important;
+									}
+								}
+							}
+
+							@media screen and (min-width: $break-md){
+
+								&--first{
+									margin-left: -150px;
+								}
+								&--second{
+									left: -210px;
+								}
+								&--third{
+									left: -200px;
+								}
+							}
+						}
+					}
+				}
+				// .Section-ImageMain--right
+				&--right{
+
+					& .Section-imageMain{
+						&-figure{
+							&--first{
+								right: -20px;
+							}
+							&--second{
+								right: -31px;
+								transform: rotate(-45deg) !important;
+								&.u-isScrollFade--on{
+									transform: rotate(45deg) !important;
+								}
+							}
+							&--third{
+								right: -30px;
+								transform: rotate(45deg) !important;
+								&.u-isScrollFade--on{
+									transform: rotate(-45deg) !important;
+								}
+							}
+							@media screen and (min-width: $break-sm){
+								&--first{
+									right: -20px;
+								}
+								&--second{
+									right: -31px;
+									transform: rotate(-45deg) !important;
+									&.u-isScrollFade--on{
+										transform: rotate(45deg) !important;
+									}
+								}
+								&--third{
+									right: -300px;
+									transform: rotate(45deg) !important;
+									&.u-isScrollFade--on{
+										transform: rotate(-45deg) !important;
+									}
+								}
+							}
+
+							@media screen and (min-width: $break-md){
+
+								&--first{
+									right: -150px;
+								}
+								&--second{
+									right: -210px;
+								}
+								&--third{
+									right: -200px;
+								}
+							}
+						}
+					}
+				}
+				&-figure{
+
+						&--first{	
+						}
+						&--second{
+							top:0px;
+						}
+						&--third{
+							top: -80px;
+						}
+					
+				}
+			}
+
+
 	//==============
 	// CROSS STYLES
 	//=============
@@ -1266,46 +1399,6 @@
 			}
 
 
-			.Flatlays{
-				//overflow: hidden;
-			    width: 100%;
-			    height: calc(100vh + 100px);
-			}
-			.Flatlay{
-				position: absolute;
-				display: block;
-				&--folha1{
-					left: -75px;
-					bottom: -50px;
-					display: none;
-				}
-				&--tomate1{
-					right: -130px;
-					top: 0px;
-				}
-				&--tomate2{
-					left: -125px;
-					bottom: 100px;
-				}
-				&--azeite{
-					right: 25%;
-					bottom: -270px;
-					display: none;
-				}
-				&--colher{
-					right: -210px;
-					bottom: 30px;
-				}
-				&--ramo{
-					left: -10px;
-					top: -55px;
-				}
-				&--folha2{
-					right: 5%;
-					bottom: 0px;
-					display: none;
-				}
-			}
 		@media screen and (min-width: $break-sm){
 			&:after{
 
@@ -1318,9 +1411,8 @@
 		}
 	} // .Intro
 
-// Figure
+// ImgFigure
 .ImgFigure{
-	&--franquia{
 		&--flyer{
 			top: -300px;
 			&--vert{
@@ -1343,8 +1435,14 @@
 				width: 60px;
 				height: 60px;
 			}
+			&--sm{
+				top: -100px;
+				border-radius: 150px;
+				border: 8px solid #f7eadd;
+				width: 40px;
+				height: 40px;
+			}
 		}
-	}
 	&--left{
 		left: 0%;
 		&Center{
@@ -1359,6 +1457,7 @@
 	}
 }
 	
+
 	// A FRANQUIA
 
 	&--aFranquia{
@@ -1371,44 +1470,7 @@
 					}
 				}
 			}
-			&-imageMain{
-				&-figure{
-
-						&--first{
-							margin-left: -200px;
-						}
-						&--second{
-							top:0px;
-							left: -310px;
-							transform: rotate(-45deg) !important;
-							&.u-isScrollFade--on{
-								transform: rotate(45deg) !important;
-							}
-						}
-						&--third{
-							left: -300px;
-							top: -80px;
-							transform: rotate(45deg) !important;
-							&.u-isScrollFade--on{
-								transform: rotate(-45deg) !important;
-							}
-						}
-
-						@media screen and (min-width: $break-md){
-
-							&--first{
-								margin-left: -150px;
-							}
-							&--second{
-								left: -210px;
-							}
-							&--third{
-								left: -200px;
-							}
-						}
-					
-				}
-			}
+			
 			
 			@media screen and (min-width: $break-sm){
 				&-mainContent{
@@ -1455,134 +1517,8 @@
 			}
 
 		} // .Section
-		
-		@media screen and (min-width: $break-sm){
-			& .Features-items-item{
-				&-title{
-					font-size: $font_size_title_item;
-				}
-				&-value{
-					font-size: $font_size_text;
-					& em{
-						font-size: $font_size_subtitle_section;
-					}
-				}
-			}
-			
-		}
 
-		& .Subsection{
-			@media screen and (min-width: $break-sm){
-				padding-top: $v_spacing * 0.5;
-			}
-		}
-		
-		& .Section-subSection{
-			background: $color_1;
-
-			&:after{
-
-			 	width: 100%;
-			    height: 120px;
-			    margin: 0px;
-			    -webkit-transform: skew(0deg, -4deg);
-			       -moz-transform: skew(0deg, -4deg);
-			         -o-transform: skew(0deg, -4deg);
-			    overflow:hidden;
-			  
-
-			    content:"";
-			    position: absolute;
-			    top: -65px;
-			    left: 0px;
-
-			    background: $color_1;
-			}
-
-
-			& .Subsection{
-
-				&-content{
-					&-header{
-						width: 100%;
-    					text-align: center;
-    					top: -40px;
-						&-title{
-						    color: $color_1;
-						    font-style: italic;
-						    width: 100%;
-						    text-align: center;
-
-						    font-size: 41px;
-						    text-shadow: 3px 5px 15px #DDD;
-						    letter-spacing: -3px;
-						    &.u-isScrollFade--on{
-								text-shadow: 3px 3px 15px #BBBBBB;	
-							}
-						}
-					}
-				}
-
-				&-items{
-						&-item{
-							&.Item{
-								&--tab{
-									
-								}
-							}
-						}
-					}
-
-				&-imageMain{
-					display: none;
-					&-src{
-					}
-					&.is-active{
-						display: block;
-						& .Subsection-imageMain-src{
-
-							//opacity: 1;
-							//transition-delay: 0.5s;
-						}
-					}
-				}
-			}
-			@media screen and (min-width: $break-sm){
-					//Subsection-imageMain
-				& .Subsection{
-					&-content{
-						&-header{
-	    					top: -40px;
-							&-title{
-								font-size: 60px;
-							    text-shadow: 2px 7px 15px #e4e4e4;
-							    letter-spacing: -4px;
-							}
-						}
-					}
-
-					&-imageMain{
-						position: absolute;
-						right: 0px;
-						top: -300px;
-						display: block;
-						&-src{
-							max-width: inherit;
-							opacity: 0;
-						}
-						&.is-active{
-							& .Subsection-imageMain-src{
-								opacity: 1;
-							}
-						}
-						
-
-					}
-				}
-
-			}
-
-		}
+	
 
 
 	}
@@ -1850,132 +1786,107 @@
 	}
 
 	&--opinioes{
-		background: $color_5;
 
-
-		& .navController{
-			&--prev{}
-			&--next{}
-			&--content{
-					position: relative;
-					display: flex;
-					justify-content: center;
-					width: calc(50% - 1px);
-					padding: 25px;
-					background: $color_1 !important;
-					min-height: 70px !important;
-					& .u-icon{
-						color: $color_4;
-					}
-			}	
+		& .owl-item{
+			background: $color_1;
 		}
-
-		& .Section{
-			
-			&-imageMain{
-				min-height: 200px;
-			}
-
-			&--texts{
-				& .quoteAuthor{
-					color: $color_4;
-				}
-			}
+		& .owl-dots{
+		  	display: block;
+		  	text-align: center;
+		  	& .owl-dot{
+		  		
+		  		
+		  		&.active{
+		  			
+		  		}
+		  	}
 		}
-
-		@media screen and (max-width: $break-sm){
-			
-
-			& .Section{
-				&-mainContent{
-					background: $color_1;
-					margin-bottom: 65px;
-				}
-			}
-		}
-
-
 		@media screen and (min-width: $break-sm){
-
-
-
-
-		& .Owl-container{
-				padding: 0px !important;
-				margin: 0px !important;
+			& .owl-dots{
+			    position: absolute;
+			  	display: block;
+			    bottom: 200px;
+			    left: 50%;
+			    transform: translateX(-50%);
 			}
-
-			& .owl-carousel{
-				padding: 0px !important;
-			}
-			& .Section--texts{
-				width: 50% !important;
-				padding-top: 180px;
-				padding-bottom: 180px;
-			}
-			& .Section-imageMain{
+		}
+		//ImgFigure--circle--lg ImgFigure--rightCenter
+		& .Section{
+			&-content{
 				width: 50%;
-				margin-top: 0px !important;
-				border-radius: 0px;
 			}
-			& .Section-mainContent{
-				margin-top: 0px !important;
-				
-				display: flex !important;
-				&.u-flexDirectionColumn.u-flexSwitchRow{
-					flex-direction: row-reverse !important;
-				}
-			}
+			&-imageMain{
+				width: 50%;
 
-			& .owl-nav{
-				width: 300px;
-    			bottom: 80px;
-    			left: inherit !important;
-    			right: 15% !important;
-
-				&:after{
-				    width: 70%;
-				    left: 15%;
-				    bottom: 0;
-				    height: 25px;
-				     -moz-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-				    -webkit-box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-				    box-shadow: 0px 10px 35px rgba(0,0,0,0.22);
-				    background: $color_5;
-				}
-			}
-
-			& .Section{
-				&-header{
-					position: absolute;
-				    left: inherit !important;
-				    right: 0px !important;
-				    transform: none !important;
-				    top: $sizeColumns_px !important;
-				    width: 50% !important;
+				& .Section-imageMain-figure{
+					&--second{
+						top: 55px;
+					}
+					&--third{
+						top: 0px;
+					}
 				}
 			}
 		}
-
-
-		& .Section{
-			&-header{
-				&-title{
-					color: $color_4;
+		& .ImgFigure{
+			&--circle{
+				&--lg{
+					&.ImgFigure{
+						&--rightCenter{
+							top: 50px;
+							right: 25%;
+						}
+					}
+				}
+				&--sm{
+					width: 40px;
+					height: 40px;
+					border-width: 12px;
+					&.ImgFigure{
+						&--left{
+							top: 600px;
+							left: 5%;
+						}
+					}
 				}
 			}
-			&-imageMain{
-				background: $color_4;
-
-				min-height: 200px;
-
+			//ImgFigure--flyer--biColor ImgFigure--left
+			&--flyer{
+				&--biColor{
+					&.ImgFigure{
+						&--left{
+							left: 5%;
+							top: 250px;
+						}
+					}
+				}
+				&--vert{
+					top: 300px;
+				}
+			}
+		}
+		& .iconQuoteLeft{
+			color: $color_14;
+		}
+		& .QuoteText{
+			font-size: 16px;
+		}
+		& .quoteAuthor{
+			color: $color_2;
+		}
+		@media screen and (min-width: $break-sm){
+			& .iconQuoteLeft{
+				font-size: 55px;
+			}
+			& .QuoteText{
+				font-size: 28px;
 			}
 		}
 	}
 
 
 /*
-A VIGNOLI
+SOBRE
  */
 
  	&--aVignoli{
@@ -2170,6 +2081,17 @@ NA MÍDIA .Section--naMidia
  */
 &--naMidia{
 		
+	background: $color_13;
+
+	& .Section{
+		&-items{
+			&-item{
+				&-content{
+					background: $color_1; 
+				}
+			}
+		}
+	}
 
 	}
 

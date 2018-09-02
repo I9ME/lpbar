@@ -1,36 +1,96 @@
-<section id="opinioes" class="Section Section--style1 Section--opinioes u-positionRelative">
-	<header class="Section-header u-marginBottom--inter u-size16of24 u-alignCenterBox u-displayFlex u-flexDirectionColumn u-flexAlignItemsCenter  u-size12of24 u-paddingVertical u-absoluteTopCenter u-paddingTop--inter--half u-zIndex5">
-		<figure class="ArabescoTop--color_15 u-displayBlock"></figure>
-		<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingBottom--inter--half u-sizeFull"><strong>OPINIÕES</strong></h2>
-	</header>
-	<div class="Owl-container u-paddingVertical u-marginVertical u-paddingTop">
-	<div id="opinioes-carousel" class="Section-items owl-carousel u-paddingTop">
-		<div class="Section-items-item Section-mainContent u-marginTop--inter u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-positionRelative u-borderRadius5">
-				<div class="Section--texts u-displayFlex u-flexDirectionColumn u-size12of24 u-paddingTop--inter--half u-paddingVertical">
-					<div class="Section-content u-alignCenter">
-						<h3 class="Section-content-subtitle">
-							Conheci a Pizza Vignoli há quase 10 anos e, logo depois, quando pensei em entrar no ramo de alimentação, liguei para Cláudio Vignoli. Por coincidência ele estava iniciando um projeto de franquia e eu me tornei o primeiro franqueado da rede e depois o primeiro franqueado de shopping center.
-						</h3>
-						
-						<i class="u-positionRelative u-displayInlineBlock u-marginTop--inter--half">
+<section id="opinioes" class="Section Section--style1 Section--opinioes u-paddingTop u-positionRelative">
+	
+	
+	<div class="u-maxSize--container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-positionRelative">
+		
+			<header class="Section-header u-alignCenterBox u-paddingVertical u-displayFlex u-flexDirectionColumn u-size16of24 u-alignCenter">
+
+				<h2 class="Section-header-title Section-header-title--beforeTitleLine u-alignCenter u-paddingHorizontal--inter--half u-sizeFull"><strong>OPINIÕES</strong></h2>
+
+				<p class="Section-header-subtitle u-marginTop--inter u-paddingVertical">
+					<strong>Lorem Ipsum</strong> indústria tipográfica e de impressos, e vem sendo utilizado desde o <strong>século XVI</strong>, quando um impressor desconhecido.
+				</p>
+			</header>
+	</div>
+			<div id="opinioes-carousel" class="owl-carousel">
+			<!-- ITEM -->
+			<div class="u-displayFlex u-flexDirectionRow u-sizeFull">
+				
+				<div class="Section-content u-flexDirectionRow u-paddingLeft u-paddingTop u-alignRight">
+					<i class="u-positionRelative u-displayInlineBlock u-marginTop--inter--half">
 							<svg class="iconQuoteLeft u-icon u-displayInlineBlock">
 								<use xlink:href="#iconQuoteLeft"></use>
 							</svg>
-						</i>
-						<p class="Section-content-text u-marginTop--inter--half">
-							<strong class="quoteAuthor">Carvalho Neto</strong><br />
-							 franqueado das duas unidades de São Luís/MA
-						</p>
-					</div>
-				</div>
-
-				<div class="Section-imageMain Section-gridElastic u-size12of24 u-positionRelative u-marginTop--inter u-borderRadius5--bottom" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Section-items-item-quote<?php echo switch_img_Mobile(); ?>.png'); background-position: center center; background-size: cover;">
+					</i>
+					<h3 class="Section-content-subtitle QuoteText u-alignRight u-marginTop--inter">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo.
+					</h3>
+					<p class="Section-content-text u-marginTop--inter--half">
+						<strong class="quoteAuthor">Patrícia Florenza</strong>
+						<br />
+						Franqueada Teresiza/PI
+					</p>
 					
 				</div>
-		</div> <!-- .Section-items-item -->
+			
+				<div class="Section-imageMain Section-imageMain--right u-marginTop--inter u-positionRelative">
 
-		
-	</div>
-</div>
+					<figure class="Section-imageMain-figure  Section-imageMain-figure--first ImgFigure--main--depoimentoSample<?php echo switch_img_Mobile(); ?> u-positionRelative u-displayBlock u-zIndex2"></figure>
+					<?php if( !wp_is_mobile() ) { ?>
+						<figure class="Section-imageMain-figure Section-imageMain-figure--second ImgFigure--topLeftDirection u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
+						<figure class="Section-imageMain-figure Section-imageMain-figure--third ImgFigure--rightDirection u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>
+					<?php } ?>
+
+				</div>
+
+			</div>
+			<!-- ITEM -->
+			<!-- ITEM -->
+			<div class="u-displayFlex u-flexDirectionRow u-sizeFull">
+				
+				<div class="Section-content u-flexDirectionRow u-paddingLeft u-paddingTop u-alignRight">
+					<i class="u-positionRelative u-displayInlineBlock u-marginTop--inter--half">
+							<svg class="iconQuoteLeft u-icon u-displayInlineBlock">
+								<use xlink:href="#iconQuoteLeft"></use>
+							</svg>
+					</i>
+					<h3 class="Section-content-subtitle QuoteText u-alignRight u-marginTop--inter">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo.
+					</h3>
+					<p class="Section-content-text u-marginTop--inter--half">
+						<strong class="quoteAuthor">Patrícia Florenza</strong>
+						<br />
+						Franqueada Teresiza/PI
+					</p>
+					
+				</div>
+			
+				<div class="Section-imageMain Section-imageMain--right u-marginTop--inter u-positionRelative">
+					
+					<figure class="Section-imageMain-figure  Section-imageMain-figure--first ImgFigure--main--depoimentoSample<?php echo switch_img_Mobile(); ?> u-positionRelative u-displayBlock u-zIndex2"></figure>
+					<?php if( !wp_is_mobile() ) { ?>
+						<figure class="Section-imageMain-figure Section-imageMain-figure--second ImgFigure--topLeftDirection u-positionAbsolute u-displayBlock u-zIndex-1 is-animating--time2 u-isScrollFade"></figure>
+						<figure class="Section-imageMain-figure Section-imageMain-figure--third ImgFigure--rightDirection u-positionAbsolute u-displayBlock u-zIndex-2 is-animating--time2 u-isScrollFade"></figure>
+					<?php } ?>
+
+				</div>
+
+			</div>
+			<!-- ITEM -->
+		</div>
+
+			<figure class="FigureIcon ImgFigure--circle--lg ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-opacity30 u-zIndex3 is-animating--time2" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+			
+			<figure class="FigureIcon ImgFigure--flyer--vert ImgFigure--right u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.0" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+
+
+			<figure class="FigureIcon ImgFigure--flyer--biColor ImgFigure--left u-opacity100 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2 u-onlyDesktop" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+
+			<figure class="FigureIcon ImgFigure--circle--sm ImgFigure--left  u-opacity80 u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.0" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+
+	
+
+			
 
 </section>
+

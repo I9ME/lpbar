@@ -21,7 +21,7 @@
 </section>
 
 <div class="u-displayBlock u-alignCenter u-paddingHorizontal--inter--half u-lineHeight0 color_5 u-sizeFull">
-	<a class="u-displayInlineBlock u-lineHeight0" href="https://www.i9me.com.br/?utm_source=siteCliente&utm_medium=logoI9ME&utm_campaign=vignoli_franquia" target="_blank">
+	<a class="u-displayInlineBlock u-lineHeight0" href="https://www.i9me.com.br/?utm_source=siteCliente&utm_medium=logoI9ME&utm_campaign=barneys_franquia" target="_blank">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logptipo-i9me-web-design-fortaleza-ce.png" width="30" height="30" alt="I9ME Web & Design" />
 	</a>
 </div>
