@@ -21,7 +21,7 @@ get_header(); ?>
 	<?php get_template_part('template-parts/na-midia/namidia','section'); ?>
 	<?php get_template_part('template-parts/barneys/barneys','section'); ?>
 	<?php get_template_part('template-parts/seja-franqueado/seja-franqueado','section'); ?>
-	<?php // get_template_part('template-parts/locais/locais','section'); ?>
+	<?php get_template_part('template-parts/newsletter/newsletter','section'); ?>
 </main><!-- #main -->
 
 

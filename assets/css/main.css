@@ -1049,6 +1049,120 @@ FOOTER .Site--foter .Section--footerContent
   color: #f3ad13 !important;
 }
 
+.Section .FormMail .Form .u-icon {
+  font-size: 18px;
+  color: #999999;
+}
+
+.Section .FormMail .Form-input {
+  max-width: 140px;
+}
+
+.Section .FormMail .Form-input.Form-input--text, .Section .FormMail .Form-input.Form-input--email, .Section .FormMail .Form-input.Form-input--tel {
+  background: transparent;
+  border: none;
+}
+
+.Section .FormMail .Form-input.Form-input--text::-webkit-input-placeholder, .Section .FormMail .Form-input.Form-input--email::-webkit-input-placeholder, .Section .FormMail .Form-input.Form-input--tel::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999999;
+}
+
+.Section .FormMail .Form-input.Form-input--text::-moz-placeholder, .Section .FormMail .Form-input.Form-input--email::-moz-placeholder, .Section .FormMail .Form-input.Form-input--tel::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999999;
+}
+
+.Section .FormMail .Form-input.Form-input--text:-ms-input-placeholder, .Section .FormMail .Form-input.Form-input--email:-ms-input-placeholder, .Section .FormMail .Form-input.Form-input--tel:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999999;
+}
+
+.Section .FormMail .Form-input.Form-input--text:-moz-placeholder, .Section .FormMail .Form-input.Form-input--email:-moz-placeholder, .Section .FormMail .Form-input.Form-input--tel:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999999;
+}
+
+.Section .FormMail .Form-input.Button {
+  border: none;
+  font-size: 11px;
+  letter-spacing: 3px;
+  position: absolute;
+  height: 100%;
+}
+
+.Section .FormMail .Form-input.Button.Form-input--submit {
+  background: transparent;
+  color: #FFFFFF;
+  padding-left: 0px;
+}
+
+.Section .FormMail .Form-input.Button .u-icon {
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.Section .FormMail .Form-input--bg {
+  -moz-background: linear-gradient(to bottom right, #9d0a0e, #f3ad13);
+  -webkit-background: linear-gradient(to bottom right, #9d0a0e, #f3ad13);
+  background: linear-gradient(to bottom right, #9d0a0e, #f3ad13);
+  color: #FFFFFF;
+}
+
+.Section .FormMail .Form-input--bg--hover {
+  -moz-background: linear-gradient(to bottom right, #f3ad13, #9d0a0e);
+  -webkit-background: linear-gradient(to bottom right, #f3ad13, #9d0a0e);
+  background: linear-gradient(to bottom right, #f3ad13, #9d0a0e);
+  opacity: 0;
+  color: #FFFFFF;
+}
+
+.Section .FormMail .Form-row--email {
+  padding: 3px 3px 3px 15px;
+  background: #FFFFFF;
+  -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 5px 60px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 50px;
+}
+
+.Section .FormMail .Form-row--email .Form-coll {
+  min-width: 200px;
+}
+
+.Section .FormMail .Form-row .Form-input--email {
+  min-width: 180px;
+}
+
+.Section .FormMail .Form-coll.Submit {
+  min-width: 55px;
+  height: 50px;
+  position: relative;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .Section .FormMail .Form-coll.Submit {
+    min-width: 112.5px;
+  }
+  .Section .FormMail .Form-coll.Submit .Form-input--bg {
+    justify-content: flex-end;
+  }
+  .Section .FormMail .Form-coll.Submit .Form-input--bg .u-icon {
+    margin-right: 10px;
+  }
+  .Section .FormMail .Form-coll.Submit:hover .Form-input--bg {
+    opacity: 0;
+  }
+  .Section .FormMail .Form-coll.Submit:hover .Form-input--bg--hover {
+    opacity: 1;
+  }
+  .Section .FormMail .Form-input {
+    max-width: inherit;
+  }
+}
+
 .Section--intro {
   max-height: 900px !important;
   min-height: 100vh;
@@ -1287,99 +1401,6 @@ FOOTER .Site--foter .Section--footerContent
   font-size: 24px;
 }
 
-.Section--intro .Captions .Form .u-icon {
-  font-size: 18px;
-  color: #999999;
-}
-
-.Section--intro .Captions .Form-input {
-  max-width: 140px;
-}
-
-.Section--intro .Captions .Form-input.Form-input--text, .Section--intro .Captions .Form-input.Form-input--email, .Section--intro .Captions .Form-input.Form-input--tel {
-  background: transparent;
-  border: none;
-}
-
-.Section--intro .Captions .Form-input.Form-input--text::-webkit-input-placeholder, .Section--intro .Captions .Form-input.Form-input--email::-webkit-input-placeholder, .Section--intro .Captions .Form-input.Form-input--tel::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #999999;
-}
-
-.Section--intro .Captions .Form-input.Form-input--text::-moz-placeholder, .Section--intro .Captions .Form-input.Form-input--email::-moz-placeholder, .Section--intro .Captions .Form-input.Form-input--tel::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #999999;
-}
-
-.Section--intro .Captions .Form-input.Form-input--text:-ms-input-placeholder, .Section--intro .Captions .Form-input.Form-input--email:-ms-input-placeholder, .Section--intro .Captions .Form-input.Form-input--tel:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #999999;
-}
-
-.Section--intro .Captions .Form-input.Form-input--text:-moz-placeholder, .Section--intro .Captions .Form-input.Form-input--email:-moz-placeholder, .Section--intro .Captions .Form-input.Form-input--tel:-moz-placeholder {
-  /* Firefox 18- */
-  color: #999999;
-}
-
-.Section--intro .Captions .Form-input.Button {
-  border: none;
-  font-size: 11px;
-  letter-spacing: 3px;
-  position: absolute;
-  height: 100%;
-}
-
-.Section--intro .Captions .Form-input.Button.Form-input--submit {
-  background: transparent;
-  color: #FFFFFF;
-  padding-left: 0px;
-}
-
-.Section--intro .Captions .Form-input.Button .u-icon {
-  font-size: 15px;
-  color: #FFFFFF;
-}
-
-.Section--intro .Captions .Form-input--bg {
-  -moz-background: linear-gradient(to bottom right, #9d0a0e, #f3ad13);
-  -webkit-background: linear-gradient(to bottom right, #9d0a0e, #f3ad13);
-  background: linear-gradient(to bottom right, #9d0a0e, #f3ad13);
-  color: #FFFFFF;
-}
-
-.Section--intro .Captions .Form-input--bg--hover {
-  -moz-background: linear-gradient(to bottom right, #f3ad13, #9d0a0e);
-  -webkit-background: linear-gradient(to bottom right, #f3ad13, #9d0a0e);
-  background: linear-gradient(to bottom right, #f3ad13, #9d0a0e);
-  opacity: 0;
-  color: #FFFFFF;
-}
-
-.Section--intro .Captions .Form-row--email {
-  padding: 3px 3px 3px 15px;
-  background: #FFFFFF;
-  -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-  -o-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 5px 60px -10px rgba(0, 0, 0, 0.35);
-  border-radius: 50px;
-}
-
-.Section--intro .Captions .Form-row--email .Form-coll {
-  min-width: 200px;
-}
-
-.Section--intro .Captions .Form-row .Form-input--email {
-  min-width: 180px;
-}
-
-.Section--intro .Captions .Form-coll.Submit {
-  min-width: 55px;
-  height: 50px;
-  position: relative;
-  display: block;
-}
-
 @media screen and (min-width: 768px) {
   .Section--intro .Captions {
     position: absolute;
@@ -1392,24 +1413,6 @@ FOOTER .Site--foter .Section--footerContent
   }
   .Section--intro .Captions-title {
     color: #555555;
-  }
-  .Section--intro .Captions .Form-coll.Submit {
-    min-width: 112.5px;
-  }
-  .Section--intro .Captions .Form-coll.Submit .Form-input--bg {
-    justify-content: flex-end;
-  }
-  .Section--intro .Captions .Form-coll.Submit .Form-input--bg .u-icon {
-    margin-right: 10px;
-  }
-  .Section--intro .Captions .Form-coll.Submit:hover .Form-input--bg {
-    opacity: 0;
-  }
-  .Section--intro .Captions .Form-coll.Submit:hover .Form-input--bg--hover {
-    opacity: 1;
-  }
-  .Section--intro .Captions .Form-input {
-    max-width: inherit;
   }
 }
 

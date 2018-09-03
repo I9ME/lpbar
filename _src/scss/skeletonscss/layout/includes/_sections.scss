@@ -904,6 +904,139 @@
 	// CUSTOMIZER
 	// ===================
 
+	.FormMail{
+				& .Form{
+					& .u-icon{
+						font-size: 18px;
+						color: $color_9;
+					}
+					&-input{
+						max-width: 140px;
+
+						&.Form-input--text,
+						&.Form-input--email,
+						&.Form-input--tel{
+							background: transparent;
+							border: none;
+							&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+							  color: $color_9;
+						}
+							&::-moz-placeholder { /* Firefox 19+ */
+							  color: $color_9;
+						}
+							&:-ms-input-placeholder { /* IE 10+ */
+							  color: $color_9;
+						}
+							&:-moz-placeholder { /* Firefox 18- */
+							  color: $color_9;
+							}
+						}
+						&.Button{
+							border: none;
+							font-size: 11px;
+							letter-spacing: 3px;
+							position: absolute;
+							height: 100%;
+
+							&.Form-input--submit{
+								background: transparent;
+								color: $color_1;
+								padding-left: 0px;
+								&:hover{
+
+								}
+							}
+							& .u-icon{
+								font-size: $font_size_text;
+								color: $color_1;
+							}
+						}
+						&--bg{
+							-moz-background: linear-gradient(to bottom right, $color_2, $color_3);
+							-webkit-background: linear-gradient(to bottom right, $color_2, $color_3);
+							background: linear-gradient(to bottom right, $color_2, $color_3);
+							color: $color_1;
+							&--hover{
+								-moz-background: linear-gradient(to bottom right, $color_3, $color_2);
+								-webkit-background: linear-gradient(to bottom right, $color_3, $color_2);
+								background: linear-gradient(to bottom right, $color_3, $color_2);
+								opacity: 0;
+								color: $color_1;
+							}
+						}
+
+
+					}
+					
+					&-row{
+						&--email{
+							padding: 3px 3px 3px 15px;
+							background: $color_1;
+
+
+							-moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+						    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+						    -o-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+						    box-shadow: 0px 5px 60px -10px rgba(0,0,0,0.35);
+
+						    border-radius: 50px;
+
+						    & .Form-coll{
+						    	min-width: 200px;
+						    }
+
+						}
+						& .Form-input{
+							&--email{
+								min-width: 180px;
+							}
+
+						}
+					}
+					&-coll{
+						&.Submit{
+							min-width: $sizeColumns_px * 1.1;
+							height: $sizeColumns_px;
+							position: relative;
+							display: block;
+						}
+					}
+				}
+				@media screen and (min-width: $break-sm){
+					
+					& .Form{	
+						&-coll{
+							&.Submit{
+								min-width: $sizeColumns_px * 2.25;
+								& .Form-input{
+										&--bg{
+											justify-content: flex-end;
+											& .u-icon{
+												margin-right: 10px;
+											}
+										}
+									}
+								&:hover{
+									& .Form-input{
+										&--bg{
+											opacity: 0;
+
+											&--hover{
+												opacity: 1;
+											}
+										}
+									}
+								}
+							}
+						}
+						&-input{
+							max-width: inherit;
+						}
+					}
+					
+				}
+			}
+
 	&--intro{
 		
 		max-height: 900px !important;
@@ -1272,103 +1405,7 @@
 						font-size: 24px;
 					}
 				}
-				& .Form{
-					& .u-icon{
-						font-size: 18px;
-						color: $color_9;
-					}
-					&-input{
-						max-width: 140px;
-
-						&.Form-input--text,
-						&.Form-input--email,
-						&.Form-input--tel{
-							background: transparent;
-							border: none;
-							&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-							  color: $color_9;
-						}
-							&::-moz-placeholder { /* Firefox 19+ */
-							  color: $color_9;
-						}
-							&:-ms-input-placeholder { /* IE 10+ */
-							  color: $color_9;
-						}
-							&:-moz-placeholder { /* Firefox 18- */
-							  color: $color_9;
-							}
-						}
-						&.Button{
-							border: none;
-							font-size: 11px;
-							letter-spacing: 3px;
-							position: absolute;
-							height: 100%;
-
-							&.Form-input--submit{
-								background: transparent;
-								color: $color_1;
-								padding-left: 0px;
-								&:hover{
-
-								}
-							}
-							& .u-icon{
-								font-size: $font_size_text;
-								color: $color_1;
-							}
-						}
-						&--bg{
-							-moz-background: linear-gradient(to bottom right, $color_2, $color_3);
-							-webkit-background: linear-gradient(to bottom right, $color_2, $color_3);
-							background: linear-gradient(to bottom right, $color_2, $color_3);
-							color: $color_1;
-							&--hover{
-								-moz-background: linear-gradient(to bottom right, $color_3, $color_2);
-								-webkit-background: linear-gradient(to bottom right, $color_3, $color_2);
-								background: linear-gradient(to bottom right, $color_3, $color_2);
-								opacity: 0;
-								color: $color_1;
-							}
-						}
-
-
-					}
-					
-					&-row{
-						&--email{
-							padding: 3px 3px 3px 15px;
-							background: $color_1;
-
-
-							-moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-						    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-						    -o-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-						    box-shadow: 0px 5px 60px -10px rgba(0,0,0,0.35);
-
-						    border-radius: 50px;
-
-						    & .Form-coll{
-						    	min-width: 200px;
-						    }
-
-						}
-						& .Form-input{
-							&--email{
-								min-width: 180px;
-							}
-
-						}
-					}
-					&-coll{
-						&.Submit{
-							min-width: $sizeColumns_px * 1.1;
-							height: $sizeColumns_px;
-							position: relative;
-							display: block;
-						}
-					}
-				}
+				
 				@media screen and (min-width: $break-sm){
 					position: absolute;
 					left: 0px;
@@ -1377,35 +1414,6 @@
 					margin-top: 0px;
 					&-title{
 						color: $color_10;
-					}
-					& .Form{	
-						&-coll{
-							&.Submit{
-								min-width: $sizeColumns_px * 2.25;
-								& .Form-input{
-										&--bg{
-											justify-content: flex-end;
-											& .u-icon{
-												margin-right: 10px;
-											}
-										}
-									}
-								&:hover{
-									& .Form-input{
-										&--bg{
-											opacity: 0;
-
-											&--hover{
-												opacity: 1;
-											}
-										}
-									}
-								}
-							}
-						}
-						&-input{
-							max-width: inherit;
-						}
 					}
 					top: calc(50% - 20px);
 					transform: translateY(-50%);
@@ -2308,3 +2316,9 @@ FOOTER .Site--foter .Section--footerContent
 
 	// end class .Section
 	}
+
+
+
+	 
+
+			
