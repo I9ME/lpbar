@@ -122,6 +122,7 @@
 							font-size: 30px;
 							color: $color_2;
 						}	
+						
 					}
 					&.Contacts{
 						border-top: 1px solid $color_8;
@@ -135,13 +136,16 @@
 						}
 						& a{
 								color: $color_2;
-							}	
+							}
+							
 					}
 
 					@media screen and (min-width: $break-sm) {
 
 					height: auto !important;
 					margin: 0px 0px 0px 2.5% !important;
+					position: absolute;
+					top: -3px !important;
 
 					
 					& .Item{
@@ -156,7 +160,8 @@
 							&:hover{
 								color: $color_3;
 							}
-						}	
+						}
+						right: 0%;	
 					}
 					&.Contacts{
 						color: $color_1;
@@ -170,7 +175,8 @@
 							margin-left: 5px;
 							color: $color_1;
 							letter-spacing: 1px;
-						}	
+						}
+						right: 100px;	
 					}
 
 					}
@@ -227,6 +233,7 @@
 						&:hover{
 							color: $color_1;
 						}
+						
 						/* &--backNav{
 							font-size: 16px;
 							color: $color_1;
@@ -253,9 +260,39 @@
 					background: none;
 					font-weight: bold;
 					& .NavigationLink{
-						color: $color_3;
+						color: $color_2;
 						font-weight: bold;
-						font-size: $font_size_title_section;
+						font-size: $font_size_subtitle_section;
+
+						&.ButtonLink--nav{
+								color: $color_2;
+								
+								moz-background: linear-gradient(to bottom, $color_3 35%, $color_7);
+							    -webkit-background: linear-gradient(to bottom, $color_3 35%, $color_7);
+							    background: linear-gradient(to bottom, $color_3 35%, $color_7);
+
+							    border: 1px solid $color_3;
+
+							    -moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+							    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+							    -o-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+							    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
+
+							    &:hover{
+							    	color: $color_1;
+
+							    	moz-background: linear-gradient(to bottom, $color_3 35%, $color_8);
+								    -webkit-background: linear-gradient(to bottom, $color_3 35%, $color_8);
+								    background: linear-gradient(to bottom, $color_3 35%, $color_8);
+
+							    	-moz-box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
+							    	-webkit-box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
+							    	-o-box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
+							    	box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
+							    }
+
+							}
+
 					}
 				}
 				/* & .Navigation--subMenu{
@@ -286,34 +323,7 @@
 							&:hover{
 								color: $color_3;
 							}
-							&.ButtonLink--nav{
-								color: $color_2;
-								
-								moz-background: linear-gradient(to bottom, $color_3 35%, $color_7);
-							    -webkit-background: linear-gradient(to bottom, $color_3 35%, $color_7);
-							    background: linear-gradient(to bottom, $color_3 35%, $color_7);
-
-							    border: 1px solid $color_3;
-
-							    -moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-							    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-							    -o-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-							    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.35);
-
-							    &:hover{
-							    	color: $color_1;
-
-							    	moz-background: linear-gradient(to bottom, $color_3 35%, $color_8);
-								    -webkit-background: linear-gradient(to bottom, $color_3 35%, $color_8);
-								    background: linear-gradient(to bottom, $color_3 35%, $color_8);
-
-							    	-moz-box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
-							    	-webkit-box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
-							    	-o-box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
-							    	box-shadow: 0px 8px 20px -5px rgba(0,0,0,0.35);
-							    }
-
-							}
+							
 						}
 					}
 					/* & .Navigation--subMenu{

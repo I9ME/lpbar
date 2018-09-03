@@ -2284,12 +2284,17 @@ FOOTER .Site--foter .Section--footerContent
 
 		& .SocialMediaBar{
 			& a{
-				&:hover{
-					& .FigureIcon{
-						margin-left: -30px; 
+				margin-left: -1px;
+			}
+
+			@media screen and (min-width: $break-sm){
+				& a{
+					&:hover{
+						& .FigureIcon{
+							margin-left: -30px; 
+						}
 					}
 				}
-				margin-left: -1px;
 			}
 			
 			@media screen and (max-width: $break-sm){

@@ -12,7 +12,7 @@
 											<use xlink:href="#iconFacebook"></use>
 										</svg>
 								 	</i>
-									<p class="Section-items-item-resume">/baneys</p>
+									<p class="Section-items-item-resume">/barneysburger</p>
 								</div>
 								<figure class="FigureIcon SocialMediaBg SocialMediaBg--facebook u-displayBlock is-animating"></figure>
 						</a>
@@ -25,7 +25,7 @@
 											<use xlink:href="#iconInstagram"></use>
 										</svg>
 								 	</i>
-									<p class="Section-items-item-resume">@barneys</p>
+									<p class="Section-items-item-resume">@barneysburger</p>
 								</div>
 								<figure class="FigureIcon SocialMediaBg SocialMediaBg--facebook u-displayBlock is-animating"></figure>
 						</a>
