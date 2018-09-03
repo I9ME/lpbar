@@ -25,9 +25,9 @@
 			</a>
 		</li>
 		<li class="Navigation-items-item Item u-flex u-flexAlignCenter is-animating">
-			<a href="https://www.tripadvisor.com.br/" target="_blank" class="u-displayInlineBlock u-lineHeight0">
-				<svg class="SocialBar-item-icon u-icon iconTripadvisor u-displayInlineBlock is-animating">
-						<use xlink:href="#iconTripadvisor"></use>
+			<a href="https://www.youtube.com/" target="_blank" class="u-displayInlineBlock u-lineHeight0">
+				<svg class="SocialBar-item-icon u-icon iconYoutube u-displayInlineBlock is-animating">
+						<use xlink:href="#iconYoutube"></use>
 				</svg>
 			</a>
 		</li>

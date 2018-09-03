@@ -1,7 +1,7 @@
 <?php if( is_home() || is_front_page() ) { ?>
-<section id="up" class="Section--intro Intro Intro--home Section--style1 u-positionRelative">
+<section id="up" class="Section Section--intro Intro Intro--home Section--style1 u-positionRelative">
 
-	<div class="Captions u-positionAbsolute u-zIndex2 u-displayFlex u-flexJustifyContentCenter u-paddingVertical--inter--px u-flexDirectionColumn u-flexAlignItemsCenter">	
+	<div class="Captions FormMail u-positionAbsolute u-zIndex2 u-displayFlex u-flexJustifyContentCenter u-paddingVertical--inter--px u-flexDirectionColumn u-flexAlignItemsCenter">	
 			<h1 class="Captions-title u-alignCenter">
 				<span class="Captions-title--line1 u-displayBlock u-sizeFull">Tem fome de</span>
 				<em class="Captions-title--line2 u-displayBlock u-sizeFull u-lineHeightNormal">

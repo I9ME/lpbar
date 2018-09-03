@@ -10,7 +10,7 @@
 		<span class="u-isOut">MENU</span>
 	</i>
 </a>
-<div class="ElementImg--bgNav--menu u-displayBlock u-absoluteMiddle u-onlyMobile"></div>
+<div class="ElementImg--bgNav--menu u-displayBlock u-absoluteMiddle"></div>
 
 <nav id="MainNavigation-container" class="Navigation Navigation--menu u-sizeFull u-flex1 Navigation--menu--main Navigation--menu--style2 is-animating u-isCollapsed u-contentHide u-contentHide--height u-flexJustifyContentFlexEnd u-zIndex20" role="navigation" aria-label="">
 	<ul class="Navigation-items Navigation-items--level1 u-alignCenter u-sizeFull u-marginTop--inter is-animating">

@@ -12,18 +12,19 @@
 	flex-direction: row;
 }
 .owl-dot{
-	width: 25px;
-	height: 25px;
-	border-radius: 25px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
 	margin: 0 5px;
-	background: rgba(0,0,0,0.15) !important;
+	background: none !important;
+	border: 2px solid rgba(0,0,0,0.5) !important;
+
 	&.active{
 		background: rgba(0,0,0,0.5) !important;
 	}
 	@media screen and (min-width: $break-sm){
-		width:15px;
-		height: 15px;
-		border-radius: 15px;
+		width: 22px;
+		height: 22px;
 	}
 }
 
