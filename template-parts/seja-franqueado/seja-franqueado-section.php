@@ -17,7 +17,7 @@
 		</header>
 
 		<div class="Section-content u-sizeFull u-paddingVertical u-alignCenterBox u-marginTop--inter u-marginBottom">
-			<form class="Form Form--style1 Form--rounded u-size12of24 u-sizeFull validate" action="https://barneysburger.us17.list-manage.com/subscribe/post?u=013c7607f1ef642ea1ee3653c&amp;id=8550e63be3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+			<form class="Form Form--style1 Form--rounded u-size12of24 u-sizeFull validate" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div id="mc_embed_signup_scroll">
 					<fieldset class="Form-fieldset u-sizeFull u-displayFlex u-flexDirectionColumn">
 						<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">
@@ -215,7 +215,7 @@
 					Solicite um atendimento comercial, agora.
 				</p>
 			</div>
-			<form class="Form Form--style1 Form--rounded u-size12of24 u-sizeFull validate" action="https://barneysburger.us17.list-manage.com/subscribe/post?u=013c7607f1ef642ea1ee3653c&amp;id=8550e63be3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+			<form class="Form Form--style1 Form--rounded u-size12of24 u-sizeFull validate" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div id="mc_embed_signup_scroll">
 					<fieldset class="Form-fieldset u-sizeFull u-displayFlex u-flexDirectionColumn">
 						<div class="Form-row u-sizeFull u-positionRelative u-displayFlex u-flexDirectionColumn u-flexSwitchRow">

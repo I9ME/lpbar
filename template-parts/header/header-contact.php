@@ -16,14 +16,14 @@
 				<svg class="SocialBar-item-icon u-icon iconPhone u-displayInlineBlock">
 					<use xlink:href="#iconPhone"></use>
 				</svg>
-				<span class="Value u-marginLeft--inter--half--px">(85) 3267-9450</span>
+				<span class="Value u-marginLeft--inter--half--px">(85) 3333-3333</span>
 			</a>
 			<?php else: ?>
 
 				<svg class="SocialBar-item-icon u-icon iconPhone u-displayInlineBlock">
 					<use xlink:href="#iconPhone"></use>
 				</svg>
-				<span class="Value">(85) 3267-9450</span>
+				<span class="Value">(85) 3333-3333</span>
 
 			<?php endif; ?>
 			

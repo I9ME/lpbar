@@ -2227,28 +2227,11 @@ FOOTER .Site--foter .Section--footerContent
 					}
 				}
 			}
-			&-content{
-					padding-bottom: 114px;
-					top: -12px;
-					@media screen and (min-width: $break-sm){
-						top: -20px;
-						padding-bottom: 164px;
-					}
-					&--formSpace{
-						border-bottom: 1px solid $color_6;
-						& .Form{
-							max-width: 400px !important;
-						}
-					}
-			}
 			&-items{
 				    box-shadow: 0px 33px 40px -15px rgba(0,0,0,0.35); 
 				&-item{
-					background-image: url(../images/texture.png);
-					background-size: cover;
+					
 
-					/*padding-top: 65px;
-					padding-bottom: 65px;*/
 					a{
 						color: white;
 					}
@@ -2259,9 +2242,14 @@ FOOTER .Site--foter .Section--footerContent
 				&--contact{
 					&-item{
 						&-resume{
-							color: $color_11;
 							font-weight: bolder;
 							font-size: 15px;
+						}
+						& svg{
+							font-size: 18px;
+						}
+						&.Phone{
+							color: $color_2;	
 						}
 					}
 				}
@@ -2291,6 +2279,17 @@ FOOTER .Site--foter .Section--footerContent
 			}
 			&:after{
 				right: 0px;
+			}
+		}
+
+		& .SocialMediaBar{
+			& a{
+				&:hover{
+					& .FigureIcon{
+						margin-left: -30px; 
+					}
+				}
+				margin-left: -1px;
 			}
 		}
 

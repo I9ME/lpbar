@@ -2036,35 +2036,8 @@ FOOTER .Site--foter .Section--footerContent
   }
 }
 
-.Section--footerContent .Section-content {
-  padding-bottom: 114px;
-  top: -12px;
-}
-
-@media screen and (min-width: 768px) {
-  .Section--footerContent .Section-content {
-    top: -20px;
-    padding-bottom: 164px;
-  }
-}
-
-.Section--footerContent .Section-content--formSpace {
-  border-bottom: 1px solid #e2c6aa;
-}
-
-.Section--footerContent .Section-content--formSpace .Form {
-  max-width: 400px !important;
-}
-
 .Section--footerContent .Section-items {
   box-shadow: 0px 33px 40px -15px rgba(0, 0, 0, 0.35);
-}
-
-.Section--footerContent .Section-items-item {
-  background-image: url(../images/texture.png);
-  background-size: cover;
-  /*padding-top: 65px;
-					padding-bottom: 65px;*/
 }
 
 .Section--footerContent .Section-items-item a {
@@ -2076,9 +2049,16 @@ FOOTER .Site--foter .Section--footerContent
 }
 
 .Section--footerContent .Section-items--contact-item-resume {
-  color: #000000;
   font-weight: bolder;
   font-size: 15px;
+}
+
+.Section--footerContent .Section-items--contact-item svg {
+  font-size: 18px;
+}
+
+.Section--footerContent .Section-items--contact-item.Phone {
+  color: #9d0a0e;
 }
 
 .Section--footerContent .Form-row {
@@ -2104,6 +2084,14 @@ FOOTER .Site--foter .Section--footerContent
 
 .Section--footerContent .LogoFooter:after {
   right: 0px;
+}
+
+.Section--footerContent .SocialMediaBar a {
+  margin-left: -1px;
+}
+
+.Section--footerContent .SocialMediaBar a:hover .FigureIcon {
+  margin-left: -30px;
 }
 
 .Section--locais {
@@ -4872,6 +4860,12 @@ th.u-isShown {
   right: -80px;
 }
 
+@media screen and (min-width: 960px) {
+  .ElementImg--bgNav--menu {
+    display: none !important;
+  }
+}
+
 /* @custom-media --lg-viewport (min-width: 960px);
 @custom-media --md-viewport (min-width: 768px);
 @custom-media --sm-viewport (min-width: 480px);
@@ -6826,35 +6820,35 @@ th.u-isShown {
 
 .ElementImg--bgLogo {
   background-image: url(../images/sprite.png);
-  background-position: -2059px -1485px;
+  background-position: -1396px -1488px;
   width: 225px;
   height: 66px;
 }
 
 .ElementImg--bgNav--menu {
   background-image: url(../images/sprite.png);
-  background-position: -987px -821px;
+  background-position: -1638px -1953px;
   width: 160px;
   height: 58px;
 }
 
 .FigureIcon--200mil {
   background-image: url(../images/sprite.png);
-  background-position: -987px -707px;
+  background-position: -2181px -1414px;
   width: 165px;
   height: 114px;
 }
 
 .FigureIcon--28meses {
   background-image: url(../images/sprite.png);
-  background-position: -1152px -707px;
+  background-position: -1449px -2024px;
   width: 121px;
   height: 114px;
 }
 
 .FigureIcon--80mil {
   background-image: url(../images/sprite.png);
-  background-position: -1878px -1599px;
+  background-position: -1462px -707px;
   width: 134px;
   height: 120px;
 }
@@ -6866,93 +6860,100 @@ th.u-isShown {
   height: 354px;
 }
 
+.FigureIcon--barneysLogo {
+  background-image: url(../images/sprite.png);
+  background-position: -1330px -2144px;
+  width: 98px;
+  height: 98px;
+}
+
 .FigureIcon--hamburger {
   background-image: url(../images/sprite.png);
-  background-position: -1273px -707px;
+  background-position: -1570px -2024px;
   width: 120px;
   height: 114px;
 }
 
 .FigureIcon--history {
   background-image: url(../images/sprite.png);
-  background-position: -2367px -1414px;
+  background-position: -2365px -1414px;
   width: 15px;
   height: 21px;
 }
 
 .FigureIcon--network {
   background-image: url(../images/sprite.png);
-  background-position: -1878px -1719px;
+  background-position: -2235px -1765px;
   width: 124px;
   height: 126px;
 }
 
 .FigureIcon--newsletter {
   background-image: url(../images/sprite.png);
-  background-position: -1604px -707px;
+  background-position: -1634px -1189px;
   width: 53px;
   height: 50px;
 }
 
 .FigureIcon--photos {
   background-image: url(../images/sprite.png);
-  background-position: -2059px -1551px;
+  background-position: -1702px -1580px;
   width: 20px;
   height: 18px;
 }
 
 .FigureIcon--report {
   background-image: url(../images/sprite.png);
-  background-position: -2012px -1599px;
+  background-position: -1330px -2024px;
   width: 119px;
   height: 120px;
 }
 
 .FigureIcon--send {
   background-image: url(../images/sprite.png);
-  background-position: -2284px -1485px;
+  background-position: -2181px -1528px;
   width: 85px;
   height: 52px;
 }
 
 .FigureIcon--trofeu {
   background-image: url(../images/sprite.png);
-  background-position: -1393px -707px;
+  background-position: -1690px -2024px;
   width: 117px;
   height: 114px;
 }
 
 .FigureIcon--video {
   background-image: url(../images/sprite.png);
-  background-position: -1604px -757px;
+  background-position: -1462px -827px;
   width: 46px;
   height: 36px;
 }
 
 .FigureIcon--videos {
   background-image: url(../images/sprite.png);
-  background-position: -2284px -1537px;
+  background-position: -2365px -1435px;
   width: 17px;
   height: 13px;
 }
 
 .ImgFigure--flyer--biColor {
   background-image: url(../images/sprite.png);
-  background-position: -1510px -707px;
+  background-position: -1596px -707px;
   width: 94px;
   height: 106px;
 }
 
 .ImgFigure--flyer--vert {
   background-image: url(../images/sprite.png);
-  background-position: -2131px -1599px;
+  background-position: 0px -2263px;
   width: 76px;
   height: 119px;
 }
 
 .ImgFigure--flyer {
   background-image: url(../images/sprite.png);
-  background-position: -1396px -1488px;
+  background-position: -1807px -2024px;
   width: 107px;
   height: 92px;
 }
@@ -6973,7 +6974,7 @@ th.u-isShown {
 
 .ImgFigure--main--barneys {
   background-image: url(../images/sprite.png);
-  background-position: -715px -892px;
+  background-position: -1702px 0px;
   width: 681px;
   height: 707px;
 }
@@ -6987,7 +6988,7 @@ th.u-isShown {
 
 .ImgFigure--main--depoimentoSample {
   background-image: url(../images/sprite.png);
-  background-position: -1702px 0px;
+  background-position: -715px -892px;
   width: 681px;
   height: 707px;
 }
@@ -7008,56 +7009,56 @@ th.u-isShown {
 
 .ImgFigure--topLeftDirection {
   background-image: url(../images/sprite.png);
-  background-position: -987px 0px;
+  background-position: 0px -892px;
   width: 715px;
   height: 707px;
 }
 
 .ImgFigure--topRightDirection {
   background-image: url(../images/sprite.png);
-  background-position: 0px -892px;
+  background-position: -987px 0px;
   width: 715px;
   height: 707px;
 }
 
 .Intro--nameVignoli {
   background-image: url(../images/sprite.png);
-  background-position: -2059px -1414px;
+  background-position: -1330px -1953px;
   width: 308px;
   height: 71px;
 }
 
 .LogoBase {
   background-image: url(../images/sprite.png);
-  background-position: -1702px -1414px;
+  background-position: -1878px -1765px;
   width: 357px;
   height: 155px;
 }
 
 .ShadowBox--bottom {
   background-image: url(../images/sprite.png);
-  background-position: -1702px -1569px;
+  background-position: -1396px -1554px;
   width: 293px;
   height: 30px;
 }
 
 .ShadowBox--tabLeft--footer {
   background-image: url(../images/sprite.png);
-  background-position: -1995px -1569px;
+  background-position: -2266px -1528px;
   width: 113px;
   height: 26px;
 }
 
 .ShadowBox--tabLeft {
   background-image: url(../images/sprite.png);
-  background-position: -1682px -1005px;
+  background-position: -2346px -1414px;
   width: 19px;
   height: 113px;
 }
 
 .ShadowBox--tabRight--footer {
   background-image: url(../images/sprite.png);
-  background-position: -2108px -1569px;
+  background-position: -2266px -1554px;
   width: 113px;
   height: 26px;
 }
@@ -7069,9 +7070,30 @@ th.u-isShown {
   height: 113px;
 }
 
+.SocialMediaBg--facebook {
+  background-image: url(../images/sprite.png);
+  background-position: -987px -707px;
+  width: 475px;
+  height: 166px;
+}
+
+.SocialMediaBg--instagram {
+  background-image: url(../images/sprite.png);
+  background-position: -1702px -1414px;
+  width: 479px;
+  height: 166px;
+}
+
+.SocialMediaBg--youtube {
+  background-image: url(../images/sprite.png);
+  background-position: -1878px -1599px;
+  width: 474px;
+  height: 166px;
+}
+
 .borderBox--gadient {
   background-image: url(../images/sprite.png);
-  background-position: -2079px -1551px;
+  background-position: -1722px -1580px;
   width: 290px;
   height: 1px;
 }

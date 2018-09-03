@@ -645,4 +645,8 @@
 
 .ElementImg--bgNav--menu{
 	right: -80px;
+	
+	@media screen and (min-width: $break-md){
+		display: none !important;
+	}
 }

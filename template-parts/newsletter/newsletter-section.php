@@ -5,7 +5,7 @@
 </header>
 			<div class="Section-content--formSpace FormMail u-size24of24 u-displayFlex u-flexJustifyContentCenter u-flexDirectionColumn u-paddingBottom--inter">
 
-				<form class="Form FormMail Form--style2 Form--modal Form--modal--franqueado u-marginTop--inter u-sizeFull" action="javascript:LightboxCall('<?php echo get_home_url(); ?>/form-franqueado/?action=open-modal','modal');">
+				<form class="Form FormMail Form--style2 Form--modal Form--modal--franqueado u-sizeFull" action="javascript:LightboxCall('<?php echo get_home_url(); ?>/form-franqueado/?action=open-modal','modal');">
 				<fieldset class="Form-fieldset u-alignCenter">
 					<div class="Form-row u-positionRelative Form-row--email u-displayInlineFlex u-flexDirectionRow u-flexJustifyContentCenter u-flexAlignItemsCenter">
 						<div class="Form-coll u-displayFlex u-flexAlignItemsCenter">
