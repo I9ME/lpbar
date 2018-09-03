@@ -2090,8 +2090,16 @@ FOOTER .Site--foter .Section--footerContent
   margin-left: -1px;
 }
 
-.Section--footerContent .SocialMediaBar a:hover .FigureIcon {
-  margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .Section--footerContent .SocialMediaBar a:hover .FigureIcon {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Section--footerContent .SocialMediaBar .SocialMediaBg {
+    width: 100%;
+  }
 }
 
 .Section--locais {
@@ -4364,10 +4372,15 @@ th.u-isShown {
   .Navigation--menu .Navigation--menu--contactPoints {
     height: auto !important;
     margin: 0px 0px 0px 2.5% !important;
+    position: absolute;
+    top: -3px !important;
   }
   .Navigation--menu .Navigation--menu--contactPoints .Item {
     margin: 0px 5px;
     padding: 0px;
+  }
+  .Navigation--menu .Navigation--menu--contactPoints.SocialMedias {
+    right: 0%;
   }
   .Navigation--menu .Navigation--menu--contactPoints.SocialMedias svg {
     font-size: 20px;
@@ -4380,6 +4393,7 @@ th.u-isShown {
     color: #FFFFFF;
     min-width: 130px;
     border: none;
+    right: 100px;
   }
   .Navigation--menu .Navigation--menu--contactPoints.Contacts svg {
     font-size: 14px;
@@ -4488,9 +4502,32 @@ th.u-isShown {
 }
 
 .Navigation--menu--style2 .Navigation-items-item .NavigationLink {
-  color: #f3ad13;
+  color: #9d0a0e;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 22px;
+}
+
+.Navigation--menu--style2 .Navigation-items-item .NavigationLink.ButtonLink--nav {
+  color: #9d0a0e;
+  moz-background: linear-gradient(to bottom, #f3ad13 35%, #f38713);
+  -webkit-background: linear-gradient(to bottom, #f3ad13 35%, #f38713);
+  background: linear-gradient(to bottom, #f3ad13 35%, #f38713);
+  border: 1px solid #f3ad13;
+  -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+}
+
+.Navigation--menu--style2 .Navigation-items-item .NavigationLink.ButtonLink--nav:hover {
+  color: #FFFFFF;
+  moz-background: linear-gradient(to bottom, #f3ad13 35%, #c15f08);
+  -webkit-background: linear-gradient(to bottom, #f3ad13 35%, #c15f08);
+  background: linear-gradient(to bottom, #f3ad13 35%, #c15f08);
+  -moz-box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
 }
 
 @media screen and (min-width: 960px) {
@@ -4524,27 +4561,6 @@ th.u-isShown {
   }
   .Navigation--menu--style2 .Navigation-items-item .NavigationLink:hover {
     color: #f3ad13;
-  }
-  .Navigation--menu--style2 .Navigation-items-item .NavigationLink.ButtonLink--nav {
-    color: #9d0a0e;
-    moz-background: linear-gradient(to bottom, #f3ad13 35%, #f38713);
-    -webkit-background: linear-gradient(to bottom, #f3ad13 35%, #f38713);
-    background: linear-gradient(to bottom, #f3ad13 35%, #f38713);
-    border: 1px solid #f3ad13;
-    -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-    -o-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
-  }
-  .Navigation--menu--style2 .Navigation-items-item .NavigationLink.ButtonLink--nav:hover {
-    color: #FFFFFF;
-    moz-background: linear-gradient(to bottom, #f3ad13 35%, #c15f08);
-    -webkit-background: linear-gradient(to bottom, #f3ad13 35%, #c15f08);
-    background: linear-gradient(to bottom, #f3ad13 35%, #c15f08);
-    -moz-box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
-    -o-box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 8px 20px -5px rgba(0, 0, 0, 0.35);
   }
 }
 
