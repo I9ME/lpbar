@@ -2,10 +2,10 @@
 
 	<div class="Section-content u-positionRelative u-sizeFull u-flexAlignItemsCenter u-flexJustifyContentCenter">
 		<div class="u-positionRelative Section-content u-marginTop--inter u-displayFlex u-size24of24 u-flexAlignItemsCenter u-flexJustifyContentCenter">
-			<div class="u-maxSize--container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-positionRelative">
-				<ul class="Section-items SocialMediaBar u-displayFlex u-flexJustifyContentCenter u-positionRelative u-flexFollowSize u-sizeFull">
+			<div class="u-maxSize--container u-alignCenterBox u-sizeFull u-displayFlex u-flexDirectionColumn u-positionRelative">
+				<ul class="Section-items SocialMediaBar u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexJustifyContentCenter u-positionRelative u-flexFollowSize u-sizeFull">
 					<li class="Section-items-item u-size8of24">
-						<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull u-positionRelative u-overflowHidden" href="#" target="_blank">
+						<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-positionRelative u-overflowHidden" href="#" target="_blank">
 								<div class="u-absoluteCenterMiddle u-displayFlex u-flexAlignItemsCenter is-animating">
 									<i class="FigureIcon u-marginRight--inter u-lineHeight0 is-animating">
 										<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
@@ -14,11 +14,11 @@
 								 	</i>
 									<p class="Section-items-item-resume">/baneys</p>
 								</div>
-								<figure class="FigureIcon SocialMediaBg--facebook u-displayBlock is-animating"></figure>
+								<figure class="FigureIcon SocialMediaBg SocialMediaBg--facebook u-displayBlock is-animating"></figure>
 						</a>
 					</li>
 					<li class="Section-items-item u-size8of24">
-						<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull u-positionRelative u-overflowHidden" href="#" target="_blank">
+						<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-positionRelative u-overflowHidden" href="#" target="_blank">
 								<div class="u-absoluteCenterMiddle u-displayFlex u-flexAlignItemsCenter is-animating">
 									<i class="FigureIcon u-marginRight--inter u-lineHeight0 is-animating">
 										<svg class="SocialBar-item-icon u-icon iconFacebook u-displayInlineBlock is-animating">
@@ -27,11 +27,11 @@
 								 	</i>
 									<p class="Section-items-item-resume">@barneys</p>
 								</div>
-								<figure class="FigureIcon SocialMediaBg--facebook u-displayBlock is-animating"></figure>
+								<figure class="FigureIcon SocialMediaBg SocialMediaBg--facebook u-displayBlock is-animating"></figure>
 						</a>
 					</li>
 					<li class="Section-items-item u-size8of24">
-						<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-heightFull u-positionRelative u-flexAlignItemsCenter u-overflowHidden" href="#" target="_blank">
+						<a class="u-displayFlex u-flexDirectionColumn u-flexSwitchRow u-flexAlignItemsCenter u-flexJustifyContentCenter u-positionRelative u-flexAlignItemsCenter u-overflowHidden" href="#" target="_blank">
 								<div class="u-absoluteCenterMiddle u-displayFlex u-flexAlignItemsCenter is-animating">
 									<i class="FigureIcon u-marginRight--inter u-lineHeight0 is-animating">
 										<svg class="SocialBar-item-icon u-icon iconYoutube u-displayInlineBlock is-animating">
@@ -40,7 +40,7 @@
 								 	</i>
 									<p class="Section-items-item-resume">/barneysburger</p>
 								</div>
-								<figure class="FigureIcon SocialMediaBg--facebook u-displayBlock is-animating"></figure>
+								<figure class="FigureIcon SocialMediaBg SocialMediaBg--facebook u-displayBlock is-animating"></figure>
 						</a>
 					</li>
 				</ul>

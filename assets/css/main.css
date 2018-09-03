@@ -2094,6 +2094,12 @@ FOOTER .Site--foter .Section--footerContent
   margin-left: -30px;
 }
 
+@media screen and (max-width: 768px) {
+  .Section--footerContent .SocialMediaBar .SocialMediaBg {
+    width: 100%;
+  }
+}
+
 .Section--locais {
   background: #f9ebd9;
 }

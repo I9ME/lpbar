@@ -2291,6 +2291,12 @@ FOOTER .Site--foter .Section--footerContent
 				}
 				margin-left: -1px;
 			}
+			
+			@media screen and (max-width: $break-sm){
+				& .SocialMediaBg{
+					width: 100%;
+				}	
+			}
 		}
 
 	}
