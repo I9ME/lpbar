@@ -23,10 +23,10 @@
 
 	
 <div id="page" class="Site">
-	<header id="masthead" class="Site-header u-positionAbsolute u-sizeFull u-paddingVertical u-paddingHorizontal--inter is-animating u-zIndex20">
-		<div class="u-maxSize--container u-alignCenterBox u-alignCenter u-displayFlex">
+	<header id="masthead" class="Site-header u-sizeFull u-paddingVertical u-lineHeight0 is-animating u-zIndex20">
+		<div class="u-maxSize--container u-alignCenterBox u-alignCenter u-displayFlex u-flexJustifyContentSpaceBetween">
 			<!-- Logo do site -->
-			<div class="Site-header-branding u-positionRelative"> 
+			<div class="Site-header-branding u-positionRelative u-displayInlineBlock"> 
 				<?php  get_template_part('template-parts/header/header','branding');?>
 			</div>
 			<!-- Menu de Navegação -->

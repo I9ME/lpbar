@@ -28,6 +28,21 @@
 .u-borderRadius50{
 	border-radius: 50px;
 }
+.u-borderRadius60{
+	border-radius: 60px;
+}
+.u-borderRadius70{
+	border-radius: 70px;
+}
+.u-borderRadius80{
+	border-radius: 80px;
+}
+.u-borderRadius90{
+	border-radius: 90px;
+}
+.u-borderRadius100{
+	border-radius: 100px;
+}
 .u-boxShadow{
 	box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.25);
 	&--hover{
@@ -41,27 +56,27 @@
 			&:hover{
 				box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
 			}
-		}	
+		}
 	}
 	&--clean{
 		-moz-box-shadow: 0px 5px 45px -10px rgba(0,0,0,0.25);
 		-webkit-box-shadow: 0px 5px 45px -10px rgba(0,0,0,0.25);
 		box-shadow: 0px 5px 45px -10px rgba(0,0,0,0.25);
 		&--bottom{
-			-moz-box-shadow: 0px 22px 45px -10px rgba(0,0,0,0.15);
-			-webkit-box-shadow: 0px 22px 45px -10px rgba(0,0,0,0.15);
-			box-shadow: 0px 22px 45px -10px rgba(0,0,0,0.15);
+			-moz-box-shadow: 0px 15px 60px -10px rgba(0,0,0,0.15);
+			-webkit-box-shadow: 0px 15px 60px -10px rgba(0,0,0,0.15);
+			box-shadow: 0px 15px 65px -5px rgba(0,0,0,0.15);
 		}
 	}
 }
 .u-onlyMobile{
-	@media screen and (min-width: $break-md){
+	@media screen and (min-width: $break-sm){
 		display: none !important;
 	}
 }
 
 .u-onlyDesktop{
-	@media screen and (max-width: $break-md){
+	@media screen and (max-width: $break-sm){
 		display: none !important;
 	}
 }

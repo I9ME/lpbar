@@ -27,12 +27,6 @@
   visibility: hidden !important;
 }
 
-.u-isHidden--orcamento{
-  opacity: 0 !important;
-  visibility: hidden !important;
-  height: 0px;
-  overflow: hidden;
-}
 /**
  * Display a hidden-by-default element.
  */
@@ -84,6 +78,38 @@ th.u-isShown {
 
 .u-isVisible {
   visibility: visible !important;
+}
+
+.u-opacity10{
+  opacity: 0.1;
+}
+.u-opacity20{
+  opacity: 0.2;
+}
+.u-opacity30{
+  opacity: 0.3;
+}
+.u-opacity40{
+  opacity: 0.4;
+}
+.u-opacity50{
+  opacity: 0.5;
+}
+
+.u-opacity60{
+  opacity: 0.6;
+}
+.u-opacity70{
+  opacity: 0.7;
+}
+.u-opacity80{
+  opacity: 0.8;
+}
+.u-opacity90{
+  opacity: 0.9;
+}
+.u-opacity100{
+  opacity: 1;
 }
 
 .Navigation--menu{
@@ -402,6 +428,7 @@ body.u-isScrollOff{
 }
 .u-isScrollOn{
 
+
   .Site{
     &:after{
    opacity: 1;
@@ -428,11 +455,64 @@ body.u-isScrollOff{
     }
   }
   & .Site-header{
-      position:fixed !important;
-      padding-top:15px !important;
-      padding-bottom:15px !important;
-      background: $color_1;
-      box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+
+     background: $color_1;
+    -moz-box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.20);
+    -o-box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.20);
+    box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.20);
+
+    /* padding-top: $v_spacing / 6;
+    padding-bottom: $v_spacing / 6; */
+
+    @media screen and (min-width: $break-md){
+
+
+      & .Navigation{
+        &-items{
+          //justify-content: center;
+        }
+
+      &--menu--contactPoints{
+
+       &.SocialMedias{
+            & svg{
+              color: $color_2;
+              &:hover{
+                color: $color_11;
+              }
+            } 
+          }
+          &.Contacts{
+            color: $color_11;
+            & svg{
+            }
+            & .Value{
+              color: $color_11;
+            } 
+          }
+        }
+      }
+
+    }
+     
+
+    & .NavigationLink{
+        color: $color_2 !important;
+        &.ButtonLink--nav{
+          // color: $color_2 !important;
+          &:hover{
+            color: $color_1 !important;
+          }
+        }
+      }
+     
+
+      @media screen and (min-width: $break-sm){
+        position: fixed;
+        padding-top: $v_spacing / 4;
+        padding-bottom: $v_spacing / 4;
+      }
   }
   & .Branding--img:first-child{
     display: none;
@@ -440,24 +520,7 @@ body.u-isScrollOff{
   & .Branding--img:last-child{
     display: block;
   }
-  & .Navigation{
-   
-    &--menu{
-      &--main{
-        top: 55px !important;
-      }
-    }
-  }
-
  
-  
-  & .Site-header .ButtonLink--nav.NavigationLink{
-      border-color: $color_2;
-      // color: $color_2 !important;
-      &:hover{
-        color: $color_1 !important;
-      }
-  }
 
   & .Intro--blog-headerBar{
     position: fixed;

@@ -34,6 +34,14 @@
 	top: 50% !important;
 	transform: translateX(-50%) translateY(-50%) !important;
 }
+
+.u-absoluteRightMiddle{
+	position: absolute;
+	right: 0px !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+}
+
 .u-absoluteLeftMiddle{
 	position: absolute;
 	left: 0px !important;
@@ -50,11 +58,28 @@
 	top: 0px;
 	left: 0px;
 }
+.u-absoluteTopRight{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
 
 .u-absoluteTopCenter{
 	position: absolute;
 	left: 50% !important;
 	top: 0px !important;
+	transform: translateX(-50%) !important;
+}
+
+.u-absoluteTop{
+	position: absolute;
+	top: 0px !important;
+}
+
+.u-absoluteBottomCenter{
+	position: absolute;
+	left: 50% !important;
+	bottom: 0px !important;
 	transform: translateX(-50%) !important;
 }
 

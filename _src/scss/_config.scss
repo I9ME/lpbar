@@ -6,23 +6,23 @@
 //== colors tests =================
 
 $color_1: #FFFFFF;
-$color_2: #6e1b1d; //Vinho
-$color_3: #b8252b; // vermelho
-$color_4: #63974d; // Verde
-$color_5: #edeae3; // Off 
-$color_6: #ab696b; // Vinho Claro
-$color_7: #BBBBBB; //Cinza Médio
-$color_8: #e9e9e9; // cinza claro
+$color_2: #9d0a0e; // Vermelho Barneys
+$color_3: #f3ad13; // Amarelo Barneys
+$color_4: #7c1e1f; // Vermelho Escuro
+$color_5: #f7eadd; // Vermelho Claro 1 
+$color_6: #e2c6aa; // Vemelho Claro 2
+$color_7: #f38713; // Laranja
+$color_8: #c15f08; // Laranja Escuro
 $color_9: #999999; // Cinza Médio 2
 $color_10: #555555; // Cinza Escuro
 $color_11: #000000; // Preto
 $color_12: #44752f; // verde escuro
-$color_13: #deffaf; // verde claro
+$color_13: #EEEEEE; // verde claro
 $color_14: #DDDDDD; // Cinza Claro 2
 $color_15: #d4cbaf; // Verde opaco claro
 $color_16: #d2c6aa; //BEGE claro
 $color_17: #167614; //Verde escuro botão
-$color_18: #3A9018; //Verde claro botão
+$color_18: #56a256; //Verde
 $color_19: #a18c59; //Bege escuro
 $color_20: #f9ebd9; //Cor da section locais
 
@@ -35,11 +35,12 @@ $cor_lilas: #4f4872;
 $cor_yellow: #feb933;
 
 //Fonts
-$fontFamily: "Cambria";
-$font_size_text: 16px;
-$font_size_title_section: 30px;
+$fontFamily: "Raleway";
+$font_size_text: 15px;
+$font_size_title_section: 32px;
+$font_size_title_section_m: 26px;
 $font_size_subtitle_section: 22px;
-$font_size_title_item: 18px;
+$font_size_title_item: 16px;
 $font_size_subtitle_item: 16px;
 $line_height: 120%;
 
@@ -47,7 +48,7 @@ $line_height: 120%;
 //== Layout =====================
 //Regular Content
 $h_spacing: 4.166666666666667%;
-$v_spacing: 45px;
+$v_spacing: 37.5px;
 
 //== Sizes =====================
 
@@ -57,7 +58,7 @@ $sizeColumns: 4.166666666666667%;
 $sizeColumns_px: 50px;
 
 //customizer
-$header_height_m: 74px;
+$header_height_m: 100px;
 $header_height: $header_height_m * 1.25;
 
 
@@ -73,7 +74,7 @@ $header_height: $header_height_m * 1.25;
 // Variables in queries
 //==============================
 
-
+$break-xs: 480px;
 $break-sm: 768px;
 $break-md: 960px;
 $break-lg: 1200px;

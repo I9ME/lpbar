@@ -11,11 +11,12 @@ jQuery(function($) {
 //
 var hostname = location.hostname;
 if ( hostname == 'localhost' ) {
-    url = 'http://localhost/vignoli';
+    url = 'http://localhost/barneys/franquia';
 } else {
     url = 'http://'+hostname+'/franquia';
 }
 
+/*
 window.onload = function() {
 
 
@@ -31,7 +32,7 @@ window.onload = function() {
         //Inserindo imagens secudárias
         $('.Section--aFranquia #tabImage-2.Subsection-imageMain[data-img-src]').each(function(){
           var src = $(this).attr('data-img-src');
-          $('<img>').attr('src', url+'/wp-content/themes/lpvigno/assets/images/'+src).appendTo('.Section--aFranquia .Section-subSection #tabImage-2').addClass('Subsection-imageMain-src u-maxSize100 is-animating');
+          $('<img>').attr('src', url+'/wp-content/themes/lpbar/assets/images/'+src).appendTo('.Section--aFranquia .Section-subSection #tabImage-2').addClass('Subsection-imageMain-src u-maxSize100 is-animating');
         });
 
         
@@ -43,9 +44,9 @@ window.onload = function() {
     //$('#afranquia #tabImage-1.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza'+mobile+'.png" />');
     //$('#afranquia #tabImage-2.Subsection-imageMain').html('<img class="Subsection-imageMain-src u-maxSize100 is-animating" src="'+url+'/wp-content/themes/lpvigno/assets/images/subSection-mainImage--pizza--expresso'+mobile+'.png" />');
     //$('#onde-estamos .Section-items-figure').html('<img class="u-objectFitCover u-sizeHeight100 u-sizeFull u-displayFlex u-justifyContentCenter u-flexAlignItemsCenter" src="'+url+'/wp-content/themes/lpvigno/assets/images/brazil-pizza--right'+mobile+'.png" />');
-    $('#avignoli').addClass('imgAfter');
+    //$('#avignoli').addClass('imgAfter');
 
-    $('#avignoli .Items--tabs .Item--tab.Item--gallery').load(url+'/galeria-de-fotos/');
+    //$('#avignoli .Items--tabs .Item--tab.Item--gallery').load(url+'/galeria-de-fotos/');
     //$('#avignoli .Gallery--videos').load(url+'/galeria-de-videos/');
 
 
@@ -57,7 +58,7 @@ window.onload = function() {
    //alert('Carregou! ')
    //
 
-};
+};*/
 
 
 
@@ -95,7 +96,7 @@ var title = $(this).find('img').attr('alt');
         
        
 
-        $('html,body').animate({scrollTop:$(this.hash).offset().top - 0}, 1000);
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
 
           if ($(".Navigation--main").hasClass('u-isExpanded')){
             $("#MainNavigation-container, .NavigationButton.NavigationButton--main").removeClass("u-isExpanded")
@@ -137,7 +138,6 @@ var title = $(this).find('img').attr('alt');
 
 
 
-
 // =====================================
 // .ScrollOn
 // Detecta o Movimento da Barra de Rolagem e aplica a classe no body
@@ -146,23 +146,23 @@ var title = $(this).find('img').attr('alt');
 $(window).scroll(function(){
 
 
-     var scroll = jQuery(window).scrollTop();
+     var scroll = $(window).scrollTop();
 
      //Class ScrollOn
      if ( scroll > 0 ) {
-      jQuery('body').addClass('u-isScrollOn');
+
+      $('body').addClass('u-isScrollOn');
 
      } else {
-      jQuery('body').removeClass('u-isScrollOn');
+      $('body').removeClass('u-isScrollOn');
      }
 
-     //Class Fixed
-    /* if ( scroll > 135 ) {
-      jQuery('.Intro--blog-headerBar').addClass('u-isFixed');
+      /*if ( scroll > 300 ) {
+        $('.Intro--home-imageMain .Layer').addClass('LessDesign');
+      } else { 
+        $('.Intro--home-imageMain .Layer').removeClass('LessDesign');
+      }*/
 
-     } else {
-      jQuery('.Intro--blog-headerBar').removeClass('u-isFixed');
-     }*/
 
 });
 
@@ -178,21 +178,35 @@ $(window).scroll(function(){
         $('.u-isScrollFade').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 100;
             var bottom_of_window_ = $(window).scrollTop() + $(window).height();
 
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object && bottom_of_window < bottom_of_object + $(window).height() ){
-                
-                //$(this).animate({'opacity':'1'},500);
-                $(this).addClass('u-isScrollFade--on'); 
-                    
-            } else {
+             if ( $(this).hasClass('is-repeat') ) {
+                 /* If the object is completely visible in the window, fade it it */
+                  if( bottom_of_window > bottom_of_object && bottom_of_window < bottom_of_object + $(window).height() ){
+                      
+                      //$(this).animate({'opacity':'1'},500);
+                      $(this).addClass('u-isScrollFade--on'); 
+                      
 
-               //$(this).removeClass('u-isScrollFade--on'); 
+
+                  } else {
+
+                     $(this).removeClass('u-isScrollFade--on'); 
+                  
+                  } 
+
+             } else {
+
+                if( bottom_of_window > bottom_of_object && bottom_of_window < bottom_of_object + $(window).height() ){
+                  
+                  //$(this).animate({'opacity':'1'},500);
+                  $(this).addClass('u-isScrollFade--on'); 
+                  
+                }
+
+            }
             
-            } 
             
         }); 
     
@@ -298,28 +312,6 @@ $( ".LightboxClose" ).on( "click", LightboxClose );
 
 
 
-// =====================================
-// .ScrollOn
-// Detecta o Movimento da Barra de Rolagem e aplica a classe no body
-// =====================================
-
-$(window).scroll(function(){
-
-
-     var scroll = $(window).scrollTop();
-
-     //Class ScrollOn
-     if ( scroll > 0 ) {
-
-      $('body').addClass('u-isScrollOn');
-
-     } else {
-      $('body').removeClass('u-isScrollOn');
-     }
-
-
-});
-
 
 
     $(document)
@@ -368,14 +360,14 @@ $('#namidia-carousel').owlCarousel({
 $('#videos-carousel').owlCarousel({
     loop:true,
     dots: false,
-    nav: true,
+    nav: false,
     margin: 0,
     responsiveClass: true,
     responsive:{
         0:{
             items:1,
-            
-
+            //dots: true,
+            nav: true,
         },
         768:{
             items:1,
@@ -386,17 +378,42 @@ $('#videos-carousel').owlCarousel({
     }
 });
 
+
+$('#videos-carousel--control').owlCarousel({
+    loop:false,
+    margin:0,
+    dots: false,
+    nav: false,
+    URLhashListener:true,
+    autoplayHoverPause:false,
+    startPosition: 'URLHash',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+         480:{
+            items:2,
+        },
+        768:{
+            items:2,
+        },
+        960:{
+            items:4,
+        }
+    } // Responsive
+
+})
+
 $('#opinioes-carousel').owlCarousel({
     loop:true,
-    dots: false,
-    nav: true,
+    dots: true,
+    nav: false,
     margin: 0,
     responsiveClass: true,
     responsive:{
         0:{
             items:1,
-            
-
         },
         768:{
             items:1,
@@ -444,8 +461,8 @@ $('#parcerias-carousel--control .owl-prev').html('<svg class="Pagination-items-i
 $('#parcerias-carousel--control .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--border u-borderRadius50 u-positionAbsolute is-animating u-isActionable ');
 */
 
-$('#videos-carousel .owl-prev, #opinioes-carousel .owl-prev').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowLeftLine"><use xlink:href="#iconArrowLeftLine"></use></svg>').addClass('navController navController-prev navController--content u-borderRadius5--left is-animating u-isActionable ');
-$('#videos-carousel .owl-next, #opinioes-carousel .owl-next').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowRightLine"><use xlink:href="#iconArrowRightLine"></use></svg>').addClass('navController navController--next navController--content u-borderRadius5--right is-animating u-isActionable ');
+$('#videos-carousel .owl-prev').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowLeftLine"><use xlink:href="#iconArrowLeftLine"></use></svg>').addClass('navController navController--prev navController--content u-borderRadius5--left is-animating u-isActionable ');
+$('#videos-carousel .owl-next').html('<svg class="NavigationButton--controllCarousel u-icon iconArrowRightLine"><use xlink:href="#iconArrowRightLine"></use></svg>').addClass('navController navController--next navController--content u-borderRadius5--right is-animating u-isActionable ');
 
 
 /*
@@ -454,6 +471,23 @@ $('#depoimentos-carousel .owl-prev').html('<svg class="Pagination-items-item-ico
 $('#depoimentos-carousel .owl-next').html('<svg class="Pagination-items-item-icon u-icon iconArrowRight"><use xlink:href="#iconArrowRight"></use></svg>').addClass('navController navController--right navController--next navController--button navController--button--largeSize navController--border u-borderRadius50 is-animating u-marginRight--inter');
 $('#depoimentos-carousel .owl-nav').append('<a class="navController navController--center  navController--all  navController--button  navController--border ReadMore ReadMore--background  Button ButtonLink u-lineHeight0 hover is-animating u-marginRight--inter" href="/cases/"><span class="ShowText">VER TODOS</span></a>');
 */
+
+
+
+// Switch de Ativo / Inativo
+var hashUrl = window.location.hash;
+if( hashUrl != 1 ) {
+  $('#1--ControllLink').removeClass('active');  
+}
+$(hashUrl+'--ControllLink').addClass('active');
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+owl.on('changed.owl.carousel', function(event) {
+    //location.hash = event.property.value;
+  var hashUrl = window.location.hash;
+  $('.Section-navigation-items-item, .Pagination .navController').removeClass('active');
+  $(hashUrl+'--ControllLink').addClass('active');
+})
 
 
 // /*=========================================================================================
