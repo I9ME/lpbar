@@ -180,6 +180,9 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 <symbol id="iconTripadvisor" viewBox="0 0 36 28">
 <path d="M10.172 15.578c0 0.812-0.656 1.469-1.453 1.469-0.812 0-1.469-0.656-1.469-1.469 0-0.797 0.656-1.453 1.469-1.453 0.797 0 1.453 0.656 1.453 1.453zM28.203 15.563c0 0.812-0.656 1.469-1.469 1.469s-1.469-0.656-1.469-1.469 0.656-1.453 1.469-1.453 1.469 0.641 1.469 1.453zM11.953 15.578c0-1.656-1.359-3.016-3.016-3.016-1.672 0-3.016 1.359-3.016 3.016 0 1.672 1.344 3.016 3.016 3.016 1.656 0 3.016-1.344 3.016-3.016zM29.969 15.563c0-1.656-1.344-3.016-3.016-3.016-1.656 0-3.016 1.359-3.016 3.016 0 1.672 1.359 3.016 3.016 3.016 1.672 0 3.016-1.344 3.016-3.016zM13.281 15.578c0 2.406-1.937 4.359-4.344 4.359s-4.359-1.953-4.359-4.359c0-2.391 1.953-4.344 4.359-4.344s4.344 1.953 4.344 4.344zM31.313 15.563c0 2.406-1.953 4.344-4.359 4.344-2.391 0-4.344-1.937-4.344-4.344s1.953-4.344 4.344-4.344c2.406 0 4.359 1.937 4.359 4.344zM16.25 15.609c0-3.984-3.234-7.219-7.219-7.219-3.969 0-7.203 3.234-7.203 7.219s3.234 7.219 7.203 7.219c3.984 0 7.219-3.234 7.219-7.219zM26.688 6.656c-2.578-1.125-5.484-1.734-8.687-1.734s-6.391 0.609-8.953 1.719c4.953 0.016 8.953 4.016 8.953 8.969 0-4.859 3.859-8.813 8.687-8.953zM34.172 15.609c0-3.984-3.219-7.219-7.203-7.219s-7.219 3.234-7.219 7.219 3.234 7.219 7.219 7.219 7.203-3.234 7.203-7.219zM30.016 6.766h5.984c-0.938 1.094-1.625 2.562-1.797 3.578 1.078 1.484 1.719 3.297 1.719 5.266 0 4.953-4.016 8.953-8.953 8.953-2.812 0-5.313-1.281-6.953-3.297 0 0-0.734 0.875-2.016 2.797-0.219-0.453-1.328-2.031-2-2.812-1.641 2.031-4.156 3.313-6.969 3.313-4.937 0-8.953-4-8.953-8.953 0-1.969 0.641-3.781 1.719-5.266-0.172-1.016-0.859-2.484-1.797-3.578h5.703c3.063-2.047 7.516-3.328 12.297-3.328s8.953 1.281 12.016 3.328z"></path>
 </symbol>
+<symbol id="iconHandshake" viewBox="0 0 36 28">
+<path d="M3 18c1.313 0 1.313-2 0-2s-1.313 2 0 2zM26.016 17.094c-1.234-1.609-2.438-3.25-3.844-4.719l-1.953 2.188c-1.719 1.953-4.797 1.906-6.469-0.094-1.188-1.437-1.188-3.5 0.031-4.922l2.766-3.219c-0.969-0.5-2.141-0.328-3.187-0.328-0.922 0-1.813 0.375-2.469 1.031l-2.469 2.469h-2.422v8.5c0.688 0 1.312-0.094 1.859 0.438l4.641 4.562c0.953 0.922 2.187 1.734 3.547 1.734 0.703 0 1.453-0.234 1.953-0.734 1.172 0.406 2.531-0.25 2.891-1.453 0.75 0.063 1.437-0.172 1.984-0.688 0.359-0.328 0.828-0.984 0.781-1.5 0.141 0.141 0.484 0.156 0.672 0.156 1.859 0 2.828-1.953 1.687-3.422zM28.5 18h1.5v-8h-1.453l-2.453-2.812c-0.656-0.75-1.641-1.188-2.641-1.188h-2.609c-0.875 0-1.719 0.391-2.281 1.047l-3.266 3.797c-0.578 0.688-0.578 1.656-0.016 2.344 0.891 1.062 2.531 1.078 3.453 0.047l3.016-3.406c0.719-0.797 2.031-0.047 1.703 0.969 0.594 0.688 1.234 1.359 1.813 2.047 0.781 0.969 1.531 1.984 2.297 2.969 0.484 0.625 0.844 1.375 0.938 2.188zM33 18c1.313 0 1.313-2 0-2s-1.313 2 0 2zM36 9v10c0 0.547-0.453 1-1 1h-6.781c-0.562 1.359-1.797 2.266-3.234 2.469-0.672 0.984-1.703 1.734-2.859 1.984-0.859 1.094-2.25 1.75-3.641 1.656-2.578 1.453-5.484 0.187-7.406-1.703l-4.484-4.406h-5.594c-0.547 0-1-0.453-1-1v-10.5c0-0.547 0.453-1 1-1h6.578c1.813-1.813 3.062-3.5 5.781-3.5h1.828c1.016 0 2 0.313 2.828 0.875 0.828-0.562 1.813-0.875 2.828-0.875h2.609c2.969 0 4.203 1.937 6 4h5.547c0.547 0 1 0.453 1 1z"></path>
+</symbol>
 </defs>
 </svg>';
 
@@ -191,34 +194,7 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.paroller.min.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
  
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-
-<script type='text/javascript'>
-(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='phone';fnames[3]='MMERGE3';ftypes[3]='text';fnames[2]='MMERGE2';ftypes[2]='dropdown';fnames[7]='MMERGE7';ftypes[7]='dropdown';fnames[5]='MMERGE5';ftypes[5]='dropdown'; 
-/**
- * Translated default messages for the $ validation plugin.
- * Locale: PT_PT
- */
-$.extend($.validator.messages, {
-	required: "Campo de preenchimento obrigat&oacute;rio.",
-	remote: "Por favor, corrija este campo.",
-	email: "Por favor, introduza um endere&ccedil;o eletr&oacute;nico v&aacute;lido.",
-	url: "Por favor, introduza um URL v&aacute;lido.",
-	date: "Por favor, introduza uma data v&aacute;lida.",
-	dateISO: "Por favor, introduza uma data v&aacute;lida (ISO).",
-	number: "Por favor, introduza um n&uacute;mero v&aacute;lido.",
-	digits: "Por favor, introduza apenas d&iacute;gitos.",
-	creditcard: "Por favor, introduza um n&uacute;mero de cart&atilde;o de cr&eacute;dito v&aacute;lido.",
-	equalTo: "Por favor, introduza de novo o mesmo valor.",
-	accept: "Por favor, introduza um ficheiro com uma extens&atilde;o v&aacute;lida.",
-	maxlength: $.validator.format("Por favor, n&atilde;o introduza mais do que {0} caracteres."),
-	minlength: $.validator.format("Por favor, introduza pelo menos {0} caracteres."),
-	rangelength: $.validator.format("Por favor, introduza entre {0} e {1} caracteres."),
-	range: $.validator.format("Por favor, introduza um valor entre {0} e {1}."),
-	max: $.validator.format("Por favor, introduza um valor menor ou igual a {0}."),
-	min: $.validator.format("Por favor, introduza um valor maior ou igual a {0}.")
-});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
+<!-- Include JavaScript Mailchimp -->
 
 <?php
 }

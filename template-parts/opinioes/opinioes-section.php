@@ -1,4 +1,4 @@
-<section id="opinioes" class="Section Section--style1 Section--opinioes u-paddingTop u-positionRelative">
+<section id="opinioes" class="Section Section--style1 Section--opinioes u-paddingHorizontal u-positionRelative">
 	
 	
 	<div class="u-maxSize--container u-alignCenterBox u-displayFlex u-flexDirectionColumn u-positionRelative">
@@ -79,7 +79,7 @@
 			<!-- ITEM -->
 		</div>
 
-			<figure class="FigureIcon ImgFigure--circle--lg ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-opacity30 u-zIndex3 is-animating--time2" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
+			<figure class="FigureIcon ImgFigure--circle--lg ImgFigure--rightCenter u-displayBlock u-positionAbsolute u-opacity30 u-zIndex-1 is-animating--time2" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 			
 			<figure class="FigureIcon ImgFigure--flyer--vert ImgFigure--right u-displayBlock u-positionAbsolute u-zIndex3 is-animating--time2" data-paroller-factor="1.0" data-paroller-type="foreground" data-paroller-direction="vertical"></figure>
 

@@ -84,6 +84,7 @@ $mainSelector: '.Form';
 			color: $color_10;
 			z-index: 2;
 		}
+		
 
 		& span.required{
 				position: absolute;
@@ -106,9 +107,8 @@ $mainSelector: '.Form';
 			}
 		}
 		& #{$mainSelector}-input:not([type="submit"]){
-			border-radius: 5px;
 			border: 1px solid $color_9;
-			text-indent: 22px;
+			text-indent: 27px;
 
 			color: $color_10;
 			 font-weight: bold;
@@ -143,6 +143,7 @@ $mainSelector: '.Form';
 		& ._form-thank-you { 
 		    color: #25c844;
 		}
+
 		
 	}
 	&--style2{
@@ -291,6 +292,11 @@ $mainSelector: '.Form';
 		}
 		@media screen and (min-width: $break-sm){
 			margin: 0px 0 0 2.5% !important;
+		}
+	}
+	&--rounded{
+		& #{$mainSelector}-label{
+			left: 30px;
 		}
 	}
 }

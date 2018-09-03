@@ -78,6 +78,11 @@
 		flex-direction: row !important;
 	}
 }
+.u-flexDirectionRow.u-flexSwitchColumn{
+	@media screen and (min-width: $break-sm){
+		flex-direction: column !important;
+	}
+}
 .u-flexDirectionColumn.u-flexSwitchRow{
 	@media screen and (min-width: $break-sm){
 		flex-direction: row !important;
@@ -89,11 +94,6 @@
 	}
 }
 
-.u-flexDirectionRow.u-flexSwitchRow{
-	@media screen and (min-width: $break-sm){
-		flex-direction: column !important;
-	}
-}
 // .u-flexSwitchReverse--mobile.u-flexDirectionRowReverse{
 // 	@media screen and (max-width: $break-sm){
 // 		flex-direction: column-reverse !important;
