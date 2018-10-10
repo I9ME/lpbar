@@ -1,0 +1,335 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <link type="text/css" rel="stylesheet" href="https://kickoff.solutto.com.br/js/bootstrap/css/bootstrap.min.css" >
+        <script type="text/javascript" src="https://kickoff.solutto.com.br/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="https://kickoff.solutto.com.br/js/jquery/jquery.validate.1.11.1.customizado.min.js"></script>
+        <script type="text/javascript" src="https://kickoff.solutto.com.br/js/jquery/jquery.mask.min.js"></script>
+
+
+                                                       
+        <script type="text/javascript">
+            var cidades = [];
+           window.getParameterByName = function(name) {
+               name = name.replace(/[[]/, "\[").replace(/[]]/, "\]");
+               var regexS = "[\?&]" + name + "=([^&#]*)";
+               var regex = new RegExp(regexS);
+               var results = regex.exec(window.location.href);
+               if (results == null) return "";
+               else return decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+            $(document).ready(function () {
+                   if(getParameterByName("erroID") != ""){
+                       document.getElementById("divMessage").style.display = "";
+                       document.getElementById("divErro").innerHTML = "&nbsp; &nbsp;" + getParameterByName("erroID");
+                   }
+                
+
+                var $form = $("form");
+                $form.validate({
+                    highlight: function (element) {
+                        $(element).closest(".form-group").addClass("has-error");
+                    },
+                    unhighlight: function (element) {
+                        $(element).closest(".form-group").removeClass("has-error");
+                    },
+                    errorElement: "span",
+                    errorClass: "help-block"
+                });
+
+
+
+                $.each($("input[data-mask]"), function (i, o) {
+                    var $o = $(o),
+                        reverse = (($o.attr("data-mask-reverse") == "true") ? true : false);
+                    $o.mask($o.attr("data-mask"), {
+                        reverse: reverse
+                    });
+                    delete $o;
+                });
+                
+                 $('#Pais').change(function(){
+
+                    var $cidade = $('#ddlCidade');
+                    var $divCidade = $cidade.closest('div.form-group');
+                    var $estado = $('#Estado');
+                    var paisSelecionado = $('#Pais').val();
+
+                    if (paisSelecionado == null || paisSelecionado == '' || paisSelecionado == 'BR'){
+                        $divCidade.show();
+                        $estado.removeAttr('disabled')
+                       
+                   $("#Estado option[value='EX']").remove();
+
+                     $estado.val('');
+
+                    } else{
+                        $divCidade.hide();
+                        $estado.append("<option value='EX'>EX</option>");
+                        $estado.val('EX');
+                        $estado.attr('disabled', 'disabled');
+                    }
+
+                    $cidade = $estado = $divCidade = null;
+                });
+
+
+                var cidades = [];
+                $('#Estado').change(function(){
+                    var $cidade = $('#ddlCidade');
+                    var $hdnCidade = $('#Cidade');
+                    var $hdnCidadeIntere = $('input:hidden#cidade_interesse_1')
+                    var $estado = $(this);
+                    
+                    if($hdnCidade.length > 0) $hdnCidade.val('');
+                    if($hdnCidadeIntere.length > 0) $hdnCidadeIntere.val('');
+                    
+                    populaEstadoCidades($estado, $cidade);
+                    $cidade = $hdnCidade = $estado = null;
+
+                });
+
+                $('#ddlEstadoInteresse').change(function(){
+                    var $cidades = $('.cidade-interesse');
+					var $ocultos = $cidades.filter(":hidden");
+                    var $btnAdicionar = $('#btnAdicionarCidadeInteresse')
+                    if(this.value == ''){
+                        limpaCidades($cidades);
+                        if($btnAdicionar.length == 0) $btnAdicionar.addClass('hide');
+						$cidades.addClass('hide');
+						return;
+                    }
+					if ($ocultos.length > 0){
+						if($btnAdicionar.length > 0) $btnAdicionar.removeClass('hide');
+
+					}
+                    
+					$cidades.first().removeClass('hide');
+					
+                    populaEstadoCidades($(this), $cidades);
+                    
+
+                });
+				
+				$('#btnAdicionarCidadeInteresse').click(function(){
+                    var $cidades = $('.cidade-interesse');
+                    
+                    var $ocultos = $cidades.filter(":hidden");
+					
+					if ($ocultos.length == 0){
+						$('#btnAdicionarCidadeInteresse').addClass('hide');
+						return;
+					}
+					$ocultos.first().removeClass('hide');
+					$ocultos = $cidades.filter(":hidden");
+					if ($ocultos.length == 0){
+						$('#btnAdicionarCidadeInteresse').addClass('hide');
+						return;
+					}
+                });
+                
+
+
+                $('#ddlCidade').change(function(){
+                    var $cidade = $('#Cidade');
+                    var $hdnCidadeIntere = $('input:hidden#cidade_interesse_1')
+                    var $optionSelected = $("option:selected", this);
+                    var _value = $optionSelected.val();
+                    var _text = '';
+                    if(_value != '') _text = $optionSelected.text();
+
+                    if($cidade.length > 0) $cidade.val(_text);
+                    if($hdnCidadeIntere.length > 0) $hdnCidadeIntere.val(_value);
+
+                    $cidade = $hdnCidadeIntere = null;
+                });
+
+            }) 
+            function limpaCidades($cidades){
+                $("option", $cidades).remove()
+                $cidades.append($("<option />").val('').text('* Selecione o estado *'));
+                $cidades.prop('disabled',true);
+            }
+
+            function populaEstadoCidades($estado, $cidades){
+                var estado = $estado.val();
+				if(estado == ''){
+					limpaCidades($cidades);
+					$estado.prop('disabled',false);
+					return;
+				}
+				$estado.prop('disabled',true);
+				$cidades.prop('disabled',true);
+				var result = $.grep(cidades, function(e){ return e.UF == estado; });
+				
+				if(result.length == 0){
+					ajaxCidades($estado, $cidades);
+				}else{
+					bindCidades($estado, $cidades);
+				}
+            }
+			
+			function ajaxCidades($estado, $cidades){
+                var estado = $estado.val();
+				var obj = {'UF': estado, 'cidades':[]};
+				$.ajax({
+					 dataType: "post"
+					,url: "https://sistema.solutto.com.br/wsUtilitarios.asmx/Retorna_Municipios_Por_Estado_V1"
+					,data: { siglaUF: estado }
+					,complete: function(data) {
+						if(data.status != 200 || data.responseXML == ''){
+							/* $.each($cidades, function(i, cidade) { 
+								$("option", $(cidade)).remove()
+								$(cidade).append($("<option />").val('').text('* Selecione o estado *'));
+							})*/
+							
+							limpaCidades($cidades);
+							$estado.prop('disabled',false);
+							return;
+						}
+						
+						
+						var _temp = $(data.responseXML).find("string").text().split(",");
+						
+						$.each(_temp, function(i, item) { 
+							obj.cidades.push(
+							{
+								'id':item.split("|")[0], 
+								'nome':item.split("|")[1]}
+							)
+						})
+						cidades.push(obj);
+						
+						bindCidades($estado, $cidades)
+					}
+					,error: function() {
+						$estado.prop('disabled',false);
+						limpaCidades($cidades);
+					}
+				});
+            }
+			
+			function bindCidades($estado, $cidades){
+				var estado = $estado.val();
+				var result = $.grep(cidades, function(e){ return e.UF == estado; });
+				
+				/*$.each($cidades, function(i, cidade) { 
+					$("option", $(cidade)).remove()
+				})*/
+				$("option", $cidades).remove()
+				$cidades.append($("<option />").val('').text('* Selecione *'));
+				
+				
+				$.each(result[0].cidades, function(i, cidade) { 
+					$cidades.append($("<option />").val(cidade.id).text(cidade.nome));
+					/*$.each($cidades, function(i, ddl) { 
+						$(ddl).append($("<option />").val(cidade.id).text(cidade.nome));
+					})*/
+				})
+				
+				$estado.prop('disabled',false);
+				$cidades.prop('disabled',false);
+			}
+			
+
+        </script>
+    </head>
+    <body>
+        
+        <div class="container" id="divMessage" style="display:none">
+           <div class="alert alert-danger">
+               <div id="divErro"></div>
+           </div>
+        </div>
+        <div class="container">
+            <form role="form" class="form-horizontal" action="https://kickoff.solutto.com.br/investidores_form.aspx" method="POST">
+                <input id="empresa" name="empresa" type="hidden" value="Kickoff" />
+<input id="usuario" name="usuario" type="hidden" value="William Juliano" />
+<input id="unidade" name="unidade" type="hidden" value="21693" />
+<input id="RedirectSucesso" name="RedirectSucesso" type="hidden" value="https://kickoff.solutto.com.br/forms/formulario_sucesso.htm" />
+<input id="RedirectErro" name="RedirectErro" type="hidden" value="https://kickoff.solutto.com.br/forms/formulario_erro.htm" />
+
+        <div class="form-group">
+			<label for="Nome" class="control-label col-sm-2">Nome</label>
+			<div class="col-sm-10">
+				<input type="text" id="Nome" name="Nome" class="form-control" data-rule-required="true"  />
+			</div>
+		</div>
+            
+
+        <div class="form-group">
+			<label for="Email" class="control-label col-sm-2">E-mail</label>
+			<div class="col-sm-10">
+				<input type="text" id="Email" name="Email" class="form-control" data-rule-required="true" data-rule-email="True" />
+			</div>
+		</div>
+            
+
+
+
+
+        <div class="form-group">
+			<label for="Telefone" class="control-label col-sm-2">Telefone</label>
+			<div class="col-sm-10">
+				<input type="text" id="Telefone" name="Telefone" class="form-control" data-rule-required="true" maxlength="50" />
+			</div>
+		</div>
+            
+
+
+
+
+<Input id="Marca" name="Marca" type="hidden" value="180511184714572" />
+
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+			<label for="Estado" class="control-label col-sm-2">Estado</label>
+			<div class="col-sm-10">
+                <select id="Estado" name="Estado" class="form-control" data-rule-required="true" >
+					<Option value="">* Selecione *</Option><Option value="AC">AC - Acre</Option><Option value="AL">AL - Alagoas</Option><Option value="AM">AM - Amazonas</Option><Option value="AP">AP - Amapá</Option><Option value="BA">BA - Bahia</Option><Option value="CE">CE - Ceará</Option><Option value="DF">DF - Distrito Federal</Option><Option value="ES">ES - Espírito Santo</Option><Option value="GO">GO - Goiás</Option><Option value="MA">MA - Maranhão</Option><Option value="MG">MG - Minas Gerais</Option><Option value="MS">MS - Mato Grosso Do Sul</Option><Option value="MT">MT - Mato Grosso</Option><Option value="PA">PA - Pará</Option><Option value="PB">PB - Paraíba</Option><Option value="PE">PE - Pernambuco</Option><Option value="PI">PI - Piaui</Option><Option value="PR">PR - Paraná</Option><Option value="RJ">RJ - Rio de Janeiro</Option><Option value="RN">RN - Rio Grande Do Norte</Option><Option value="RO">RO - Rondônia</Option><Option value="RR">RR - Roraima</Option><Option value="RS">RS - Rio Grande Do Sul</Option><Option value="SC">SC - Santa Catarina</Option><Option value="SE">SE - Sergipe</Option><Option value="SP">SP - São Paulo</Option><Option value="To">To - Tocantins</Option>
+				</select>
+			</div>
+		</div>
+            
+
+
+
+
+        <div class="form-group">
+			<label for="cidade_interesse_" class="control-label col-sm-2">Cidade de interesse</label>
+			<div class="col-sm-5">
+                <select id="ddlEstadoInteresse" name="ddlEstadoInteresse" class="form-control" data-rule-required="true">
+					<Option value=""></Option><Option value="AC">AC - Acre</Option><Option value="AL">AL - Alagoas</Option><Option value="AM">AM - Amazonas</Option><Option value="AP">AP - Amapá</Option><Option value="BA">BA - Bahia</Option><Option value="CE">CE - Ceará</Option><Option value="DF">DF - Distrito Federal</Option><Option value="ES">ES - Espírito Santo</Option><Option value="GO">GO - Goiás</Option><Option value="MA">MA - Maranhão</Option><Option value="MG">MG - Minas Gerais</Option><Option value="MS">MS - Mato Grosso Do Sul</Option><Option value="MT">MT - Mato Grosso</Option><Option value="PA">PA - Pará</Option><Option value="PB">PB - Paraíba</Option><Option value="PE">PE - Pernambuco</Option><Option value="PI">PI - Piaui</Option><Option value="PR">PR - Paraná</Option><Option value="RJ">RJ - Rio de Janeiro</Option><Option value="RN">RN - Rio Grande Do Norte</Option><Option value="RO">RO - Rondônia</Option><Option value="RR">RR - Roraima</Option><Option value="RS">RS - Rio Grande Do Sul</Option><Option value="SC">SC - Santa Catarina</Option><Option value="SE">SE - Sergipe</Option><Option value="SP">SP - São Paulo</Option><Option value="To">To - Tocantins</Option>
+				</select>
+			</div>
+            <div Class="col-sm-5">
+            <select id="cidade_interesse_1" name="cidade_interesse_1" class="form-control hide cidade-interesse" data-rule-required="true"></select></div>
+		</div>
+
+
+
+                <div class="clearfix"> &nbsp; </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button id="btnEnviar" type="submit" class="btn btn-primary"> Enviar </button> &nbsp; 
+                    <button id="btnLimpar" type="reset" class="btn btn-warning"> Limpar </button>
+                </div>
+            </form>
+        </div>
+
+        
+    </body>
+</html>
+            
